@@ -1,0 +1,523 @@
+@media screen and (min-width: 1024px),screen and (min-height: 1024px) and (orientation: landscape){
+    *{
+        margin:0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    body{
+        height: 100%;
+        background: #fff;
+        display: block;
+    }
+    header{
+        position: relative;
+        z-index: 200;
+        width: 100%;
+        background: white;
+    }
+    header nav{
+        background-color: white;
+    }
+    header nav a{
+        width: 134px;
+        height: 31px;
+    }
+    header nav ul li{
+        display: inline-block;
+    }
+    section{
+        display: block;
+        width: 100%;
+        min-height: 1440px;
+        margin: 0 auto;
+    }
+    .cont_smart{
+        width: 100%;
+        padding: 30px 0 70px;
+        background: #f7f7f7;
+    }
+    .cont_smart .tabNav{
+        display: flex;
+        justify-content: space-between;
+        width: 1140px;
+        margin: 0 auto 0;
+        text-align: left;
+    }
+    .cont_smart .tabNav a{
+        text-decoration: none;
+        color: black;
+    }
+    .cont_smart .tabNav.levelLearning li{
+        width: 370px;
+    }
+    .cont_smart .tabNav.levelLearning li a {
+        font-size: 18px
+    }
+    .cont_smart .tabNav.levelLearning li a::before {
+        margin-top: -12px
+    }
+    .cont_smart .tabNav li{
+        width: 160px;
+        height: 80px;
+        list-style: none;
+    }
+    .cont_smart .tabNav li.on a{
+        background: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+    .cont_smart .tabNav li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border-radius: 15px;
+        box-sizing: border-box;
+        background: #fff;
+        color: #222;
+        line-height: 1.1em;
+        letter-spacing: -0.05rem;
+
+    }
+    .cont_smart .tabNav li a:active{
+        background: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+    .cont_smart .tab_content{
+        width: 1140px;
+        margin: 10px auto 0;
+        background: #fff;
+    }
+    .cont_smart .tab_content .top_title{
+        height: 200px;
+        text-align: center;
+    }
+    .cont_smart .tab_content .top_title h3{
+        display: block;
+        height: auto;
+        padding: 60px 0 0;
+        color: black;
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    .cont_smart .tab_content .top_title p{
+        display: block;
+        padding: 20px 0 0 0;
+        color: #444;
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    .cont_smart .tab_content .tab_area{
+        position: relative;
+        width: 1140px;
+        height: 50px;
+        margin: 0 auto;
+        padding: 0;
+        border-bottom: 0;
+        z-index: 1;
+    }
+    .cont_smart .tab_area ul li{
+        list-style: none;
+        display: inline-block;
+    }
+    .cont_smart .btm_info{
+        clear: both;
+        width: 1140px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .cont_smart .tab_content .tab_area{
+        position: relative;
+        width: 1140px;
+        height: 50px;
+        margin: 0 auto;
+        padding: 0;
+        border-bottom: 0;
+        z-index: 1;
+    }
+    .cont_smart .tab_content .tab_area .cont_tabs_kor{
+        width: 70%;
+        padding: 0 0 0 2px;
+        margin: 0 0 0;
+        text-align: center;
+    }
+    .cont_smart .tab_content .tab_area .cont_tabs_kor:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .cont_smart .cont_tabs_kor{
+        overflow: hidden;
+        display: inline-block;
+        height: 46px;
+        border:2px solid #f5f5f5;
+        border-radius: 23px;
+    }
+    .cont_smart .cont_tabs_kor li{
+        width: 130px;
+        /*float: left;*/
+        height: 46px;
+        list-style: none;
+    }
+    .cont_smart .cont_tabs_kor li a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        /*padding-top: 5px;*/
+        box-sizing: border-box;
+        border-radius: 23px;
+        font-size: 1rem;
+        color:#888;
+        letter-spacing: -0.02em;
+        text-decoration: none;
+    }
+    .cont_smart .cont_tabs_kor li a:hover, a:active{
+        background: #3d8af0;
+        color: #fff
+    }
+    .cont_area{
+        list-style: none;
+    }
+    .cont_smart .start_milkT {
+        padding-bottom: 100px;
+        text-align: center;
+    }
+    .cont_smart .start_milkT .btn{
+        margin-top: 32px;
+    }
+    .btnTop{
+        display: flex;
+        position: fixed;
+        right: .4rem;
+        bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px), screen and (min-height: 760px) and (max-height: 1023px) and (orientation: landscape) {
+    *{
+        margin:0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+    section{
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .cont_smart{
+        width: 95%;
+        padding: 30px 0 70px;
+        background: #f7f7f7;
+    }
+    .cont_smart .tabNav{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto 0;
+        text-align: left;
+    }
+    .cont_smart .tabNav.levelLearning li{
+        width: 160px;
+        height: 80px;
+    }
+    .cont_smart .tabNav li{
+        list-style: none;
+        width: 160px;
+        height: 80px;
+    }
+    .cont_smart .tabNav li.on a{
+        background: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+    .cont_smart .tabNav li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        box-sizing: border-box;
+        background: #fff;
+        color: #222;
+        line-height: 1.1em;
+        letter-spacing: -0.05rem;
+        width: 160px;
+        height: 60px;
+    }
+    .cont_smart .tabNav a{
+        text-decoration: none;
+        color: black;
+    }
+    .cont_smart .tabNav li a:active{
+        background: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+    section .tab_content .tab_detail img{
+        width: 90%;
+    }
+    .cont_smart .tab_content{
+        width: 90%;
+        margin: 10px auto 0;
+        background: #fff;
+    }
+    .cont_smart .tab_content .top_title{
+        height: 150px;
+        text-align: center;
+    }
+    .cont_smart .tab_content .top_title h3{
+        display: block;
+        height: auto;
+        padding: 40px 0 0;
+        color: black;
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+    .cont_smart .tab_content .top_title p{
+        display: block;
+        padding: 5px 0 0 0;
+        color: #444;
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+    .cont_smart .tab_content .tab_area{
+        position: relative;
+        width: 90%;
+        height: 50px;
+        margin: 0 auto;
+        padding: 0;
+        border-bottom: 0;
+        z-index: 1;
+    }
+    .cont_smart .tab_area ul li{
+        list-style: none;
+        display: inline-block;
+    }
+    .cont_smart .btm_info{
+        clear: both;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .cont_smart .tab_content .tab_area{
+        position: relative;
+        width: 90%;
+        height: 50px;
+        margin: 0 auto;
+        padding: 0;
+        border-bottom: 0;
+        z-index: 1;
+    }
+    .cont_smart .tab_content .tab_area .cont_tabs_kor:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .cont_smart .cont_tabs_kor{
+        overflow: hidden;
+        display: inline-block;
+        height: 46px;
+        border:2px solid #f5f5f5;
+        border-radius: 23px;
+    }
+    .cont_smart .cont_tabs_kor li{
+        width: 130px;
+        height: 46px;
+        list-style: none;
+
+    }
+    .cont_smart .cont_tabs_kor li a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 5px;
+        box-sizing: border-box;
+        border-radius: 23px;
+        font-size: 0.8rem;
+        color:#888;
+        letter-spacing: -0.02em;
+        text-decoration: none;
+    }
+    .cont_smart .cont_tabs_kor li a:hover, a:active{
+        background: #3d8af0;
+        color: #fff
+    }
+    .cont_area{
+        list-style: none;
+    }
+    .cont_smart .start_milkT {
+        padding-bottom: 100px;
+        text-align: center;
+    }
+    .cont_smart .start_milkT .btn{
+        margin-top: 32px;
+    }
+    .btnTop{
+        display: flex;
+        position: fixed;
+        right: .4rem;
+        bottom: 1.5rem;
+    }
+}
+@media screen and (max-width: 767px), screen and (max-height: 479px) and (orientation: landscape){
+    * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    section {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .cont_smart {
+        width: 95%;
+        padding: 30px 0 70px;
+        background: #f7f7f7;
+    }
+
+    section .tab_content .tab_detail img {
+        width: 100%;
+    }
+
+    .cont_smart .start_milkT img {
+        width: 90%;
+    }
+
+    .cont_smart .tabNav {
+        /*display: flex;*/
+        /*justify-content: space-between;*/
+        width: 90%;
+        margin: 0 auto 0;
+        text-align: left;
+    }
+
+    .cont_smart .tabNav.levelLearning li {
+        width: 160px;
+        height: 50px;
+    }
+
+    .cont_smart .tabNav li {
+        list-style: none;
+        width: 160px;
+        height: 50px;
+    }
+
+    .cont_smart .tabNav li.on a {
+        background: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+    /*.cont_smart .tabNav li a{*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    border-radius: 15px;*/
+    /*    box-sizing: border-box;*/
+    /*    background: #fff;*/
+    /*    color: #222;*/
+    /*    line-height: 1.1em;*/
+    /*    letter-spacing: -0.05rem;*/
+    /*    width: 160px;*/
+    /*    height: 60px;*/
+    /*}*/
+    .cont_smart .tabNav li a:active{
+        background: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+    .cont_smart .tab_content{
+        width: 90%;
+        margin: 10px auto 0;
+        background: #fff;
+    }
+    .cont_smart .tab_content .top_title{
+        height: 150px;
+        text-align: center;
+    }
+    .cont_smart .tab_content .top_title h3{
+        display: block;
+        height: auto;
+        padding: 40px 0 0;
+        color: black;
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+    .cont_smart .tab_content .top_title p{
+        display: block;
+        padding: 5px 0 0 0;
+        color: #444;
+        font-size: 0.7rem;
+        line-height: 1.4;
+    }
+    .cont_smart .tab_content .tab_area{
+        position: relative;
+        width: 90%;
+        height: 50px;
+        margin: 0 auto;
+        padding: 0;
+        border-bottom: 0;
+        z-index: 1;
+    }
+    .cont_smart .tab_area ul li{
+        list-style: none;
+        display: inline-block;
+    }
+    .cont_smart .btm_info{
+        clear: both;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .cont_smart .tab_content .tab_area .cont_tabs_kor:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .cont_smart .cont_tabs_kor{
+        overflow: hidden;
+        display: inline-block;
+        height: 30px;
+        border:2px solid #f5f5f5;
+        border-radius: 23px;
+    }
+    .cont_smart .cont_tabs_kor li{
+        width: 60px;
+        height: 30px;
+        list-style: none;
+    }
+    .cont_smart .cont_tabs_kor li a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 5px;
+        box-sizing: border-box;
+        border-radius: 23px;
+        font-size: 0.5rem;
+        color:#888;
+        letter-spacing: -0.02em;
+        text-decoration: none;
+    }
+    .cont_area{
+        list-style: none;
+    }
+    .cont_smart .cont_tabs_kor li a:active{
+        background: #3d8af0;
+        color: #fff
+    }
+    .cont_smart .start_milkT {
+        padding-bottom: 100px;
+        text-align: center;
+    }
+    .cont_smart .start_milkT .btn{
+        margin-top: 32px;
+    }
+    .btnTop{
+        display: flex;
+        position: fixed;
+        right: .4rem;
+        bottom: 1.5rem;
+    }
+}
