@@ -1,0 +1,413 @@
+@media screen and (min-width: 1024px)
+    /*, screen and (min-height: 1024px)*/
+    /*and (orientation: landscape)*/ {
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
+    }
+
+    header {
+        background-color: lightblue;
+        height: 8vh;
+    }
+
+    body {
+        background-color: #EFF9FB;
+        z-index: -2;
+    }
+
+    /*내부 메뉴 네비게이션*/
+    .tabNav {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 70vw;
+        margin: 3vh auto;
+        text-align: left;
+    }
+
+    .tabNav li {
+        display: inline-block;
+    }
+
+    .tabNav li a {
+        text-decoration: none;
+        color: #1f1f1f;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: white;
+        width: 16vw;
+        height: 5vh;
+        border-radius: 3vw;
+
+        font-size: 0.9em;
+
+        line-height: 1.2em;
+        letter-spacing: -0.03rem;
+
+    }
+
+    .tabNav li img {
+        width: 30px;
+        height: 30px;
+        margin-right: 1.2vw;
+    }
+
+    /*마우스 오버*/
+    .tabNav li.on a {
+        background-color: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .tabNav li .icon_on {
+        display: none;
+    }
+
+    .tabNav .on .icon_off {
+        display: none;
+    }
+
+    .tabNav .on .icon_on {
+        display: flex;
+    }
+
+    /*흰바탕*/
+    #wrap {
+        margin: 2vw auto;
+        background-color: white;
+        width: 80vw;
+        border-radius: 2vw;
+        z-index: -1;
+    }
+
+    /*큰제목*/
+    article h1 {
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 4vw 0 0;
+        font-size: 2.5em;
+        color: #1f1f1f;
+        font-weight: 600;
+    }
+
+    /*작은 제목*/
+    article h2 {
+        display: block;
+        height: auto;
+        text-align: center;
+        font-size: 1.3em;
+        color: #1f1f1f;
+        font-weight: normal;
+        line-height: 1.6;
+        margin: 3vw 1vh;
+    }
+
+    /*강조 텍스트*/
+    .text_blue {
+        color: #438FFC;
+        font-weight: bolder;
+    }
+
+    /*설명 이미지*/
+    .p_img {
+        width: 80vw;
+        margin: 5vh auto 0;
+        /*border: 1px solid red;*/
+        overflow: hidden;
+    }
+    .p_img img {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+
+    .m_img {
+        display: none;
+    }
+
+    /*줄바꿈 제거*/
+    br.break-m {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px)
+and (max-width: 1023px)
+    /*, screen and (min-height: 768px) and (max-height: 1023px)*/
+    /*and (orientation: landscape)*/ {
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
+    }
+
+    header {
+        background-color: lightblue;
+        height: 8vh;
+    }
+
+    body {
+        background-color: #EFF9FB;
+        z-index: -2;
+    }
+    /*내부 메뉴 네비게이션*/
+    .tabNav {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 70vw;
+        margin: 3vh auto;
+        text-align: left;
+    }
+
+    .tabNav li {
+        display: inline-block;
+    }
+
+    .tabNav li a {
+        text-decoration: none;
+        color: #1f1f1f;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: white;
+        width: 17vw;
+        height: 5vh;
+        border-radius: 4vw;
+
+        font-size: 0.9em;
+
+        line-height: 1em;
+        letter-spacing: -0.05rem;
+    }
+
+    .tabNav li .hover-on a {
+        background-color: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .tabNav li img {
+        width: 25px;
+        height: 25px;
+        margin-right: 1.2vw;
+    }
+
+    /*마우스 오버*/
+    .tabNav li.on a {
+        background-color: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .tabNav li .icon_on {
+        display: none;
+    }
+
+    .tabNav .on .icon_off {
+        display: none;
+    }
+    .tabNav .on .icon_on{
+        display: flex;
+    }
+
+    #wrap {
+        margin: 2vw auto;
+        background-color: white;
+        width: 80vw;
+        border-radius: 2vw;
+        z-index: -1;
+    }
+
+    /*큰제목*/
+    article h1 {
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 4vw 0 0;
+        font-size: 2em;
+        color: #1f1f1f;
+        font-weight: 600;
+    }
+
+    /*작은 제목*/
+    article h2 {
+        display: block;
+        height: auto;
+        text-align: center;
+        font-size: 1.3em;
+        color: #1f1f1f;
+        font-weight: normal;
+        line-height: 1.6;
+        margin: 3vw 1vh;
+    }
+    /*강조 텍스트*/
+    .text_blue {
+        color: #438FFC;
+        font-weight: bolder;
+    }
+    /*설명 이미지*/
+    .p_img {
+        width: 80vw;
+        margin: 1vw auto 0;
+        /*border: 1px solid red;*/
+        overflow: hidden;
+    }
+    .p_img img {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .m_img {
+        display: none;
+    }
+    /*줄바꿈 제거*/
+    br.break-m {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px)
+    /*, screen and (max-height: 479px) and (orientation: landscape)*/ {
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
+    }
+
+    header {
+        background-color: lightblue;
+        height: 8vh;
+    }
+
+    body {
+        background-color: #EFF9FB;
+        z-index: -2;
+    }
+
+    /*내부 메뉴 네비게이션*/
+    .tabNav {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 75vw;
+        margin: 3vh auto;
+        text-align: left;
+    }
+
+    .tabNav li {
+        flex-basis: 50%;
+        box-sizing: border-box;
+        margin: 1vh auto;
+    }
+
+    .tabNav li a {
+        text-decoration: none;
+        color: #1f1f1f;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: white;
+        width: 35vw;
+        height: 5vh;
+        border-radius: 4vw;
+
+        font-size: 0.9em;
+
+        line-height: 1.2em;
+        letter-spacing: -0.03rem;
+    }
+
+    .tabNav li.on a {
+        background-color: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .tabNav li a img {
+        width: 25px;
+        height: 25px;
+        margin-right: 1.7vw;
+    }
+
+    .tabNav li .icon_on {
+        display: none;
+    }
+
+    .tabNav .on .icon_on {
+        display: flex;
+    }
+
+    .tabNav .on .icon_off {
+        display: none;
+    }
+
+
+    #wrap {
+        margin: 2vw auto;
+        background-color: white;
+        width: 80vw;
+        border-radius: 2vw;
+        z-index: -1;
+    }
+    /*큰제목*/
+    article h1 {
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 4vw 0 0;
+        font-size: 2em;
+        color: #1f1f1f;
+        font-weight: 600;
+    }
+
+    /*작은 제목*/
+    article h2 {
+        display: block;
+        height: auto;
+        text-align: center;
+        font-size: 1.3em;
+        color: #1f1f1f;
+        font-weight: normal;
+        line-height: 1.6;
+        margin: 3vw 1vh;
+    }
+    /*강조 텍스트*/
+    .text_blue {
+        color: #438FFC;
+        font-weight: bolder;
+    }
+    /*설명 이미지*/
+    .m_img {
+        width: 80vw;
+        margin: 3vw auto 0;
+        /*border: 1px solid red;*/
+        overflow: hidden;
+    }
+    .m_img img {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 5vh auto;
+    }
+    .p_img {
+        display: none;
+    }
+
+}
