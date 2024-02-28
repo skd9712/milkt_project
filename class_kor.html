@@ -11,23 +11,50 @@ initial-scale=1.0,max-scale=2.0">
 <body>
 <div id="wrap">
     <header>
-        <nav>
-            <a href="#"> <img src="img/logo.png" alt="logo"></a>
-            <ul>
-                <li><a href="#">AI Genia.</a></li>
-                <li><a href="#"> 학교 공부</a></li>
-                <li><a href="#"> 수준별 국.영.수</a></li>
-                <li><a href="#"> 학습 자료실</a></li>
-                <li class="left_side"><a href="#"><img src="img/search.png" alt="search"></a></li>
-                <li class="left_side"><a href="#"><img src="img/join.png" alt="join"> </a></li>
+        <nav class="navbar">
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+            <ul class="navbar_menu">
+                <li class="menu_li"><a href="#genia">AI Genia.</a></li>
+
+                <li class="menu_li"><a href="#school">학교 공부</a>
+                    <ul class="inner_school">
+                        <li><a href="#">밀크T 메뉴 구성</a></li>
+                        <li><a href="#">학년별 학습 가이드</a></li>
+                        <li><a href="#">과목별 학교 공부</a></li>
+                        <li><a href="#">실력 평가</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu_li"><a href="class_kor.html">수준별 국 영 수</a>
+                    <ul class="inner_level">
+                        <li><a href="class_kor.html">국어</a></li>
+                        <li><a href="class_eng.html">영어</a></li>
+                        <li><a href="class_math.html">수학</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu_li"><a href="#">학습 자료실</a></li>
+
             </ul>
+
+            <ul class="navbar_icon">
+                <li><a href="#"><img src="img/join.png" alt="login"></a></li>
+                <li><a href="#"><img src="img/search.png" alt="search"></a></li>
+            </ul>
+
+            <a href="#" class="navbar_toggleBtn">
+                <img src="img/hamburger.png" alt="hamburger">
+            </a>
+
         </nav>
     </header>
     <section>
         <div class="cont_smart">
             <ul class="tabNav levelLearning">
                 <li class="on"><a href="class_kor.html">
-                    <span>수준별 국어</span></a></li>
+                    <span>수준별 국어</span></a>
+                </li>
+
                 <li><a href="class_eng.html">
                     <span>수준별 영어</span></a></li>
                 <li><a href="class_math.html"><span>수준별 수학</span></a></li>
@@ -35,6 +62,14 @@ initial-scale=1.0,max-scale=2.0">
             <section class="tab_content">
                 <div class="top_title">
                     <h3>수준별 국어</h3>
+                    <div class="waviy">
+                        <span style="--i:1">수</span>
+                        <span style="--i:2">준</span>
+                        <span style="--i:3">별</span>
+                        <span style="--i:4">&nbsp</span>
+                        <span style="--i:4">국</span>
+                        <span style="--i:5">어</span>
+                    </div>
                     <p>어휘와 독서, 한자와 한국어까지! 알찬 국어 실력 다지기</p>
                 </div>
 
@@ -64,21 +99,56 @@ initial-scale=1.0,max-scale=2.0">
                     </div>
                 </div>
                 <div class="start_milkT">
-                    <p><img src="https://cdndata.milkt.co.kr/ele/www/images/smartstudy/txt_startmilkt_v2.gif"
-                            alt="지금 바로 밀크T 학습을 시작하시겠습니까?"></p>
-                    <p class="btn">
-                        <a href="#">
-                            <img src="https://cdndata.milkt.co.kr/ele/www/images/smartstudy/btn_startmilkt01_v2.png"
-                                 alt="free"></a>
-                        <a href="#">
-                            <img src="https://cdndata.milkt.co.kr/ele/www/images/smartstudy/btn_startmilkt02_v2.png"
-                                 alt="buy"></a>
-                    </p>
+                    <a href="#"><img src="img/obj_dumi.png" alt="bear" class="pc_bear"></a>
+                    <a href="#"><img src="img/dd.png" alt="bear2" class="tab_bear"></a>
+                    <a href="#"><img src="img/bee.png" alt="buri" class="mobile_bee"></a>
+
+<!--                    <a href="#">밀크T 학습 시작</a>-->
+<!--                    <p><img src="https://cdndata.milkt.co.kr/ele/www/images/smartstudy/txt_startmilkt_v2.gif"-->
+<!--                            alt="지금 바로 밀크T 학습을 시작하시겠습니까?"></p>-->
+<!--                    <p class="btn">-->
+<!--                        <a href="#">-->
+<!--                            <img src="https://cdndata.milkt.co.kr/ele/www/images/smartstudy/btn_startmilkt01_v2.png"-->
+<!--                                 alt="free"></a>-->
+<!--                        <a href="#">-->
+<!--                            <img src="https://cdndata.milkt.co.kr/ele/www/images/smartstudy/btn_startmilkt02_v2.png"-->
+<!--                                 alt="buy"></a>-->
+<!--                    </p>-->
+
                 </div>
             </section>
         </div>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="footer01">
+            <div class="company_info">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+            </div>
+            <div class="family_site">
+                <a class="family_btn open" href="#">FANILY SITE +</a>
+            </div>
+        </div>
+        <div class="footer02">
+            <div class="footer_img">
+                <img src="img/천재교과서_이미지.png" alt="푸터 이미지">
+            </div>
+            <div class="footer_text">
+                <p>(주) 천재교과서 | 대표: 박정과, 임형진 | 서울특별시 금천구 가산디지털1로 16, 11층 18-20층(가산동) <br>
+                    학원설립 운영등록번호 : 제 5434호 천재교과서밀크티초등원격학원 [정보조회] | 신고기관명 : 서울남부교육지원청 <br>
+                    사업자등록번호 : 119-81-70643 | 통신판매업신고번호: 제 2016-서울금천-1306호[정보조회] | 신고기관명 : 서울특별시 금천구청 <br>
+                    부가통신사업신고번호 : 제 2-01-16-0189 호 | 호스팅서비스 제공자 : (주)천재교과서 <br>
+                    대표번호 Tel : 1577-1533 | 대표문의 E-mail: mt@chunjae.co.kr | 제휴문의 E-mail : marketing@chunjae.co.kr
+                </p>
+                <p>COPYRIGHT 2015 CHUNJAE TEXTBOOK CORPORATION. ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
     <a href="#" class="btnTop"><img src="//cdndata.milkt.co.kr/ele/www/images/common/quick/quick_top_221020.png"
                                     alt="위로 가기"></a>
 
