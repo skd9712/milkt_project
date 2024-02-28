@@ -11,7 +11,7 @@
     #wrap {
         background-color: #F7F5FF;
         z-index: -2;
-        padding: 5vh;
+        padding: 2vh 0 5vh;
     }
 
     /*내부 메뉴 네비게이션*/
@@ -246,7 +246,7 @@ and (max-width: 1023px)
     #wrap {
         background-color: #F7F5FF;
         z-index: -2;
-        padding: 5vh;
+        padding: 2vh 0 5vh;
     }
 
     /*내부 메뉴 네비게이션*/
@@ -481,7 +481,7 @@ and (max-width: 1023px)
     #wrap {
         background-color: #F7F5FF;
         z-index: -2;
-        padding: 5vh;
+        padding: 2vh 0 5vh;
     }
 
     /*내부 메뉴 네비게이션*/

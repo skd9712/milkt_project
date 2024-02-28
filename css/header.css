@@ -58,6 +58,7 @@ ul li {
     left: 100px;
     text-align: center;
     z-index: 100;
+    background-color: white;
 
 }
 .navbar_menu .menu_li .inner_level {
@@ -67,6 +68,7 @@ ul li {
     left: 350px;
     text-align: center;
     z-index: 100;
+    background-color: white;
 }
 .menu_li li a{
     position: relative;
