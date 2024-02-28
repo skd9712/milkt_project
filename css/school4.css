@@ -8,9 +8,10 @@
     }
 
 
-    body {
+    #wrap {
         background-color: #F7F5FF;
         z-index: -2;
+        padding: 5vh;
     }
 
     /*내부 메뉴 네비게이션*/
@@ -19,7 +20,7 @@
         display: flex;
         justify-content: space-between;
         width: 70vw;
-        margin: 3vh auto;
+        margin: 0 auto;
         text-align: left;
     }
 
@@ -74,7 +75,7 @@
 
 
 
-    #wrap {
+    article {
 
         margin: 2vw auto;
         background-color: white;
@@ -242,9 +243,10 @@ and (max-width: 1023px)
     }
 
 
-    body {
+    #wrap {
         background-color: #F7F5FF;
         z-index: -2;
+        padding: 5vh;
     }
 
     /*내부 메뉴 네비게이션*/
@@ -253,7 +255,7 @@ and (max-width: 1023px)
         display: flex;
         justify-content: space-between;
         width: 70vw;
-        margin: 3vh auto;
+        margin: 0 auto;
         text-align: left;
     }
 
@@ -312,7 +314,7 @@ and (max-width: 1023px)
 
 
 
-    #wrap {
+    article {
 
         margin: 2vw auto;
         background-color: white;
@@ -476,9 +478,10 @@ and (max-width: 1023px)
 
 
 
-    body {
+    #wrap {
         background-color: #F7F5FF;
         z-index: -2;
+        padding: 5vh;
     }
 
     /*내부 메뉴 네비게이션*/
@@ -487,7 +490,7 @@ and (max-width: 1023px)
         display: flex;
         flex-wrap: wrap;
         width: 75vw;
-        margin: 3vh auto;
+        margin: 0 auto;
         text-align: left;
     }
 
@@ -542,7 +545,7 @@ and (max-width: 1023px)
 
 
 
-    #wrap {
+    article {
 
         margin: 2vw auto;
         background-color: white;
