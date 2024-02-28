@@ -7,10 +7,6 @@
         font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
     }
 
-    header {
-        background-color: lightblue;
-        height: 8vh;
-    }
 
     body {
         background-color: #F7F5FF;
@@ -186,7 +182,7 @@
         overflow: hidden;
     }
 
-    img {
+    .test_img img {
         width: 34vw;
         height: 34vw;
         float: left;
@@ -245,10 +241,6 @@ and (max-width: 1023px)
         font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
     }
 
-    header {
-        background-color: lightblue;
-        height: 8vh;
-    }
 
     body {
         background-color: #F7F5FF;
@@ -427,7 +419,7 @@ and (max-width: 1023px)
         overflow: hidden;
     }
 
-    img {
+    .test_img img {
         width: 34vw;
         height: 34vw;
         float: left;
@@ -482,10 +474,7 @@ and (max-width: 1023px)
         font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
     }
 
-    header {
-        background-color: lightblue;
-        height: 8vh;
-    }
+
 
     body {
         background-color: #F7F5FF;
@@ -660,7 +649,7 @@ and (max-width: 1023px)
         overflow: hidden;
     }
 
-    img {
+    .test_img img {
         width: 70vw;
         height: 70vw;
         margin: 2px 0;

@@ -7,10 +7,6 @@
         font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
     }
 
-    header {
-        background-color: lightblue;
-        height: 8vh;
-    }
 
     body {
         background-color: #EFF9FB;
@@ -184,10 +180,7 @@ and (max-width: 1023px)
         font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
     }
 
-    header {
-        background-color: lightblue;
-        height: 8vh;
-    }
+
 
     body {
         background-color: #EFF9FB;
@@ -354,10 +347,7 @@ and (max-width: 1023px)
         font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
     }
 
-    header {
-        background-color: lightblue;
-        height: 8vh;
-    }
+
 
     body {
         background-color: #EFF9FB;
