@@ -44,7 +44,7 @@ article h2 {
     display: block;
     height: auto;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     color: #1f1f1f;
     font-weight: normal;
     line-height: 1.6;
@@ -65,6 +65,12 @@ article h2 {
     background-color: #97DED6;
 }
 
+/*스크롤 트랜스폼*/
+.up_on_scroll {
+    opacity: 0.5;
+    transform: translateY(80px);
+    transition: transform 1s ease-out, opacity 1s ease-out, delay 1.2s ease-out;
+}
 
 @media screen and (min-width: 1024px) {
 
@@ -95,9 +101,9 @@ article h2 {
         height: 50px;
         border-radius: 3vw;
 
-        font-size: 0.9em;
+        font-size: 0.9rem;
 
-        line-height: 1.2em;
+        line-height: 1.2rem;
         letter-spacing: -0.03rem;
 
     }
@@ -115,7 +121,7 @@ article h2 {
         height: auto;
         text-align: center;
         padding: 4vw 0 0;
-        font-size: 2.5em;
+        font-size: 2.5rem;
         color: #1f1f1f;
         font-weight: 600;
     }
@@ -161,7 +167,7 @@ article h2 {
         height: 9vh;
         border-radius: 20px;
 
-        font-size: 1.5em;
+        font-size: 1.5rem;
 
     }
 
@@ -202,9 +208,9 @@ and (max-width: 1023px) {
         height: 50px;
         border-radius: 4vw;
 
-        font-size: 0.9em;
+        font-size: 0.9rem;
 
-        line-height: 1em;
+        line-height: 1rem;
         letter-spacing: -0.05rem;
     }
 
@@ -223,7 +229,7 @@ and (max-width: 1023px) {
         height: auto;
         text-align: center;
         padding: 4vw 0 0;
-        font-size: 2em;
+        font-size: 2rem;
         color: #1f1f1f;
         font-weight: 600;
     }
@@ -271,7 +277,7 @@ and (max-width: 1023px) {
         height: 9vh;
         border-radius: 20px;
 
-        font-size: 1.5em;
+        font-size: 1.5rem;
 
     }
 }
@@ -307,9 +313,9 @@ and (max-width: 1023px) {
         height: 50px;
         border-radius: 4vw;
 
-        font-size: 0.9em;
+        font-size: 0.9rem;
 
-        line-height: 1.2em;
+        line-height: 1.2rem;
         letter-spacing: -0.03rem;
     }
 
@@ -326,7 +332,7 @@ and (max-width: 1023px) {
         height: auto;
         text-align: center;
         padding: 4vw 0 0;
-        font-size: 2em;
+        font-size: 2rem;
         color: #1f1f1f;
         font-weight: 600;
     }
@@ -363,7 +369,7 @@ and (max-width: 1023px) {
         color: black;
         font-weight: bolder;
         display: block;
-        line-height: 8vh;
+        line-height: 8.5vh;
         text-align: center;
         margin: 2vh auto;
 
@@ -371,7 +377,7 @@ and (max-width: 1023px) {
         height: 9vh;
         border-radius: 20px;
 
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
 }

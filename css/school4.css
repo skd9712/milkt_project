@@ -42,7 +42,7 @@ article {
 /*테이블*/
 tr th, tr td {
     border: 0.2vw solid #F0F5F8;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     padding: 1vw;
 }
 
@@ -84,7 +84,7 @@ article h3 {
     height: auto;
     text-align: center;
     padding: 1vw 0 0;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     font-weight: normal;
     color: #1f1f1f;
     line-height: 1.4;
@@ -114,6 +114,12 @@ article h3 {
     background-color: #F1A9FA;
 }
 
+/*스크롤 애니메이션*/
+.up_on_scroll {
+    opacity: 0.5;
+    transform: translateY(80px);
+    transition: transform 1s ease-out, opacity 1s ease-out, delay 1.2s ease-out;
+}
 
 
 @media screen and (min-width: 1024px) {
@@ -144,9 +150,9 @@ article h3 {
         width: 16vw;
         height: 50px;
         border-radius: 3vw;
-        font-size: 0.9em;
+        font-size: 0.9rem;
 
-        line-height: 1.2em;
+        line-height: 1.2rem;
         letter-spacing: -0.03rem;
 
     }
@@ -164,7 +170,7 @@ article h3 {
         height: auto;
         text-align: center;
         padding: 4vw 0 0;
-        font-size: 2.5em;
+        font-size: 2.5rem;
         color: #1f1f1f;
         font-weight: 600;
 
@@ -176,7 +182,7 @@ article h3 {
         height: auto;
         text-align: center;
         padding: 1vw 0 0;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         color: #1f1f1f;
         font-weight: 600;
         line-height: 1.2;
@@ -228,7 +234,7 @@ article h3 {
         height: 9vh;
         border-radius: 20px;
 
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 }
 
@@ -263,9 +269,9 @@ and (max-width: 1023px) {
         height: 50px;
         border-radius: 4vw;
 
-        font-size: 0.9em;
+        font-size: 0.9rem;
 
-        line-height: 1em;
+        line-height: 1rem;
         letter-spacing: -0.05rem;
     }
 
@@ -282,7 +288,7 @@ and (max-width: 1023px) {
         height: auto;
         text-align: center;
         padding: 4vw 0 0;
-        font-size: 2em;
+        font-size: 2rem;
         color: #1f1f1f;
         font-weight: 600;
 
@@ -294,7 +300,7 @@ and (max-width: 1023px) {
         height: auto;
         text-align: center;
         padding: 1vw 0 0;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         color: #1f1f1f;
         font-weight: 600;
         line-height: 1.2;
@@ -342,7 +348,7 @@ and (max-width: 1023px) {
         height: 9vh;
         border-radius: 20px;
 
-        font-size: 1.5em;
+        font-size: 1.5rem;
 
     }
 }
@@ -379,9 +385,9 @@ and (max-width: 1023px) {
         height: 50px;
         border-radius: 4vw;
 
-        font-size: 0.9em;
+        font-size: 0.9rem;
 
-        line-height: 1.2em;
+        line-height: 1.2rem;
         letter-spacing: -0.03rem;
     }
 
@@ -398,7 +404,7 @@ and (max-width: 1023px) {
         height: auto;
         text-align: center;
         padding: 4vw 0 0;
-        font-size: 2em;
+        font-size: 2rem;
         color: #1f1f1f;
         font-weight: 600;
 
@@ -410,7 +416,7 @@ and (max-width: 1023px) {
         height: auto;
         text-align: center;
         padding: 1vw 0 0;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         color: #1f1f1f;
         font-weight: 600;
         line-height: 1.2;
@@ -461,7 +467,7 @@ and (max-width: 1023px) {
         color: black;
         font-weight: bolder;
         display: block;
-        line-height: 8vh;
+        line-height: 8.5vh;
         text-align: center;
         margin: 2vh auto;
 
@@ -469,7 +475,7 @@ and (max-width: 1023px) {
         height: 9vh;
         border-radius: 20px;
 
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 }
 
