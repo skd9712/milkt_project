@@ -1,0 +1,415 @@
+@media all and (max-width:767px) {
+    #wrap {
+        width : 100%;
+        margin : 0 auto;
+    }
+    .pc {
+        display : none;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+        padding: 21px;
+        border-bottom: 1px solid silver;
+    }
+
+
+    .navbar_icon {
+        display: none;
+        justify-items: center;
+        width: 100%;
+        padding-left: 40%
+    }
+
+    .navbar_toggleBtn {
+        display: block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icon.active {
+        display: flex;
+    }
+
+    .navbar_menu ul li {
+        display: none;
+    }
+
+    .navbar_menu a{
+        /*border-bottom: 1px solid silver;*/
+    }
+    .navbar_menu a:hover{
+        /*color: pink;*/
+        border: none;
+    }
+
+    /* icon-box영역 */
+    .icon-box li {
+        position : absolute;
+        top : 12px;
+        left : 15px;
+    }
+
+    /* section 02 영역 */
+    .section02 {
+        background-color : #f7f5ff;
+        padding : 50px 30px;
+        display : flex;
+        flex-direction : column;
+        align-items : center;
+    }
+    .section02 .sec_two_h2 {
+        font-size : 1rem;
+        text-align : center;
+    }
+    .section02 span {
+        color : #5900D9;
+    }
+    .sec_img {
+        max-width : 60vw;
+        margin : 30px;
+        display : flex;
+        flex-direction : column;
+    }
+    .sec_img li {
+        margin : 1vh 0;
+    }
+    .sec_img .pc {
+        margin : 0 3vw;
+    }
+    .sec_img img {
+        max-width :100%;
+        height : auto;
+        object-fit : cover;
+    }
+    .section02 h3 {
+        font-size : 0.95rem;
+    }
+
+    /* section 03 */
+    .section03 {
+        background-color: #f9f9f9;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section03>h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .section03>h3>span{
+        color: #0A89D0;
+    }
+    /*루프 관련*/
+    .section03 .infinite_loop_slider {
+        position:relative;
+        overflow:hidden;
+        width: 100vw;
+    }
+    .loop_list {
+        width:100%;
+        display:flex;
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    .loop_item{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin: 0 20vw;
+    }
+
+    /* 박스 관련 태그 */
+    .sec_three_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 50px 0;
+        width: 50vw;
+        height: 40vw;
+        border-radius: 30px;
+        background-color: #ffffff;
+        box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.25);
+        /* shadow 정보 => X축 0, Y축 4 blur 4 spread 25%*/
+        padding: 2vw 5vw;
+        overflow: hidden;
+    }
+
+    .section03 .sec_three_box img {
+        width: 25%;
+    }
+    .section03 .sec_three_box h4 {
+        font-size: 4vw;
+        margin: 0.3vw 0 0 0;
+        font-weight: 500;
+    }
+    .section03 .sec_three_box h2 {
+        font-size: 10vw;
+        color: #0A89D0;
+        font-weight: 900;
+    }
+
+    /* section 04 */
+    .section04 {
+        margin: 30px 0;
+    }
+
+    .box p {
+        font-weight: bolder;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .box h2 {
+        font-weight: 900;
+        font-size: 4rem;
+        text-align: center;
+        color: #C8D3EA;
+    }
+
+    .article04 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    .sec4_box {
+        background-color: #fff;
+    }
+
+    /* 박스 부분 */
+    .small_box h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+        position: relative;
+        top: 20px;
+        left: 10vw;
+        width : 40vw;
+        height : 40px;
+        background-color: #ffffff;
+        border-radius: 50px;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
+
+    }
+    .small_box h4{
+        font-size: 1.2rem;
+        font-weight: 400;
+        display: flex;
+        text-align : center;
+        align-items : center;
+        justify-content : center;
+        background-color: #F8F3FE;
+        width: 60vw;
+        height: 20vh;
+        box-shadow: 0 7px 29px rgba(0, 0, 0, 0.20%);
+    }
+
+    /* 1, 2학년 */
+    .box_2 {
+        background-color: rgba(254, 236, 226, 50%);
+        padding: 30px 0 10px;
+    }
+    .box_2 h2{
+        color: #FFBE98;
+    }
+    .box_2 .sec4_box {
+        background-color: #fff;
+        padding : 0 50px 30px;
+    }
+    .box_2 .sec4_box .small_box h4 {
+        background-color: #FEECE2;
+    }
+
+    /* 3, 4학년 */
+    .box_3 {
+        padding: 30px 0 10px;
+    }
+    .box_3 h2{
+        color: #F6d776;
+    }
+    .box_3 .sec4_box {
+        background-color: #fff;
+        padding : 0 50px 30px;
+    }
+    .box_3 .sec4_box .small_box h4 {
+        background-color: #faef9b;
+    }
+
+    /* 5, 6학년 */
+    .box_4 {
+        background-color: rgba(219, 231, 201, 50%);
+        padding: 30px 0 10px;
+    }
+    .box_4 h2{
+        color: #294b28;
+    }
+    .box_4 .sec4_box {
+        background-color: #fff;
+        padding : 0 50px 20px;
+    }
+    .box_4 .sec4_box .small_box h4 {
+        background-color: #dbe7c9;
+    }
+
+
+    /* section 05 */
+    .sec_five_two {
+        display: none;
+    }
+
+    .sec_five_one {
+        padding: 40px 0;
+    }
+    .sec_five_notice {
+        border-bottom: 1px solid black;
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .sec_five_notice h2 {
+        font-size: 3rem;
+    }
+    .sec_five_notice ul li {
+        display: flex;
+    }
+    .sec_five_notice ul li:last-child {
+        margin-bottom: 30px;
+    }
+    .sec_five_notice ul li h6 {
+        white-space: nowrap;
+        font-weight: bolder;
+        font-size: 1.2rem;
+    }
+    .sec_five_notice ul li a {
+        position: relative;
+        left: 10px;
+        float: right;
+        font-size: 1.2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .sec_five_three {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .sec_five_three h2 {
+        font-size: 3rem;
+    }
+    .sec_five_three h3 {
+        font-size: 2.8rem;
+        color: #0A89D0;
+        line-height: 0.5;
+    }
+    .sec_five_three p {
+        margin-top: 20px;
+        font-size: 0.88rem;
+    }
+
+    /* footer */
+    .footer01 {
+        text-align: center;
+    }
+
+    .footer01 .company_info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .company_info ul {
+        display: flex;
+    }
+
+    .company_info ul li {
+        height: 50px;
+        padding: 0 8px;
+        font-size: 0.88rem;
+        font-weight: 400;
+        line-height: 50px;
+        letter-spacing: -0.5px;
+    }
+
+
+    .company_info ul li:first-child {
+        padding-left: 0;
+    }
+
+    .company_info ul li a {
+        display: block;
+        width: 100%;
+        color: #999;
+    }
+
+    .family_site {
+        display: none;
+    }
+
+    /* 개인정보 처리 어쩌고 */
+    .footer02 {
+        border-top: 1px solid #999;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer02 .footer_text{
+        margin: 0 50px;
+    }
+
+    .footer02 .footer_text p:first-child{
+        display: block;
+        font-size: 13px;
+        color: #999;
+        font-weight: 300;
+    }
+    .footer02 .footer_text p:last-child{
+        display: block;
+        font-size: 14px;
+        color: #c6c6c6;
+        font-weight: 100;
+        margin-top: 10px;
+    }
+
+    .footer03 {
+        max-width: 750px;
+        height: 6.5vh;
+        margin: 0 auto;
+        background-color: #FF7C3D;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        overflow: hidden;
+    }
+    .footer03 p {
+        position: relative;
+        top: 7px;
+        text-align: center;
+        font-size : 25px;
+        font-weight : 600;
+        color : #fff;
+    }
+
+    .footer03 span {
+        color : #FAFF1D;
+    }
+}
+
