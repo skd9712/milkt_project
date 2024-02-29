@@ -1,7 +1,7 @@
 const $topbtn = document.querySelector(".btnTop");
 
-$topbtn.onclick=()=>{
-    window.screenTo({top:0,behavior:"smooth"});
+$topbtn.onclick = () => {
+    window.screenTo({top: 0, behavior: "smooth"});
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -47,16 +47,16 @@ const prevBtn = document.querySelector('.slide_prev_btn');
 const nextBtn = document.querySelector('.slide_next_btn');
 
 let slideItems = document.querySelectorAll('.slide_item');
-const  maxSlide = slideItems.length;
+const maxSlide = slideItems.length;
 
 let currSlide = 1;
 
 const pagination = document.querySelector('.slide_pagination');
 
-for(let i = 0;i<maxSlide;i++){
-    if(i===0){
-        pagination.innerHTML+=`<li class="active">•</li>`;
-    }else pagination.innerHTML += `<li>•</li>`;
+for (let i = 0; i < maxSlide; i++) {
+    if (i === 0) {
+        pagination.innerHTML += `<li class="active">•</li>`;
+    } else pagination.innerHTML += `<li>•</li>`;
 }
 const paginationItems = document.querySelectorAll(".slide_pagination > li");
 

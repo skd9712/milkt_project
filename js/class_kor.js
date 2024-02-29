@@ -1,7 +1,7 @@
 const $topbtn = document.querySelector(".btnTop");
 
-$topbtn.onclick=()=>{
-    window.screenTo({top:0,behavior:"smooth"});
+$topbtn.onclick = () => {
+    window.screenTo({top: 0, behavior: "smooth"});
 }
 document.addEventListener("DOMContentLoaded", function () {
     // 학교 공부 메뉴
@@ -39,15 +39,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-window.addEventListener('scroll',function (){
+window.addEventListener('scroll', function () {
     let elements = document.querySelectorAll('.fade-in');
 
-    elements.forEach(function (element){
+    elements.forEach(function (element) {
         let position = element.getBoundingClientRect();
 
-        if(position.top>=0 && position.bottom<=window.innerHeight){
+        if (position.top >= 0 && position.bottom <= window.innerHeight) {
             element.classList.add('visible');
-        } else{
+        } else {
             element.classList.remove('visible');
         }
     });
