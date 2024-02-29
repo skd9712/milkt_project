@@ -1,18 +1,72 @@
-@media screen and (min-width: 1024px)
-    /*, screen and (min-height: 1024px)*/
-    /*and (orientation: landscape)*/ {
-    * {
-        padding: 0;
-        margin: 0;
-        font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
-    }
+/*공통사항*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
+}
+
+#wrap {
+    background-color: #EFF9FB;
+    z-index: -2;
+    padding: 2vh 0 5vh;
+}
+
+/*마우스 오버*/
+.tabNav li.on a {
+    background-color: #3d8af0;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tabNav li .icon_on {
+    display: none;
+}
+
+.tabNav .on .icon_off {
+    display: none;
+}
+
+.tabNav .on .icon_on {
+    display: flex;
+}
+
+/*흰바탕*/
+article {
+    margin: 2vw auto;
+    background-color: white;
+    width: 80vw;
+    border-radius: 2vw;
+    z-index: -1;
+}
+
+/*작은 제목*/
+article h2 {
+    display: block;
+    height: auto;
+    text-align: center;
+    font-size: 1.3em;
+    color: #1f1f1f;
+    font-weight: normal;
+    line-height: 1.6;
+    margin: 3vw 1vh;
+}
+
+/*강조 텍스트*/
+.text_blue {
+    color: #438FFC;
+    font-weight: bolder;
+}
+
+/*하단 버튼 색깔*/
+.color_b {
+    background-color: #AAD0F7;
+}
+.color_g {
+    background-color: #97DED6;
+}
 
 
-    #wrap {
-        background-color: #EFF9FB;
-        z-index: -2;
-        padding: 2vh 0 5vh;
-    }
+@media screen and (min-width: 1024px) {
 
     /*내부 메뉴 네비게이션*/
     .tabNav {
@@ -38,7 +92,7 @@
 
         background-color: white;
         width: 16vw;
-        height: 5vh;
+        height: 50px;
         border-radius: 3vw;
 
         font-size: 0.9em;
@@ -47,40 +101,13 @@
         letter-spacing: -0.03rem;
 
     }
-
+    /*아이콘 이미지*/
     .tabNav li img {
         width: 30px;
         height: 30px;
         margin-right: 1.2vw;
     }
 
-    /*마우스 오버*/
-    .tabNav li.on a {
-        background-color: #3d8af0;
-        font-weight: 600;
-        color: #fff;
-    }
-
-    .tabNav li .icon_on {
-        display: none;
-    }
-
-    .tabNav .on .icon_off {
-        display: none;
-    }
-
-    .tabNav .on .icon_on {
-        display: flex;
-    }
-
-    /*흰바탕*/
-    article {
-        margin: 2vw auto;
-        background-color: white;
-        width: 80vw;
-        border-radius: 2vw;
-        z-index: -1;
-    }
 
     /*큰제목*/
     article h1 {
@@ -91,24 +118,6 @@
         font-size: 2.5em;
         color: #1f1f1f;
         font-weight: 600;
-    }
-
-    /*작은 제목*/
-    article h2 {
-        display: block;
-        height: auto;
-        text-align: center;
-        font-size: 1.3em;
-        color: #1f1f1f;
-        font-weight: normal;
-        line-height: 1.6;
-        margin: 3vw 1vh;
-    }
-
-    /*강조 텍스트*/
-    .text_blue {
-        color: #438FFC;
-        font-weight: bolder;
     }
 
     /*설명 이미지*/
@@ -155,13 +164,6 @@
         font-size: 1.5em;
 
     }
-    .color_b {
-        background-color: #AAD0F7;
-    }
-    .color_g {
-        background-color: #97DED6;
-    }
-
 
     /*줄바꿈 제거*/
     br.break-m {
@@ -171,23 +173,8 @@
 }
 
 @media screen and (min-width: 768px)
-and (max-width: 1023px)
-    /*, screen and (min-height: 768px) and (max-height: 1023px)*/
-    /*and (orientation: landscape)*/ {
+and (max-width: 1023px) {
 
-    * {
-        padding: 0;
-        margin: 0;
-        font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
-    }
-
-
-
-    #wrap {
-        background-color: #EFF9FB;
-        z-index: -2;
-        padding: 2vh 0 5vh;
-    }
     /*내부 메뉴 네비게이션*/
     .tabNav {
         list-style: none;
@@ -212,7 +199,7 @@ and (max-width: 1023px)
 
         background-color: white;
         width: 17vw;
-        height: 5vh;
+        height: 50px;
         border-radius: 4vw;
 
         font-size: 0.9em;
@@ -221,43 +208,14 @@ and (max-width: 1023px)
         letter-spacing: -0.05rem;
     }
 
-    .tabNav li .hover-on a {
-        background-color: #3d8af0;
-        font-weight: 600;
-        color: #fff;
-    }
-
+    /*아이콘 이미지*/
     .tabNav li img {
         width: 25px;
         height: 25px;
         margin-right: 1.2vw;
     }
 
-    /*마우스 오버*/
-    .tabNav li.on a {
-        background-color: #3d8af0;
-        font-weight: 600;
-        color: #fff;
-    }
 
-    .tabNav li .icon_on {
-        display: none;
-    }
-
-    .tabNav .on .icon_off {
-        display: none;
-    }
-    .tabNav .on .icon_on{
-        display: flex;
-    }
-
-    article {
-        margin: 2vw auto;
-        background-color: white;
-        width: 80vw;
-        border-radius: 2vw;
-        z-index: -1;
-    }
 
     /*큰제목*/
     article h1 {
@@ -270,22 +228,6 @@ and (max-width: 1023px)
         font-weight: 600;
     }
 
-    /*작은 제목*/
-    article h2 {
-        display: block;
-        height: auto;
-        text-align: center;
-        font-size: 1.3em;
-        color: #1f1f1f;
-        font-weight: normal;
-        line-height: 1.6;
-        margin: 3vw 1vh;
-    }
-    /*강조 텍스트*/
-    .text_blue {
-        color: #438FFC;
-        font-weight: bolder;
-    }
     /*설명 이미지*/
     .p_img {
         width: 80vw;
@@ -332,30 +274,9 @@ and (max-width: 1023px)
         font-size: 1.5em;
 
     }
-    .color_b {
-        background-color: #AAD0F7;
-    }
-    .color_g {
-        background-color: #97DED6;
-    }
 }
 
-@media screen and (max-width: 767px)
-    /*, screen and (max-height: 479px) and (orientation: landscape)*/ {
-
-    * {
-        padding: 0;
-        margin: 0;
-        font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
-    }
-
-
-
-    #wrap {
-        background-color: #EFF9FB;
-        z-index: -2;
-        padding: 2vh 0 5vh;
-    }
+@media screen and (max-width: 767px) {
 
     /*내부 메뉴 네비게이션*/
     .tabNav {
@@ -383,7 +304,7 @@ and (max-width: 1023px)
 
         background-color: white;
         width: 35vw;
-        height: 5vh;
+        height: 50px;
         border-radius: 4vw;
 
         font-size: 0.9em;
@@ -392,38 +313,13 @@ and (max-width: 1023px)
         letter-spacing: -0.03rem;
     }
 
-    .tabNav li.on a {
-        background-color: #3d8af0;
-        font-weight: 600;
-        color: #fff;
-    }
-
+/*아이콘 이미지*/
     .tabNav li a img {
         width: 25px;
         height: 25px;
         margin-right: 1.7vw;
     }
 
-    .tabNav li .icon_on {
-        display: none;
-    }
-
-    .tabNav .on .icon_on {
-        display: flex;
-    }
-
-    .tabNav .on .icon_off {
-        display: none;
-    }
-
-
-    article {
-        margin: 2vw auto;
-        background-color: white;
-        width: 80vw;
-        border-radius: 2vw;
-        z-index: -1;
-    }
     /*큰제목*/
     article h1 {
         display: block;
@@ -435,22 +331,6 @@ and (max-width: 1023px)
         font-weight: 600;
     }
 
-    /*작은 제목*/
-    article h2 {
-        display: block;
-        height: auto;
-        text-align: center;
-        font-size: 1.3em;
-        color: #1f1f1f;
-        font-weight: normal;
-        line-height: 1.6;
-        margin: 3vw 1vh;
-    }
-    /*강조 텍스트*/
-    .text_blue {
-        color: #438FFC;
-        font-weight: bolder;
-    }
     /*설명 이미지*/
     .m_img {
         width: 80vw;
@@ -492,12 +372,6 @@ and (max-width: 1023px)
         border-radius: 20px;
 
         font-size: 1.5em;
-    }
-    .color_b {
-        background-color: #AAD0F7;
-    }
-    .color_g {
-        background-color: #97DED6;
     }
 
 }

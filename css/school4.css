@@ -1,18 +1,122 @@
-@media screen and (min-width: 1024px)
-    /*, screen and (min-height: 1024px)*/
-    /*and (orientation: landscape)*/ {
-    * {
-        padding: 0;
-        margin: 0;
-        font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
-    }
+/*공통사항*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
+}
+
+#wrap {
+    background-color: #F7F5FF;
+    z-index: -2;
+    padding: 2vh 0 5vh;
+}
+
+/*마우스 오버*/
+.tabNav li.on a {
+    background-color: #3d8af0;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tabNav li .icon_on {
+    display: none;
+}
+
+.tabNav .on .icon_off {
+    display: none;
+}
+.tabNav .on .icon_on{
+    display: flex;
+}
+
+/*흰바탕*/
+article {
+
+    margin: 2vw auto;
+    background-color: white;
+    width: 80vw;
+    border-radius: 2vw;
+    z-index: -1;
+}
+
+/*테이블*/
+tr th, tr td {
+    border: 0.2vw solid #F0F5F8;
+    font-size: 0.9em;
+    padding: 1vw;
+}
+
+/*제목 행*/
+tr th {
+    border-bottom: 0.2vw solid #6EA7F3;
+    padding: 1vh 2vw;
+    text-align: center;
+    font-weight: bolder;
+    border-left: none;
+    border-right: none;
+}
+
+/*1열*/
+tr td:first-child {
+    color: #6A87A7;
+    text-align: center;
+    font-weight: bolder;
+    background-color: #F7F8FC;
+    border-left: none;
+    width: 15vw;
+}
+
+/*3열*/
+tr td:nth-child(3) {
+    border-right: none;
+}
+
+/*라인*/
+.line {
+    border-bottom: 0.05em solid silver;
+    width: 70vw;
+    margin: 7vw auto;
+}
+
+/*중간 텍스트*/
+article h3 {
+    display: block;
+    height: auto;
+    text-align: center;
+    padding: 1vw 0 0;
+    font-size: 1.8em;
+    font-weight: normal;
+    color: #1f1f1f;
+    line-height: 1.4;
+    margin: 7vw;
+
+}
+
+/*강조 텍스트*/
+.text_blue {
+    color: #438FFC;
+    font-weight: bolder;
+}
+
+/*설명 이미지 영역*/
+.test_img {
+    width: 70vw;
+    margin: 0 auto;
+    /*border : 1px solid red;*/
+    overflow: hidden;
+}
+
+/*하단 버튼 색깔*/
+.color_b {
+    background-color: #C5AAF6;
+}
+.color_g {
+    background-color: #F1A9FA;
+}
 
 
-    #wrap {
-        background-color: #F7F5FF;
-        z-index: -2;
-        padding: 2vh 0 5vh;
-    }
+
+@media screen and (min-width: 1024px) {
 
     /*내부 메뉴 네비게이션*/
     .tabNav {
@@ -38,7 +142,7 @@
 
         background-color: white;
         width: 16vw;
-        height: 5vh;
+        height: 50px;
         border-radius: 3vw;
         font-size: 0.9em;
 
@@ -47,41 +151,11 @@
 
     }
 
-
+    /*아이콘 이미지*/
     .tabNav li img {
         width: 30px;
         height: 30px;
         margin-right: 1.2vw;
-    }
-
-    /*마우스 오버*/
-    .tabNav li.on a {
-        background-color: #3d8af0;
-        font-weight: 600;
-        color: #fff;
-    }
-
-    .tabNav li .icon_on {
-        display: none;
-    }
-
-    .tabNav .on .icon_off {
-        display: none;
-    }
-    .tabNav .on .icon_on{
-        display: flex;
-    }
-
-
-
-
-    article {
-
-        margin: 2vw auto;
-        background-color: white;
-        width: 80vw;
-        border-radius: 2vw;
-        z-index: -1;
     }
 
     /*큰제목*/
@@ -114,75 +188,9 @@
         width: 70vw;
         border-collapse: collapse;
         margin: 0 auto;
-
     }
 
-    tr th, tr td {
-        border: 0.2vw solid #F0F5F8;
-        font-size: 0.9em;
-        padding: 1vw;
-    }
-
-    /*제목 행*/
-    tr th {
-        border-bottom: 0.2vw solid #6EA7F3;
-        padding: 1vh 2vw;
-        text-align: center;
-        font-weight: bolder;
-        border-left: none;
-        border-right: none;
-    }
-
-    /*1열*/
-    tr td:first-child {
-        color: #6A87A7;
-        text-align: center;
-        font-weight: bolder;
-        background-color: #F7F8FC;
-        border-left: none;
-        width: 15vw;
-    }
-
-    /*3열*/
-    tr td:nth-child(3) {
-        border-right: none;
-    }
-
-    /*라인*/
-    .line {
-        border-bottom: 0.05em solid silver;
-        width: 70vw;
-        margin: 7vw auto;
-    }
-
-    /*중간 텍스트*/
-    article h3 {
-        display: block;
-        height: auto;
-        text-align: center;
-        padding: 1vw 0 0;
-        font-size: 1.8em;
-        font-weight: normal;
-        color: #1f1f1f;
-        line-height: 1.4;
-        margin: 7vw;
-
-    }
-
-    /*강조 텍스트*/
-    .text_blue {
-        color: #438FFC;
-        font-weight: bolder;
-
-    }
-
-    .test_img {
-        width: 70vw;
-        margin: 0 auto;
-        /*border : 1px solid red;*/
-        overflow: hidden;
-    }
-
+    /*설명 이미지*/
     .test_img img {
         width: 34vw;
         height: 34vw;
@@ -221,33 +229,12 @@
         border-radius: 20px;
 
         font-size: 1.5em;
-
-    }
-    .color_b {
-        background-color: #AAD0F7;
-    }
-    .color_g {
-        background-color: #97DED6;
     }
 }
 
 
 @media screen and (min-width: 768px)
-and (max-width: 1023px)
-    /*, screen and (min-height: 768px) and (max-height: 1023px)*/
-    /*and (orientation: landscape)*/ {
-    * {
-        padding: 0;
-        margin: 0;
-        font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
-    }
-
-
-    #wrap {
-        background-color: #F7F5FF;
-        z-index: -2;
-        padding: 2vh 0 5vh;
-    }
+and (max-width: 1023px) {
 
     /*내부 메뉴 네비게이션*/
     .tabNav {
@@ -273,7 +260,7 @@ and (max-width: 1023px)
 
         background-color: white;
         width: 17vw;
-        height: 5vh;
+        height: 50px;
         border-radius: 4vw;
 
         font-size: 0.9em;
@@ -282,45 +269,11 @@ and (max-width: 1023px)
         letter-spacing: -0.05rem;
     }
 
-    .tabNav li .hover-on a {
-        background-color: #3d8af0;
-        font-weight: 600;
-        color: #fff;
-    }
-
+    /*아이콘 이미지*/
     .tabNav li img {
         width: 25px;
         height: 25px;
         margin-right: 1.2vw;
-    }
-
-    /*마우스 오버*/
-    .tabNav li.on a {
-        background-color: #3d8af0;
-        font-weight: 600;
-        color: #fff;
-    }
-
-    .tabNav li .icon_on {
-        display: none;
-    }
-
-    .tabNav .on .icon_off {
-        display: none;
-    }
-    .tabNav .on .icon_on{
-        display: flex;
-    }
-
-
-
-    article {
-
-        margin: 2vw auto;
-        background-color: white;
-        width: 80vw;
-        border-radius: 2vw;
-        z-index: -1;
     }
 
     /*큰제목*/
@@ -355,72 +308,7 @@ and (max-width: 1023px)
         margin: 5vw auto;
     }
 
-    tr th, tr td {
-        border: 0.2vw solid #F0F5F8;
-        font-size: 0.9em;
-        padding: 1vw;
-    }
-
-    /*제목 행*/
-    tr th {
-        border-bottom: 0.2vw solid #6EA7F3;
-        padding: 1vh 2vw;
-        text-align: center;
-        font-weight: bolder;
-        border-left: none;
-        border-right: none;
-    }
-
-    /*1열*/
-    tr td:first-child {
-        color: #6A87A7;
-        text-align: center;
-        font-weight: bolder;
-        background-color: #F7F8FC;
-        border-left: none;
-        width: 15vw;
-    }
-
-    /*3열*/
-    tr td:nth-child(3) {
-        border-right: none;
-    }
-
-    /*라인*/
-    .line {
-        border-bottom: 0.05em solid silver;
-        width: 70vw;
-        margin: 7vw auto;
-    }
-
-    /*중간 텍스트*/
-    article h3 {
-        display: block;
-        height: auto;
-        text-align: center;
-        padding: 1vw 0 0;
-        font-size: 1.8em;
-        font-weight: normal;
-        color: #1f1f1f;
-        line-height: 1.4;
-        margin: 7vw;
-
-    }
-
-    /*강조 텍스트*/
-    .text_blue {
-        color: #438FFC;
-        font-weight: bolder;
-    }
-
     /*설명 이미지*/
-    .test_img {
-        width: 70vw;
-        margin: 0 auto;
-        /*border: 1px solid red;*/
-        overflow: hidden;
-    }
-
     .test_img img {
         width: 34vw;
         height: 34vw;
@@ -457,32 +345,10 @@ and (max-width: 1023px)
         font-size: 1.5em;
 
     }
-    .color_b {
-        background-color: #AAD0F7;
-    }
-    .color_g {
-        background-color: #97DED6;
-    }
-
 }
 
 
-@media screen and (max-width: 767px)
-    /*, screen and (max-height: 479px) and (orientation: landscape)*/ {
-
-    * {
-        padding: 0;
-        margin: 0;
-        font-family: 'Noto Sans KR', Dotum, '돋움', Arial, sans-serif;
-    }
-
-
-
-    #wrap {
-        background-color: #F7F5FF;
-        z-index: -2;
-        padding: 2vh 0 5vh;
-    }
+@media screen and (max-width: 767px) {
 
     /*내부 메뉴 네비게이션*/
     .tabNav {
@@ -510,7 +376,7 @@ and (max-width: 1023px)
 
         background-color: white;
         width: 35vw;
-        height: 5vh;
+        height: 50px;
         border-radius: 4vw;
 
         font-size: 0.9em;
@@ -519,39 +385,11 @@ and (max-width: 1023px)
         letter-spacing: -0.03rem;
     }
 
-    .tabNav li.on a {
-        background-color: #3d8af0;
-        font-weight: 600;
-        color: #fff;
-    }
-
+    /*아이콘 이미지*/
     .tabNav li a img {
         width: 25px;
         height: 25px;
         margin-right: 1.7vw;
-    }
-
-    .tabNav li .icon_on {
-        display: none;
-    }
-
-    .tabNav .on .icon_on {
-        display: flex;
-    }
-
-    .tabNav .on .icon_off {
-        display: none;
-    }
-
-
-
-    article {
-
-        margin: 2vw auto;
-        background-color: white;
-        width: 80vw;
-        border-radius: 2vw;
-        z-index: -1;
     }
 
     /*큰제목*/
@@ -586,72 +424,17 @@ and (max-width: 1023px)
         margin: 5vw auto;
     }
 
-    tr th, tr td {
-        border: 0.2vw solid #F0F5F8;
-        font-size: 0.9em;
-        padding: 1vw;
-    }
-
-    /*제목 행*/
-    tr th {
-        border-bottom: 0.2vw solid #6EA7F3;
-        padding: 1vh 2vw;
-        text-align: center;
-        font-weight: bolder;
-        border-left: none;
-        border-right: none;
-    }
-
-    /*1열*/
-    tr td:first-child {
-        color: #6A87A7;
-        text-align: center;
-        font-weight: bolder;
-        background-color: #F7F8FC;
-        border-left: none;
-        width: 15vw;
-    }
-
     /*3열 숨김*/
     tr td:nth-child(3), tr th:nth-child(3) {
         display: none;
     }
 
-    /*라인*/
-    .line {
-        border-bottom: 0.05em solid silver;
-        width: 70vw;
-        margin: 7vw auto;
-    }
-
-    /*중간 텍스트*/
-    article h3 {
-        display: block;
-        height: auto;
-        text-align: center;
-        padding: 1vw 0 0;
-        font-size: 1.8em;
-        font-weight: normal;
-        color: #1f1f1f;
-        line-height: 1.4;
-        margin: 7vw;
-
-    }
-
-    /*강조 텍스트*/
-    .text_blue {
-        color: #438FFC;
-        font-weight: bolder;
+    /*2열 외곽 라인 없애기*/
+    tr td:nth-child(2) {
+        border-right: none;
     }
 
     /*설명 이미지*/
-    .test_img {
-        width: 70vw;
-        margin: 0 auto;
-        /*border: 1px solid red;*/
-        overflow: hidden;
-    }
-
     .test_img img {
         width: 70vw;
         height: 70vw;
@@ -688,13 +471,6 @@ and (max-width: 1023px)
 
         font-size: 1.5em;
     }
-    .color_b {
-        background-color: #AAD0F7;
-    }
-    .color_g {
-        background-color: #97DED6;
-    }
-
 }
 
 
