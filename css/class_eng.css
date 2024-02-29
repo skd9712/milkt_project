@@ -317,6 +317,84 @@
     .cont_area{
         list-style: none;
     }
+    .eng_listening{
+        display: none;
+    }
+    .slide{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        user-select: none;
+    }
+    .slide_item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 0px;
+        width: 100%;
+        height: 1000px;
+        flex-shrink: 0;
+        transition: left 1s;
+    }
+    .slide_btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:calc(50% - 16px);
+        width: 32px;
+        height: 32px;
+
+        border-radius: 100%;
+        background-color: #cccc;
+        cursor: pointer;
+    }
+    .slide_prev_btn{
+        left: 10px;
+    }
+    .slide_next_btn{
+        right: 10px;
+    }
+
+    .ul li{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .slide_pagination{
+        display: flex;
+        gap: 5px;
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform:translateX(-50%);
+    }
+    .slide_pagination>li{
+        color: #7fb5ff88;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+    .slide_pagination>li.active{
+        color: #7fb5ff;
+    }
+    .slide_item_duplicate{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 0px;
+        width: 100%;
+        height: 300px;
+        flex-shrink: 0;
+        transition: left 1s;
+        transition-timing-function: ease-out;
+
+    }
     .cont_smart .start_milkT {
         padding-bottom: 100px;
         text-align: center;
@@ -714,7 +792,9 @@
         padding-bottom: 100px;
         text-align: center;
     }
-
+    .slide_wrap{
+        display: none;
+    }
     .cont_smart .start_milkT .mobile_bee{
         display: none;
     }
@@ -1056,7 +1136,9 @@
         padding-bottom: 100px;
         text-align: center;
     }
-
+    .slide_wrap{
+        display: none;
+    }
     .cont_smart .start_milkT .tab_bear, .mobile_bee{
         display: none;
     }

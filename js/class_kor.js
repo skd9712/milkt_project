@@ -38,3 +38,17 @@ document.addEventListener("DOMContentLoaded", function () {
         icon.classList.toggle('active');
     });
 });
+
+window.addEventListener('scroll',function (){
+    let elements = document.querySelectorAll('.fade-in');
+
+    elements.forEach(function (element){
+        let position = element.getBoundingClientRect();
+
+        if(position.top>=0 && position.bottom<=window.innerHeight){
+            element.classList.add('visible');
+        } else{
+            element.classList.remove('visible');
+        }
+    });
+});
