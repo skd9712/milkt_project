@@ -17,7 +17,7 @@
     .navbar_menu {
         display: flex;
         padding: 0 25px;
-        font-size: 1.3rem;
+        font-size: 1rem;
         position: relative;
     }
 
@@ -51,6 +51,8 @@
         top: 50px;
         left: 100px;
         text-align: center;
+        z-index:100;
+        background-color: white;
 
     }
     .navbar_menu .menu_li .inner_level {
@@ -59,6 +61,8 @@
         top: 50px;
         left: 350px;
         text-align: center;
+        z-index:100;
+        background-color: white;
     }
     .menu_li li a{
         position: relative;
@@ -202,7 +206,43 @@
     }
 
     /* section 04 */
-    /* section 4 */
+    .section04 input[id*="slide"] {
+        display: none;
+    }
+
+    .section04 .slidewrap {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section04 .slidelist {
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .section04 .slidelist > li {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        transition: all .5s;
+    }
+
+    .section04 .slidelist > li > a {
+        display: block;
+        position: relative;
+
+    }
+
+    .section04 .slidelist label {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 50px;
+        cursor: pointer;
+    }
+
     .section04 {
         max-width : 100%;
         margin : 0 auto;
@@ -217,8 +257,9 @@
         align-items: center;
         justify-content: center;
         padding-top: 30px;
+        overflow: hidden;
     }
-    .box p {
+    .box h6 {
         font-size: 2rem;
     }
     .box h2{
@@ -304,8 +345,59 @@
     .box_4 .small_box h4 {
         background-color: rgba(219, 231, 201, 1);
     }
+    /* input에 체크되면 슬라이드 효과 */
+    .section04 input[id="slide01"]:checked ~ .slidewrap .slidelist > li {
+        transform: translateX(0%);
+    }
+
+    .section04 input[id="slide02"]:checked ~ .slidewrap .slidelist > li {
+        transform: translateX(-100%);
+    }
+
+    .section04 input[id="slide03"]:checked ~ .slidewrap .slidelist > li {
+        transform: translateX(-200%);
+    }
+
+    .section04 input[id="slide04"]:checked ~ .slidewrap .slidelist > li {
+        transform: translateX(-300%);
+    }
 
 
+    /* 페이징 */
+    .slide-pagelist {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .slide-pagelist > li {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .slide-pagelist > li > label {
+        display: block;
+        padding: 8px 30px;
+        border-radius: 30px;
+        background: #ccc;
+        margin: 20px 10px;
+        cursor: pointer;
+    }
+
+    .section04 input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {
+        background: #999;
+    }
+
+    .section04 input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {
+        background: #999;
+    }
+
+    .section04 input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {
+        background: #999;
+    }
+
+    .section04 input[id="slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {
+        background: #999;
+    }
 
     .star {
         display: block;
@@ -388,6 +480,95 @@
         opacity:1;
     }
     /* section 05 */
+    /* section 5 => 공지사항부터*/
+    .section05 {
+        background-color: #f9f9f9;
+        padding: 120px 0 100px
+    }
+    .sec_five_one {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sec_five_notice {
+        position: relative;
+    }
+    .sec_five_notice h2 {
+        font-size: 2.5rem;
+        margin-bottom: 35px;
+    }
+
+    /* 공지사항 */
+    .notice_div {
+        margin-bottom: 20px;
+        padding: 5px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 450px;
+        height: 90px;
+        border-radius: 30px;
+        background-color: #fff;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+    }
+    .notice_div h6 {
+        font-size: 1.1rem;
+    }
+    .notice_div a {
+        display: block;
+        width: 300px;
+        height: 24px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        text-align: left;
+        color: #000;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .sec_five_two {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+    }
+    .sec_five_teacher {
+        position: relative;
+        background-color: #1FB6AC;
+        border-radius: 30px;
+        padding: 5px 30px;
+        margin-bottom: 20px;
+        height: 190px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+    }
+
+    .sec_five_teacher>h2 {
+        font-size: 2rem;
+    }
+    .sec_five_teacher .teacher_while {
+        width: 100%;
+        height: 5vh;
+        background-color: #fff;
+        border-radius: 30px;
+        position: relative;
+        top: 17%
+    }
+    .sec_five_list ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sec_five_list ul li{
+        background-color: #E7F8EB;
+        border-radius: 30px;
+        width: 130px;
+        height: 216px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+        text-align: center;
+    }
 
     /* footer */
     .footer01 {

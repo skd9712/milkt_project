@@ -64,6 +64,8 @@
         top: 50px;
         left: 350px;
         text-align: center;
+        z-index:100;
+        background-color: #fff;
     }
     .menu_li li a{
         position: relative;
@@ -271,26 +273,60 @@
     }
 
     /* section 4 */
-    .section04 {
-        max-width : 1200px;
-        margin : -100px auto;
-        padding-bottom : 200px;
+    .section04 input[id*="slide"] {
+        display: none;
     }
+
+    .section04 .slidewrap {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section04 .slidelist {
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .section04 .slidelist > li {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        transition: all .5s;
+    }
+
+    .section04 .slidelist > li > a {
+        display: block;
+        position: relative;
+    }
+
+    .section04 .slidelist label {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 50px;
+        cursor: pointer;
+    }
+
     .article04 {
         display: flex;
         align-items: flex-end;
-    }
-    .box p, .box h2 {
-        position : relative;
-        top : 360px;
+        overflow: hidden;
     }
 
-    .box p {
+    .box h6, .box h2 {
+        position: relative;
+        top: 360px;
+    }
+
+    .box h6 {
         font-size: 2rem;
     }
-    .box h2{
-        font-size : 6rem;
-        color : #C8D3EA;
+
+    .box h2 {
+        font-size: 6rem;
+        color: #C8D3EA;
     }
 
     .sec4_box {
@@ -301,41 +337,134 @@
     }
 
     article img {
-        position : relative;
-        right : 565px;
-        z-index : 1;
+        position: relative;
+        right: 565px;
+        z-index: 1;
     }
 
     .sec4_box li {
-        margin : 30px;
-        z-index : 2;
+        margin: 30px;
+        z-index: 2;
     }
 
     .sec4_box .small_box h3 {
-        display : flex;
-        align-items : center;
-        justify-content : center;
-        position : relative;
-        top : 26px;
-        left : 30px;
-        z-index : 1;
-        box-shadow : 2px 2px 2px rgba(0, 0, 0, 0.15);
-        background-color : #ffffff;
-        width : 150px;
-        height : 54px;
-        border-radius : 50px;
-        font-size : 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 26px;
+        left: 30px;
+        z-index: 1;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+        background-color: #ffffff;
+        width: 150px;
+        height: 54px;
+        border-radius: 50px;
+        font-size: 14px;
     }
 
-    .sec4_box .small_box h4{
-        text-align : center;
-        display : flex;
-        align-items : center;
-        justify-content : center;
-        position : relative;
-        background-color : #f6f3fe;
-        width : 210px;
-        height : 225px;
+    .sec4_box .small_box h4 {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: #f6f3fe;
+        width: 210px;
+        height: 225px;
+    }
+
+    .box_2 h2{
+        color: #FFBE98;
+    }
+    .box_2 .small_box h4 {
+        background-color: rgba(254, 236, 226, 1);
+    }
+
+    .box_3 h2{
+        color: #F6D776;
+    }
+    .box_3 .small_box h4 {
+        background-color: #FAEF9B;
+    }
+
+    .box_4 h2{
+        color: #294B29;
+    }
+    .box_4 .small_box h4 {
+        background-color: rgba(219, 231, 201, 1);
+    }
+
+    /* input에 체크되면 슬라이드 효과 */
+    .section04 input[id="slide01"]:checked ~ .slidewrap .slidelist > li {
+        transform: translateX(0%);
+    }
+
+    .section04 input[id="slide02"]:checked ~ .slidewrap .slidelist > li {
+        transform: translateX(-100%);
+    }
+
+    .section04 input[id="slide03"]:checked ~ .slidewrap .slidelist > li {
+        transform: translateX(-200%);
+    }
+
+    .section04 input[id="slide04"]:checked ~ .slidewrap .slidelist > li {
+        transform: translateX(-300%);
+    }
+
+
+    /* 페이징 */
+    .slide-pagelist {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .slide-pagelist > li {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .slide-pagelist > li > label {
+        display: block;
+        padding: 8px 30px;
+        border-radius: 30px;
+        background: #ccc;
+        margin: 20px 10px;
+        cursor: pointer;
+    }
+
+    .section04 .box {
+        animation: slider 10s infinite linear;
+    }
+
+    @keyframes slider {
+        0% {
+            transform: translateX(0);
+        }
+        23% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(-100%);
+        }
+        48% {
+            transform: translateX(-100%);
+        }
+        50% {
+            transform: translateX(-200%);
+        }
+        73% {
+            transform: translateX(-200%);
+        }
+        75% {
+            transform: translateX(-300%);
+        }
+        98% {
+            transform: translateX(-300%);
+        }
+        100% {
+            transform: translateX(0);
+        }
     }
 
     /* section 41 */
