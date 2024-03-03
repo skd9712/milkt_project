@@ -1,0 +1,196 @@
+@media all and (min-width:1200px) {
+    .footer01 {
+        display: flex;
+        justify-content: space-between;
+        width: 1000px;
+        margin: 0 auto
+    }
+
+    .company_info {
+        height: 50px;
+        position: relative;
+    }
+
+    .company_info ul {
+        display: flex;
+    }
+
+    .company_info ul li {
+        height: 50px;
+        padding: 0 15px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 50px;
+        letter-spacing: -0.5px;
+    }
+
+    .company_info ul li:first-child {
+        padding-left: 0;
+    }
+
+    .company_info ul li a {
+        display: block;
+        width: 100%;
+        color: #999;
+    }
+
+    .family_site {
+        position: relative;
+    }
+
+    .family_site>a {
+        display: inline-block;
+        width: 113px;
+        height: 50px;
+        font-weight: 700;
+        line-height: 50px;
+        color: #999
+    }
+
+    .family_site>a::after {
+        animation: motionFamilyOpen 0.5s both;
+    }
+    .family_pop {
+        display: none;
+    }
+    .family_pop ul li {
+        margin: 20px 0 0;
+        font-size: 15px;
+        color: #c9c9
+    }
+    .family_pop ul li a {
+        font-weight: 600;
+        font-size: 15px;
+        color: #c9c9;
+    }
+
+    .footer02 {
+        display: flex;
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .footer02 .footer_text{
+        margin: 0 50px;
+    }
+
+    .footer02 .footer_text p:first-child{
+        display: block;
+        font-size: 14px;
+        color: #999;
+        font-weight: 300;
+    }
+    .footer02 .footer_text p:last-child{
+        display: block;
+        font-size: 14px;
+        color: #c6c6c6;
+        font-weight: 100;
+        margin-top: 10px;
+    }
+
+    .footer03 {
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+        height: 6.5vh;
+        margin: 0 auto;
+        background-color: #FF7C3D;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        overflow: hidden;
+    }
+    .footer03 .footer_f {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .footer03 .footer_f p{
+        display : inline-block;
+        padding : 25px;
+        font-size : 25px;
+        font-weight : 600;
+        color : #fff;
+    }
+    .footer03 .footer_f p:last-child {
+        font-size : 40px;
+    }
+    .footer03 .footer_f span {
+        color : #FAFF1D;
+    }
+
+    .footer03 .footer_f img {
+        display : block;
+        max-width : 100px;
+    }
+}
+
+@media all and (max-width:1199px) {
+
+    .pc {
+        display: none;
+    }
+    /* footer */
+    .footer01 {
+        text-align: center;
+    }
+
+    .footer01 .company_info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .company_info ul {
+        display: flex;
+    }
+
+    .company_info ul li {
+        height: 50px;
+        padding: 0 15px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 50px;
+        letter-spacing: -0.5px;
+    }
+
+    .company_info ul li:first-child {
+        padding-left: 0;
+    }
+
+    .company_info ul li a {
+        display: block;
+        width: 100%;
+        color: #999;
+    }
+
+    .family_site {
+        display: none;
+    }
+
+    /* 개인정보 처리 어쩌고 */
+    .footer02 {
+        border-top: 1px solid #999;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer02 .footer_text{
+        margin: 0 50px;
+    }
+
+    .footer02 .footer_text p:first-child{
+        display: block;
+        font-size: 13px;
+        color: #999;
+        font-weight: 300;
+    }
+    .footer02 .footer_text p:last-child{
+        display: block;
+        font-size: 14px;
+        color: #c6c6c6;
+        font-weight: 100;
+        margin-top: 10px;
+    }
+}

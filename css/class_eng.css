@@ -19,106 +19,7 @@
     ul li {
         list-style: none;
     }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 12px;
-        height: 6vh;
-        border-bottom: 2px solid silver;
-    }
-
-    .navbar_menu {
-        display: flex;
-        padding: 0 25px;
-        font-size: 1.3rem;
-        position: relative;
-    }
-
-    .navbar_menu .menu_li a {
-        padding: 20px 30px;
-        position: relative;
-        left: -10px;
-    }
-
-    .menu_li a:hover {
-        color: lightskyblue;
-        border-bottom: 3px solid blue;
-    }
-
-    /* 하위 메뉴 기본 숨김 */
-    .inner_school,
-    .inner_level {
-        display: none;
-    }
-
-    /* 하위 메뉴 표시 */
-    .inner_school.show,
-    .inner_level.show {
-        display: block;
-    }
-
-    /*---------------------------------------------------*/
-    .navbar_menu .menu_li .inner_school {
-        position: absolute;
-        padding: 20px 0 20px 20px;
-        top: 50px;
-        left: 100px;
-        text-align: center;
-        background: white;
-        z-index: 100;
-
-    }
-
-    .navbar_menu .menu_li .inner_level {
-        position: absolute;
-        padding: 20px 0 20px 20px;
-        top: 50px;
-        left: 350px;
-        text-align: center;
-        background: white;
-        z-index: 100;
-    }
-
-    .menu_li li a {
-        position: relative;
-        display: block;
-        padding: 10px 6px;
-    }
-
-    .menu_li li a:hover {
-        color: lightskyblue;
-    }
-
-
-    .navbar_menu li:hover ul {
-        display: block;
-    }
-
-    .navbar .menu_li ul a:hover, .navbar .menu_li ul li:hover a {
-        border: 0;
-        text-decoration: none;
-    }
-
-
-    /*---------------------------------------------------*/
-    .navbar_icon {
-        display: flex;
-        padding-left: 0;
-    }
-
-    .navbar_icon li {
-        padding: 0 24px;
-    }
-
-    .navbar_toggleBtn {
-        display: none;
-        position: absolute;
-        top: 20px;
-        right: 32px;
-    }
-
+    /*--------------------본문---------------------*/
     section {
         display: block;
         width: 100%;
@@ -131,7 +32,7 @@
         padding: 30px 0 70px;
         background: #f7f7f7;
     }
-
+    /*수준별 국영수 탭*/
     .cont_smart .tabNav {
         display: flex;
         justify-content: space-between;
@@ -188,7 +89,7 @@
         font-weight: 600;
         color: #fff;
     }
-
+    /*수준별 국영수를 누르면 각각 해당하는 이미지 변경*/
     .cont_smart .tabNav.levelLearning li:nth-child(1) a::before {
         content: url(//cdndata.milkt.co.kr/ele/www/images/about/ico_tabnav_levelTab01_off.png);
         width: 39px;
@@ -227,12 +128,12 @@
         margin: 10px auto 0;
         background: #fff;
     }
-
+    /*수준별 국어, 한줄 소개*/
     .cont_smart .tab_content .top_title {
         height: 200px;
         text-align: center;
     }
-
+    /*글자 애니메이션*/
     .waviy {
         padding: 60px 0 0;
         position: relative;
@@ -257,10 +158,11 @@
             transform: translateY(-20px)
         }
     }
+    /*pc일떄는 기본 상태 안보임*/
     .cont_smart .tab_content .top_title h3 {
         display: none;
     }
-
+    /*수준별 영어 아래 한줄 설명*/
     .cont_smart .tab_content .top_title p {
         display: block;
         padding: 20px 0 0 0;
@@ -300,7 +202,7 @@
         border-bottom: 0;
         z-index: 1;
     }
-
+    /*제공하는 컨텐츠 안내*/
     .cont_smart .tab_content .tab_area .cont_tabs_kor {
         width: 70%;
         padding: 0 0 0 2px;
@@ -324,7 +226,6 @@
 
     .cont_smart .cont_tabs_kor li {
         width: 130px;
-        /*float: left;*/
         height: 46px;
         list-style: none;
     }
@@ -333,7 +234,6 @@
         display: block;
         width: 100%;
         height: 100%;
-        /*padding-top: 5px;*/
         box-sizing: border-box;
         border-radius: 23px;
         font-size: 1rem;
@@ -354,7 +254,7 @@
     .eng_listening {
         display: none;
     }
-
+    /*슬라이드 애니메이션*/
     .slide {
         display: flex;
         flex-wrap: nowrap;
@@ -442,139 +342,7 @@
         padding-bottom: 100px;
         text-align: center;
     }
-
-    .footer01 {
-        display: flex;
-        justify-content: space-between;
-        width: 1000px;
-        margin: 0 auto
-    }
-
-    .company_info {
-        height: 50px;
-        position: relative;
-    }
-
-    .company_info ul {
-        display: flex;
-    }
-
-    .company_info ul li {
-        height: 50px;
-        padding: 0 15px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 50px;
-        letter-spacing: -0.5px;
-    }
-
-    .company_info ul li:first-child {
-        padding-left: 0;
-    }
-
-    .company_info ul li a {
-        display: block;
-        width: 100%;
-        color: #999;
-    }
-
-    .family_site {
-        position: relative;
-    }
-
-    .family_site > a {
-        display: inline-block;
-        width: 113px;
-        height: 50px;
-        font-weight: 700;
-        line-height: 50px;
-        color: #999
-    }
-
-    .family_site > a::after {
-        animation: motionFamilyOpen 0.5s both;
-    }
-
-    .family_pop {
-        display: none;
-    }
-
-    .family_pop ul li {
-        margin: 20px 0 0;
-        font-size: 15px;
-        color: #c9c9
-    }
-
-    .family_pop ul li a {
-        font-weight: 600;
-        font-size: 15px;
-        color: #c9c9;
-    }
-
-    .footer02 {
-        display: flex;
-        width: 1000px;
-        margin: 0 auto;
-    }
-
-    .footer02 .footer_text {
-        margin: 0 50px;
-    }
-
-    .footer02 .footer_text p:first-child {
-        display: block;
-        font-size: 14px;
-        color: #999;
-        font-weight: 300;
-    }
-
-    .footer02 .footer_text p:last-child {
-        display: block;
-        font-size: 14px;
-        color: #c6c6c6;
-        font-weight: 100;
-        margin-top: 10px;
-    }
-
-    .footer03 {
-        display: flex;
-        flex-direction: row;
-        max-width: 1200px;
-        height: 6.5vh;
-        margin: 0 auto;
-        background-color: #FF7C3D;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        overflow: hidden;
-    }
-
-    .footer03 .footer_f {
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-    .footer03 .footer_f p {
-        display: inline-block;
-        padding: 25px;
-        font-size: 25px;
-        font-weight: 600;
-        color: #fff;
-    }
-
-    .footer03 .footer_f p:last-child {
-        font-size: 40px;
-    }
-
-    .footer03 .footer_f span {
-        color: #FAFF1D;
-    }
-
-    .footer03 .footer_f img {
-        display: block;
-        max-width: 100px;
-    }
-
+    /*최상단 이동 버튼*/
     .btnTop {
         display: flex;
         position: fixed;
@@ -597,105 +365,6 @@
 
     ul li {
         list-style: none;
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 12px;
-        height: 6vh;
-        border-bottom: 2px solid silver;
-    }
-
-    .navbar_menu {
-        display: flex;
-        padding: 0 25px;
-        font-size: 1.3rem;
-        position: relative;
-    }
-
-    .navbar_menu .menu_li a {
-        padding: 20px 30px;
-        position: relative;
-        left: -10px;
-    }
-
-    .menu_li a:hover {
-        color: lightskyblue;
-        border-bottom: 3px solid blue;
-    }
-
-    /* 하위 메뉴 기본 숨김 */
-    .inner_school,
-    .inner_level {
-        display: none;
-    }
-
-    /* 하위 메뉴 표시 */
-    .inner_school.show,
-    .inner_level.show {
-        display: block;
-    }
-
-    /*---------------------------------------------------*/
-    .navbar_menu .menu_li .inner_school {
-        position: absolute;
-        padding: 20px 0 20px 20px;
-        top: 50px;
-        left: 100px;
-        text-align: center;
-        background: white;
-        z-index: 100;
-
-    }
-
-    .navbar_menu .menu_li .inner_level {
-        position: absolute;
-        padding: 20px 0 20px 20px;
-        top: 50px;
-        left: 350px;
-        text-align: center;
-        background: white;
-        z-index: 100;
-    }
-
-    .menu_li li a {
-        position: relative;
-        display: block;
-        padding: 10px 6px;
-    }
-
-    .menu_li li a:hover {
-        color: lightskyblue;
-    }
-
-
-    .navbar_menu li:hover ul {
-        display: block;
-    }
-
-    .navbar .menu_li ul a:hover, .navbar .menu_li ul li:hover a {
-        border: 0;
-        text-decoration: none;
-    }
-
-
-    /*---------------------------------------------------*/
-    .navbar_icon {
-        display: flex;
-        padding-left: 0;
-    }
-
-    .navbar_icon li {
-        padding: 0 24px;
-    }
-
-    .navbar_toggleBtn {
-        display: none;
-        position: absolute;
-        top: 20px;
-        right: 32px;
     }
 
     section {
@@ -884,138 +553,6 @@
         display: none;
     }
 
-    .footer01 {
-        display: flex;
-        justify-content: space-between;
-        width: 1000px;
-        margin: 0 auto
-    }
-
-    .company_info {
-        height: 50px;
-        position: relative;
-    }
-
-    .company_info ul {
-        display: flex;
-    }
-
-    .company_info ul li {
-        height: 50px;
-        padding: 0 15px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 50px;
-        letter-spacing: -0.5px;
-    }
-
-    .company_info ul li:first-child {
-        padding-left: 0;
-    }
-
-    .company_info ul li a {
-        display: block;
-        width: 100%;
-        color: #999;
-    }
-
-    .family_site {
-        position: relative;
-    }
-
-    .family_site > a {
-        display: inline-block;
-        width: 113px;
-        height: 50px;
-        font-weight: 700;
-        line-height: 50px;
-        color: #999
-    }
-
-    .family_site > a::after {
-        animation: motionFamilyOpen 0.5s both;
-    }
-
-    .family_pop {
-        display: none;
-    }
-
-    .family_pop ul li {
-        margin: 20px 0 0;
-        font-size: 15px;
-        color: #c9c9
-    }
-
-    .family_pop ul li a {
-        font-weight: 600;
-        font-size: 15px;
-        color: #c9c9;
-    }
-
-    .footer02 {
-        display: flex;
-        width: 1000px;
-        margin: 0 auto;
-    }
-
-    .footer02 .footer_text {
-        margin: 0 50px;
-    }
-
-    .footer02 .footer_text p:first-child {
-        display: block;
-        font-size: 14px;
-        color: #999;
-        font-weight: 300;
-    }
-
-    .footer02 .footer_text p:last-child {
-        display: block;
-        font-size: 14px;
-        color: #c6c6c6;
-        font-weight: 100;
-        margin-top: 10px;
-    }
-
-    .footer03 {
-        display: flex;
-        flex-direction: row;
-        max-width: 1200px;
-        height: 6.5vh;
-        margin: 0 auto;
-        background-color: #FF7C3D;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        overflow: hidden;
-    }
-
-    .footer03 .footer_f {
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-    .footer03 .footer_f p {
-        display: inline-block;
-        padding: 25px;
-        font-size: 25px;
-        font-weight: 600;
-        color: #fff;
-    }
-
-    .footer03 .footer_f p:last-child {
-        font-size: 40px;
-    }
-
-    .footer03 .footer_f span {
-        color: #FAFF1D;
-    }
-
-    .footer03 .footer_f img {
-        display: block;
-        max-width: 100px;
-    }
-
     .btnTop {
         display: flex;
         position: fixed;
@@ -1037,56 +574,6 @@
 
     ul li {
         list-style: none;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 8px 24px;
-    }
-
-    .navbar_menu {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .navbar_menu li {
-        width: 100%;
-        text-align: center;
-        padding: 21px;
-        border-bottom: 1px solid silver;
-    }
-
-
-    .navbar_icon {
-        display: none;
-        justify-items: center;
-        width: 100%;
-        padding-left: 40%
-    }
-
-    .navbar_toggleBtn {
-        display: block;
-    }
-
-    .navbar_menu.active,
-    .navbar_icon.active {
-        display: flex;
-    }
-
-    .navbar_menu ul li {
-        display: none;
-    }
-
-    .navbar_menu a {
-        /*border-bottom: 1px solid silver;*/
-    }
-
-    .navbar_menu a:hover {
-        /*color: pink;*/
-        border: none;
     }
 
     section {
@@ -1268,73 +755,6 @@
     .cont_smart .start_milkT .pc_bear {
         width: 70%;
         height: 70%;
-    }
-
-    .footer01 {
-        text-align: center;
-    }
-
-    .footer01 .company_info {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .company_info ul {
-        display: flex;
-    }
-
-    .company_info ul li {
-        height: 50px;
-        padding: 0 15px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 50px;
-        letter-spacing: -0.5px;
-    }
-
-    .company_info ul li:first-child {
-        padding-left: 0;
-    }
-
-    .company_info ul li a {
-        display: block;
-        width: 100%;
-        color: #999;
-    }
-
-    .family_site {
-        display: none;
-    }
-
-    /* 개인정보 처리 어쩌고 */
-    .footer02 {
-        border-top: 1px solid #999;
-        padding-top: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .footer02 .footer_text {
-        margin: 0 50px;
-    }
-
-    .footer02 .footer_text p:first-child {
-        display: block;
-        font-size: 13px;
-        color: #999;
-        font-weight: 300;
-    }
-
-    .footer02 .footer_text p:last-child {
-        display: block;
-        font-size: 14px;
-        color: #c6c6c6;
-        font-weight: 100;
-        margin-top: 10px;
     }
 
     .btnTop {
