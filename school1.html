@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>밀크T메뉴 구성</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,max-scale=2.0">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/school1.css">
@@ -14,24 +15,24 @@
 <body>
 <header>
     <nav class="navbar">
-        <a href="#"><img src="images/logo.png" alt="logo"></a>
+        <a href="#"><img src="img/logo.png" alt="logo"></a>
         <ul class="navbar_menu">
-            <li class="menu_li"><a href="#">AI Genia.</a></li>
+            <li class="menu_li"><a href="#genia">AI Genia.</a></li>
 
-            <li class="menu_li"><a href="#">학교 공부</a>
+            <li class="menu_li"><a href="school1.html">학교 공부</a>
                 <ul class="inner_school">
-                    <li><a href="#">밀크T 메뉴 구성</a></li>
+                    <li><a href="school1.html">밀크T 메뉴 구성</a></li>
                     <li><a href="#">학년별 학습 가이드</a></li>
                     <li><a href="#">과목별 학교 공부</a></li>
-                    <li><a href="#">실력 평가</a></li>
+                    <li><a href="school4.html">실력 평가</a></li>
                 </ul>
             </li>
 
-            <li class="menu_li"><a href="#">수준별 국 영 수</a>
+            <li class="menu_li"><a href="class_kor.html">수준별 국 영 수</a>
                 <ul class="inner_level">
-                    <li><a href="#">국어</a></li>
-                    <li><a href="#">영어</a></li>
-                    <li><a href="#">수학</a></li>
+                    <li><a href="class_kor.html">국어</a></li>
+                    <li><a href="class_eng.html">영어</a></li>
+                    <li><a href="class_math.html">수학</a></li>
                 </ul>
             </li>
 
@@ -40,12 +41,12 @@
         </ul>
 
         <ul class="navbar_icon">
-            <li><a href="#"><img src="images/join.png" alt="login"></a></li>
-            <li><a href="#"><img src="images/search.png" alt="search"></a></li>
+            <li><a href="#"><img src="img/join.png" alt="login"></a></li>
+            <li><a href="#"><img src="img/search.png" alt="search"></a></li>
         </ul>
 
         <a href="#" class="navbar_toggleBtn">
-            <img src="images/hamburger.png" alt="hamburger">
+            <img src="img/hamburger.png" alt="hamburger">
         </a>
 
     </nav>
@@ -57,7 +58,7 @@
     <nav>
         <ul class="tabNav">
             <li id="focus">
-                <a href="http://localhost:63342/milkt_project/school1.html">
+                <a href="school1.html">
                     <img class="icon_on" src="img/icon_pencil_on.png" alt="">
                     <img class="icon_off" src="img/icon_pencil_off.png" alt="">
                     <span>밀크T<br>메뉴 구성</span></a></li>
@@ -72,7 +73,7 @@
                     <img class="icon_off" src="img/icon_school_off.png" alt="">
                     <span>과목별<br>학교 공부</span></a></li>
             <li>
-                <a href="http://localhost:63342/milkt_project/school4.html">
+                <a href="school4.html">
                     <img class="icon_on" src="img/icon_exam_on.png" alt="">
                     <img class="icon_off" src="img/icon_exam_off.png" alt="">
                     <span>실력평가</span></a></li>
@@ -86,7 +87,6 @@
         <h2>밀크T 초등은 교과 과정과 <br class='break-m'>동일한 학습구성으로 <br>
             예·복습 과정을 통한 이해도 향상과<br>
             자기주도적 학습 능력을<br class='break-m'> 키워 주는 공부완성 플랫폼 입니다.</h2>
-
 
 
         <!-- PC/태블릿용 이미지-->
@@ -114,15 +114,14 @@
         </div>
 
 
-        <div class="milk_ad">
+        <div class="milk_ad up_on_scroll">
 
             <h1>지금 바로 밀크T 학습을 <br class='break-m'>시작하시겠습니까?</h1>
             <ul>
-                <li><a href="#" class="color_b">밀크T 무료체험 ></a></li>
-                <li><a href="#" class="color_g">밀크T 구매하기 ></a></li>
+                <li><a href="https://www.milkt.co.kr/about/pc_exp?gn_3" class="color_b">밀크T 무료체험 ></a></li>
+                <li><a href="https://www.milkt.co.kr/Lounge/Paid_Student_Apply" class="color_g">밀크T 구매하기 ></a></li>
             </ul>
         </div>
-
 
 
     </article>
@@ -158,7 +157,22 @@
             <p>COPYRIGHT 2015 CHUNJAE TEXTBOOK CORPORATION. ALL RIGHTS RESERVED</p>
         </div>
     </div>
+    <div class="footer_school">
+        <a href="https://www.milkt.co.kr/about/pc_exp?gn_3">
+            <div class="footer_sch_content">
+                <p class="pc">쑥쑥 늘어나는 성적을 보고 싶다면</p>
+                <img id="foot_bear" src="img/school_04_bear.png" alt="하단 곰 이미지">
+                <p>10일 <span>무료 체험</span>하고 <span>선물 받자</span></p>
+                <img id="foot_rab" src="img/school_04_rab.png" alt="하단 토끼 이미지">
+
+            </div>
+        </a>
+    </div>
 </footer>
+
+<a href="#" class="btnTop"><img src="//cdndata.milkt.co.kr/ele/www/images/common/quick/quick_top_221020.png"
+                                alt="위로 가기"></a>
+
 
 </body>
 </html>
