@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>천재교과서 밀크T초등</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/tab.css">
@@ -53,19 +52,49 @@
 
             </nav>
         </header>
-            <!-- section 01 -->
+        <main>
+            <!-- section01 -->
             <section class="section01">
-                <ul id="slider">
-                    <li class="slider_item pc">
-                        <img src="img/밀크티%20메인1.jpg" alt="메인">
-                    </li>
-                    <li class="slider_item pc" >
-                        <img src="img/밀크티%20메인2.jpg" alt="메인">
-                    </li>
-                    <li class="slider_item pc">
-                        <img src="img/밀크티%20메인3.jpg" alt="메인">
-                    </li>
-                </ul>
+                <input type="radio" name="slide" id="btn01" checked>
+                <input type="radio" name="slide" id="btn02">
+                <input type="radio" name="slide" id="btn03">
+                <div class="sec_slide_wrap">
+                    <ul class="sec_slide_list">
+                        <li>
+                            <a>
+<!--                                <img class="pc star" src="./img/밀크티%20메인1.jpg" alt="메인1">-->
+                                <img class="phone" src="./img/모바일1.jpg" alt="모바일 메인1">
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img class="pc star" src="./img/밀크티%20메인2.jpg" alt="메인2">
+                                <img class="phone" src="./img/모바일2.jpg" alt="모방ㄹ 메인2">
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img class="pc star" src="./img/밀크티%20메인3.jpg" alt="메인3">
+                                <img class="phone" src="./img/모바일3.jpg" alt="모바일 메인3">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="slide-control">
+                        <div class="control01">
+                            <label for="btn03" class="left"></label>
+                            <label for="btn02" class="right"></label>
+                        </div>
+                        <div class="control02">
+                            <label for="btn01" class="left"></label>
+                            <label for="btn03" class="right"></label>
+                        </div>
+                        <div class="control03">
+                            <label for="btn02" class="left"></label>
+                            <label for="btn01" class="right"></label>
+                        </div>
+                    </div>
+                </div>
             </section>
             <!-- section 02-->
             <section class="section02">
@@ -324,6 +353,7 @@
                     </div>
                 </div>
             </section>
+        </main>
         <!-- footer -->
         <footer>
             <div class="footer01">
