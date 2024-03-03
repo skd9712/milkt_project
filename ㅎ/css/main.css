@@ -145,12 +145,33 @@
     /*    margin: 0;*/
     /*}*/
 
-    /* section 영역 */
-
-    /* 이미지 영역 */
-   .section01 img{
-        object-fit: cover;
+    /* section01 영역 */
+    #slider{
         width: 100%;
+        position:relative;
+    }
+    .slider_item{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 48px;
+        position:absolute;
+        z-index:0;
+        opacity:0;
+        transition: all 1s ease-in-out;
+    }
+    .slider_item:nth-child(odd){
+        background-color:royalblue;
+    }
+    .slider_item:nth-child(even){
+        background-color:blueviolet;
+    }
+    .showing{
+        z-index:1;
+        opacity:1;
     }
 
    /* section 2 */
@@ -315,6 +336,82 @@
         background-color : #f6f3fe;
         width : 210px;
         height : 225px;
+    }
+
+    /* section 41 */
+    .section41 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/section05_img.png);
+        background-size: cover;
+        height: 750px;
+        background-position: right bottom;
+        background-attachment: fixed;
+        position: relative;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+        width: 100%;
+    }
+
+    .section41 h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .section41 h2 span {
+        color: #0A89D0;
+    }
+    .section41 h3 {
+        font-size: 2rem;
+    }
+
+    .sec41_review {
+        display: flex;
+        align-items: center;
+    }
+    .sec41_review img {
+        position: relative;
+        right: 25%;
+    }
+    .so_sad {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .review_list {
+        position: absolute;
+        z-index: 0;
+        opacity: 0;
+        left: 56%;
+        transition: 2s linear;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .review_list p {
+        font-size: 2rem;
+    }
+
+    .so_sad img {
+        position: relative;
+        right: 30%;
+    }
+    .so_sad img:first-child {
+        position: relative;
+        bottom: 180px;
+    }
+    .so_sad img:last-child {
+        transform: rotate(180deg);
+        position: relative;
+        top: 150px
+    }
+    .review_list img, .review_list p {
+        margin: 30px 0;
+    }
+    .showing{
+        z-index:1;
+        opacity:1;
     }
 
     /* section 5 => 공지사항부터*/

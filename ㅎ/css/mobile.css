@@ -7,8 +7,8 @@
         display : none;
     }
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
         padding: 8px 24px;
     }
 
@@ -268,6 +268,85 @@
         background-color: #dbe7c9;
     }
 
+    /* section41 */
+    .section41 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/section05_img.png);
+        background-size: cover;
+        height: 750px;
+        background-position: right bottom;
+        background-attachment: fixed;
+        position: relative;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+        width: 100%;
+    }
+
+    .section41 h2 {
+        font-size: 8vw;
+        text-align: center;
+    }
+    .section41 h2 span {
+        color: #0A89D0;
+    }
+    .section41 h3 {
+        font-size: 4vw;
+    }
+
+    .sec41_review {
+        display: flex;
+        align-items: center;
+    }
+    .sec41_review img {
+        position: relative;
+        right: 25%;
+    }
+
+    .review_list {
+        position: absolute;
+        z-index: 0;
+        opacity: 0;
+        right: -118px;
+        transition: 2s linear;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 330px;
+    }
+    .review_list p {
+        font-size: 1.5rem;
+    }
+
+    .so_sad {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        top:180px
+    }
+    .so_sad img {
+        position: relative;
+        right: 0;
+        width: 80%;
+    }
+    .so_sad img:first-child {
+        position: relative;
+        bottom: 150px;
+    }
+    .so_sad img:last-child {
+        transform: rotate(180deg);
+        position: relative;
+        top: 150px
+    }
+    .review_list img, .review_list p {
+        margin: 30px 0;
+    }
+    .showing{
+        z-index:1;
+        opacity:1;
+    }
 
     /* section 05 */
     .sec_five_two {
