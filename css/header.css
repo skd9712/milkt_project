@@ -1,3 +1,7 @@
+*{
+    font-family: "Noto Sans KR", sans-serif;
+
+}
 body {
     margin: 0;
 }
@@ -5,6 +9,7 @@ body {
 a {
     text-decoration: none;
     color: #191919;
+
 }
 
 ul li {
@@ -32,7 +37,8 @@ ul li {
     position: relative;
     left: -10px;
 }
-.menu_li a:hover{
+
+.menu_li a:hover {
     color: lightskyblue;
     border-bottom: 3px solid blue;
 }
@@ -57,25 +63,27 @@ ul li {
     top: 50px;
     left: 100px;
     text-align: center;
-    z-index: 100;
     background-color: white;
-
+    z-index: 100;
 }
+
 .navbar_menu .menu_li .inner_level {
     position: absolute;
     padding: 20px 0 20px 20px;
     top: 50px;
     left: 350px;
     text-align: center;
-    z-index: 100;
     background-color: white;
+    z-index: 100;
 }
-.menu_li li a{
+
+.menu_li li a {
     position: relative;
     display: block;
     padding: 10px 6px;
 }
-.menu_li li a:hover{
+
+.menu_li li a:hover {
     color: lightskyblue;
 }
 
@@ -84,9 +92,9 @@ ul li {
     display: block;
 }
 
-.navbar .menu_li ul a:hover, .navbar .menu_li ul li:hover a{
-    border:0;
-    text-decoration:none;
+.navbar .menu_li ul a:hover, .navbar .menu_li ul li:hover a {
+    border: 0;
+    text-decoration: none;
 }
 
 
@@ -121,6 +129,8 @@ ul li {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        z-index: 100;
+        background-color: white;
     }
 
     .navbar_menu li {
@@ -154,7 +164,8 @@ ul li {
     .navbar_menu a{
         /*border-bottom: 1px solid silver;*/
     }
-    .navbar_menu a:hover{
+
+    .navbar_menu a:hover {
         /*color: pink;*/
         border: none;
     }
