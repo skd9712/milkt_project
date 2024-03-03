@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let schoolMenu = document.querySelector('.inner_school');
 
     schoolMenuParent.addEventListener('click', function (event) {
-        event.preventDefault();
+
         schoolMenu.classList.toggle('show');
     });
 
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let levelMenu = document.querySelector('.inner_level');
 
     levelMenuParent.addEventListener('click', function (event) {
-        event.preventDefault();
+
         levelMenu.classList.toggle('show');
     });
 
