@@ -1,0 +1,538 @@
+@media screen and (max-width: 2560px)
+ {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrap {
+        width: 100%;
+        margin: 0 auto;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+    /* body 부분*/
+    /* 밀크T 배너 */
+    .banner {
+        /*background-color: #353d57;*/
+        background: url("../img/background.jpg");
+        padding: 10vw;
+    }
+
+    .banner .inner_content h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner .inner_content h2 img {
+        width: 20vw;
+    }
+
+     h2 {
+        opacity: 0;
+        transition: all 1s ease-in-out;
+    }
+
+    /* 중점 학습 가이드 text */
+    .txt_wrap {
+        padding: 4.5vw;
+        background-color: rgb(51, 55, 66);
+        color: whitesmoke;
+    }
+
+    .txt_wrap .inner_content h6 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -1vh;
+        font-size: 1.5vw;
+        letter-spacing: 2px; /* 글자 간격 */
+
+    }
+
+    .txt_wrap .inner_content p {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        font-size: 2.5vw;
+        font-weight: bolder;
+    }
+
+    /* 중점 학습 가이드 강조 */
+    .txt_wrap .inner_content span {
+        color: #00CAFF;
+    }
+
+    /* 키즈, 저학년, 고학년 공통 */
+    .kids, .lowerGrades, .higherGrades {
+        padding: 5vw 30vw 5vw 30vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* 키즈 section */
+    .kids {
+        background-color: rgb(255, 242, 212);
+        /*padding: 5vw 30vw 5vw 30vw;*/
+        display: flex;
+        justify-content: center;
+    }
+
+    /* 저학년 section */
+    .lowerGrades {
+        background-color: rgb(231, 248, 235);
+        /*padding: 5vw 30vw 5vw 30vw;*/
+        display: flex;
+        justify-content: center;
+    }
+
+    /* 고학년 section */
+    .higherGrades {
+        background-color: rgb(246, 243, 254);
+        /*padding: 5vw 30vw 5vw 30vw;*/
+        display: flex;
+        justify-content: center;
+    }
+
+    .inner_gd {
+        background-color: #fffafa;
+        padding: 0 0 10vw 0;
+        border-radius: 70px;
+    }
+
+    /* 키즈 (7세 예비초)*/
+    .content_box .grade {
+        display: flex;
+    }
+
+    .content_box .grade img {
+        position: relative;
+        left: 18vw;
+        top: -2.1vh;
+        width: 23vw;
+    }
+
+    /* 학습가이드 text */
+    .content_box .contWrap {
+        width: 600px;
+        height: 360px;
+    }
+
+    .content_box .contWrap .guide, .contWrap .text {
+        position: relative;
+        left: 11vw;
+        top: 50px;
+
+    }
+
+    .content_box .contWrap .guide {
+        font-size: 1.5rem;
+        width: 150px;
+        padding: 5px 0 7px 48px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        color: white;
+    }
+
+    /* 학습가이드 키즈 색*/
+    .kids .content_box .contWrap .guide {
+        background: rgb(241, 196, 15);
+    }
+
+    /* 학습가이드 저학년 색*/
+    .lowerGrades .content_box .contWrap .guide {
+        background: rgb(0, 75, 126);
+    }
+
+    /* 학습가이드 고학년 색*/
+    .higherGrades .content_box .contWrap .guide {
+        background: rgb(112, 37, 143);
+    }
+
+    /* 흥미 단계 text*/
+    .inner_content .text {
+        margin-top: 1.5rem;
+    }
+
+    .inner_content .text h3 {
+        font-size: 2.7rem;
+        margin-bottom: 1vw;
+    }
+
+    .inner_content .text p {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+
+
+    /* 키즈 크래프 */
+    .contWrap .graph {
+        position: relative;
+        left: 38vw;
+        top: -170px;
+    }
+
+    .contWrap .graph img {
+        width: 10vw;
+    }
+
+    /* 슬라이드 */
+    .slider .slide1 img, .slider .slide img, .slider .slide2 img {
+        width: 60vw;
+        overflow: hidden;
+    }
+
+    .slide1, .slide, .slide2 {
+        width: 62vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide_content {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: auto;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 2s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0.4
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* 밀크T 함께~ text */
+    .txt_wrap_2 {
+        padding: 4vw;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(225, 240, 250);
+    }
+
+    .txt_wrap_2 .inner_content {
+        font-size: 1.4rem;
+        letter-spacing: 0.4rem;
+    }
+
+    .txt_wrap_2 .inner_content h2 span {
+        color: #3dc6f3;
+    }
+
+    /* 스크롤 애니메이션 */
+    .up {
+        opacity: 0;
+        transition: all 0.8s ease;
+        transform: translate(0, 100px);
+    }
+
+    .up.show {
+        opacity: 1;
+        transform: none;
+    }
+
+    /* 챗봇, top 버튼 */
+    .chat {
+        position: fixed;
+        bottom: 100px;
+        right: 5px;
+    }
+
+    .chat img {
+        width: 110px;
+    }
+
+    .top {
+        position: fixed;
+        bottom: 55px;
+        right: 37px;
+    }
+
+    .top img {
+        width: 40px;
+    }
+}
+
+/* 모바일 화면 */
+@media screen and (max-width: 767px ), screen and (max-height: 479px) and (orientation: landscape) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrap {
+        width: 100%;
+        /*margin: 0 auto;*/
+        font-family: "Noto Sans KR", sans-serif;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /* 밀크T 배너 */
+    .banner {
+        background: url("../img/background.jpg");
+        padding: 25vw;
+    }
+
+    .banner .inner_content h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner .inner_content h2 img {
+        width: 50vw;
+    }
+
+    /* 중점 학습 가이드 text */
+    .txt_wrap {
+        padding: 50px 0 50px 0;
+        background-color: rgb(51, 55, 66);
+        color: whitesmoke;
+    }
+
+    .txt_wrap .inner_content h6 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -1vh;
+        font-size: 1.0rem;
+        color: #d9d6d6;
+
+    }
+
+    .txt_wrap .inner_content p {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        font-size: 1.8rem;
+        font-weight: bolder;
+        margin-top: 0.8vw;
+    }
+
+    /* 중점 학습 가이드 강조 */
+    .txt_wrap .inner_content span {
+        color: #FE962E;
+    }
+
+    /* 키즈, 저학년, 고학년 공통 */
+    .kids, .lowerGrades, .higherGrades {
+        padding: 10vw 30vw 5vw 30vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* 키즈 section */
+    .kids {
+        background-color: rgb(225, 240, 250);
+        display: flex;
+        justify-content: center;
+    }
+
+    /* 저학년 section */
+    .lowerGrades {
+        background-color: rgb(225, 240, 250);
+        display: flex;
+        justify-content: center;
+    }
+
+    /* 고학년 section */
+    .higherGrades {
+        background-color: rgb(225, 240, 250);
+        display: flex;
+        justify-content: center;
+    }
+
+    .inner_gd {
+        background-color: #fffafa;
+        padding: 0 20vw 20vw 10vw;
+    }
+
+    /* 키즈 (7세 예비초)*/
+    .content_box .grade {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content_box .grade img {
+        position: relative;
+        left: 5vw;
+        top: -3vh;
+        width: 70vw;
+    }
+
+    /* 학습가이드 text */
+    .content_box .contWrap {
+        display: block;
+        width: 100vw;
+        height: 25vh;
+        position: relative;
+        left: 0;
+        top: -5vh;
+        /*padding-bottom: 3vw;*/
+    }
+
+    .content_box .contWrap .guide, .contWrap .text {
+        position: relative;
+        left: 20px;
+        text-align: center;
+    }
+
+    .content_box .contWrap .guide {
+        position: relative;
+        left: 45vw;
+        font-size: 1rem;
+        width: 95px;
+        padding: 8px 2px 8px 5px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        color: white;
+    }
+
+    /* 학습가이드 키즈 색*/
+    .kids .content_box .contWrap .guide {
+        background: rgb(241, 196, 15);
+    }
+
+    /* 학습가이드 저학년 색*/
+    .lowerGrades .content_box .contWrap .guide {
+        background: rgb(0, 75, 126);
+    }
+
+    /* 학습가이드 고학년 색*/
+    .higherGrades .content_box .contWrap .guide {
+        background: rgb(112, 37, 143);
+    }
+
+    /* 흥미 단계 text*/
+    .inner_content .text {
+        margin-top: 0.5rem;
+    }
+
+    .inner_content .text h3 {
+        font-size: 2rem;
+        margin-bottom: 1vw;
+    }
+
+    .inner_content .text p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+
+    /* 키즈 크래프 숨기기 */
+    .contWrap .graph {
+        display: none;
+    }
+
+
+    /* 슬라이드 */
+    .slider .slide1 img, .slider .slide img, .slider .slide2 img {
+        width: 100vw;
+        overflow: hidden;
+        padding-top: 10vw;
+    }
+
+    .slide1, .slide, .slide2 {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 4vw;
+    }
+
+    .slide_content {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin: auto;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 2s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+
+    /* 밀크T 함께~ text */
+    .txt_wrap_2 {
+        padding: 10vw 0 10vw 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(20, 43, 61);
+        color: white;
+    }
+
+    .txt_wrap_2 .inner_content {
+        font-size: 1.1rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .txt_wrap_2 .inner_content h3 span {
+        color: #3dc6f3;
+    }
+
+    /* 스크롤 애니메이션 */
+    .up {
+        opacity: 0;
+        transition: all 0.8s ease;
+        transform: translate(0, 100px);
+    }
+
+    .up.show {
+        opacity: 1;
+        transform: none;
+    }
+
+    /* 챗봇, top 버튼 */
+    .chat img {
+        width: 80px;
+    }
+
+    .top {
+        position: fixed;
+        right: 28px;
+        bottom: 65px;
+    }
+
+    .top img {
+        width: 30px;
+    }
+
+}
+
