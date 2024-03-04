@@ -278,7 +278,11 @@
         display: none;
         justify-items: center;
         width: 100%;
-        padding: 20px 0 0 43%;
+        padding: 20px 0 0 37%;
+    }
+
+    .navbar_icon li img {
+        padding: 0 10px 0 10px;
     }
 
     .navbar_toggleBtn {
@@ -292,7 +296,6 @@
         position: absolute;
         top: 5px;
         right: 3px;
-
     }
 
 
