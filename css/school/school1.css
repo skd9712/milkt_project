@@ -1,0 +1,754 @@
+/*공통사항*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+#wrap {
+    background-color: #F6F6F6;
+    z-index: -2;
+    padding: 2vh 0 5vh;
+}
+
+/*마우스 오버*/
+.tabNav li.on a {
+    background-color: #3d8af0;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tabNav li .icon_on {
+    display: none;
+}
+
+.tabNav .on .icon_off {
+    display: none;
+}
+
+.tabNav .on .icon_on {
+    display: flex;
+}
+
+/*흰바탕*/
+article {
+    margin: 2vw auto;
+    background-color: white;
+    width: 80vw;
+    border-radius: 2vw;
+    z-index: -1;
+}
+
+/*작은 제목*/
+article h2 {
+    display: block;
+    height: auto;
+    text-align: center;
+    font-size: 1rem;
+    color: #1f1f1f;
+    font-weight: 600;
+    line-height: 1.6;
+    margin: 3vw 1vh;
+}
+
+/*강조 텍스트*/
+.text_blue {
+    color: #438FFC;
+    font-weight: bolder;
+}
+
+/*하단 버튼 색깔*/
+.color_b {
+    background-color: #AAD0F7;
+}
+.color_g {
+    background-color: #97DED6;
+}
+
+/*스크롤 트랜스폼*/
+.up_on_scroll {
+    opacity: 0.5;
+    transform: translateY(80px);
+    transition: transform 1s ease-out, opacity 1s ease-out, delay 1.2s ease-out;
+}
+
+/*캐릭터 애니메이션*/
+@keyframes icon_floating {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 10px);
+    }
+}
+/* 무료체험 팝업창 */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease;
+}
+.popup-content {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+}
+.popup-content input[type="text"],
+.popup-content select {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.popup-content input[type="submit"] {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    background-color: #3dc6f3;
+    color: #fff;
+    cursor: pointer;
+}
+.popup-content input[type="submit"]:hover {
+    background-color: rgb(0, 75, 126);
+}
+.popup-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.popup-content span {
+    color: #3dc6f3;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn #free, #buy {
+    padding: 1.5vw 3vw;
+    margin: 4vw 1vw 4vw 1vw;
+    font-size: 17px;
+    border: none
+}
+
+.btn #free {
+    background-color: #fdbc98;
+}
+
+.btn #buy {
+    background-color: #5A7490;
+}
+
+.btn button a {
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+
+.footer_school a {
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    /*내부 메뉴 네비게이션*/
+    .tabNav {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 70vw;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .tabNav li {
+        display: inline-block;
+    }
+
+    .tabNav li a {
+        text-decoration: none;
+        color: #1f1f1f;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: white;
+        width: 16vw;
+        height: 50px;
+        border-radius: 3vw;
+
+        font-size: 0.9rem;
+
+        line-height: 1.2rem;
+        letter-spacing: -0.03rem;
+
+    }
+    /*아이콘 이미지*/
+    .tabNav li img {
+        width: 30px;
+        height: 30px;
+        margin-right: 1.2vw;
+    }
+
+
+    /*큰제목*/
+    article h1 {
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 4vw 0 0;
+        font-size: 2rem;
+        color: #1f1f1f;
+        font-weight: 600;
+    }
+
+    /*설명 이미지*/
+    .p_img {
+        width: 80vw;
+        margin: 5vh auto 0;
+        /*border: 1px solid red;*/
+        overflow: hidden;
+    }
+    .p_img img {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+
+    .m_img {
+        display: none;
+    }
+
+    /*하단 광고 버튼*/
+
+    /*.milk_ad ul {*/
+    /*    list-style: none;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    width: 70vw;*/
+    /*    margin: 3vh auto;*/
+    /*    text-align: left;*/
+    /*}*/
+    /*.milk_ad ul li a {*/
+    /*    text-decoration: none;*/
+    /*    color: black;*/
+    /*    font-weight: bolder;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    margin: 0 1vw 3vh;*/
+
+    /*    width: 25vw;*/
+    /*    height: 9vh;*/
+    /*    border-radius: 20px;*/
+
+    /*    font-size: 1.5rem;*/
+    /*}*/
+
+    /*줄바꿈 제거*/
+    br.break-m {
+        display: none;
+    }
+
+    /*캐릭터*/
+    #icon_bee {
+        position: absolute;
+        top: -50px;
+        width : 70px;
+        transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation: icon_floating 0.7s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate;
+    }
+
+    /*하단 픽스 광고*/
+    .footer_school {
+        width: 1000px;
+        height: 70px;
+
+        background-color: #FFE076;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .footer_sch_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .footer_school p{
+        display : inline-block;
+        padding : 25px;
+        font-size : 25px;
+        font-weight : 600;
+        color : black;
+    }
+    .footer_school .pc {
+        font-size : 20px;
+    }
+    .footer_school p span {
+        color : #FF7C3D;
+    }
+    .footer_school #foot_bear {
+        display : block;
+        width : 80px;
+        height: auto;
+    }
+    .footer_school #foot_rab {
+        display : block;
+        width : 80px;
+        height: auto;
+    }
+    .footer02 {
+        margin-bottom: 70px;
+    }
+
+
+    /*위로 가기*/
+    .btnTop {
+        display: flex;
+        position: fixed;
+        right: 2.5rem;
+        bottom: 5rem;
+    }
+    /*챗봇*/
+    .school_Chat {
+        display: flex;
+        position: fixed;
+        right: 1rem;
+        bottom: 8rem;
+    }
+    .school_Chat img {
+        width: 90px;
+    }
+    .popup-content h2 {
+        text-align: center;
+        margin: 0;
+        padding-bottom: 15px;
+        font-size: 21px;
+    }
+
+}
+
+@media screen and (min-width: 768px)
+and (max-width: 1023px) {
+
+    /*내부 메뉴 네비게이션*/
+    .tabNav {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 70vw;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .tabNav li {
+        display: inline-block;
+    }
+
+    .tabNav li a {
+        text-decoration: none;
+        color: #1f1f1f;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: white;
+        width: 17vw;
+        height: 50px;
+        border-radius: 4vw;
+
+        font-size: 0.9rem;
+
+        line-height: 1rem;
+        letter-spacing: -0.05rem;
+    }
+
+    /*아이콘 이미지*/
+    .tabNav li img {
+        width: 25px;
+        height: 25px;
+        margin-right: 1.2vw;
+    }
+
+
+
+    /*큰제목*/
+    article h1 {
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 4vw 0 0;
+        font-size: 1.5rem;
+        color: #1f1f1f;
+        font-weight: 600;
+    }
+
+    /*설명 이미지*/
+    .p_img {
+        width: 80vw;
+        margin: 1vw auto 0;
+        /*border: 1px solid red;*/
+        overflow: hidden;
+    }
+    .p_img img {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .m_img {
+        display: none;
+    }
+    /*줄바꿈 제거*/
+    br.break-m {
+        display: none;
+    }
+
+    /*하단 광고 버튼*/
+
+    /*.milk_ad ul {*/
+    /*    list-style: none;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    width: 70vw;*/
+    /*    margin: 3vh auto;*/
+    /*    text-align: left;*/
+    /*}*/
+    /*.milk_ad ul li a {*/
+    /*    text-decoration: none;*/
+    /*    color: black;*/
+    /*    font-weight: bolder;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    margin: 0 1vw 3vh;*/
+
+    /*    width: 25vw;*/
+    /*    height: 9vh;*/
+    /*    border-radius: 20px;*/
+
+    /*    font-size: 1.5rem;*/
+
+    /*}*/
+
+    /*캐릭터*/
+    #icon_bee {
+        position: absolute;
+        top: -50px;
+        width : 70px;
+        transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation: icon_floating 0.7s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate;
+    }
+
+    /*하단 픽스 광고*/
+    .footer_school {
+        width: 750px;
+        height: 70px;
+
+        background-color: #FFE076;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .footer_sch_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .footer_school p{
+        display : inline-block;
+        padding : 25px;
+        font-size : 25px;
+        font-weight : 600;
+        color : black;
+    }
+    .footer_school .pc {
+        display: none;
+    }
+    .footer_school p span {
+        color : #FF7C3D;
+    }
+    .footer_school #foot_bear {
+        display : block;
+        width : 80px;
+        height: auto;
+    }
+    .footer_school #foot_rab {
+        display : block;
+        width : 80px;
+        height: auto;
+    }
+    .footer02 {
+        margin-bottom: 70px;
+    }
+
+    /*위로 가기*/
+    .btnTop {
+        display: flex;
+        position: fixed;
+        right: 2rem;
+        bottom: 5rem;
+    }
+
+    /*챗봇*/
+    .school_Chat {
+        display: flex;
+        position: fixed;
+        right: 1rem;
+        bottom: 8rem;
+    }
+    .school_Chat img {
+        width: 80px;
+    }
+
+    .popup-content h2 {
+        text-align: center;
+        margin-top: 0;
+        /*padding-bottom: 15px;*/
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    /*내부 메뉴 네비게이션*/
+    .tabNav {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 75vw;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .tabNav li {
+        flex-basis: 50%;
+        box-sizing: border-box;
+        margin: 1vh auto;
+    }
+
+    .tabNav li a {
+        text-decoration: none;
+        color: #1f1f1f;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: white;
+        width: 35vw;
+        height: 50px;
+        border-radius: 4vw;
+
+        font-size: 0.9rem;
+
+        line-height: 1.2rem;
+        letter-spacing: -0.03rem;
+    }
+
+    /*아이콘 이미지*/
+    .tabNav li a img {
+        width: 25px;
+        height: 25px;
+        margin-right: 1.7vw;
+    }
+
+    /*큰제목*/
+    article h1 {
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 4vw 0 0;
+        font-size: 1.2rem;
+        color: #1f1f1f;
+        font-weight: 600;
+    }
+
+    /*설명 이미지*/
+    .m_img {
+        width: 80vw;
+        margin: 3vw auto 0;
+        /*border: 1px solid red;*/
+        overflow: hidden;
+    }
+    .m_img img {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 5vh auto;
+    }
+    .p_img {
+        display: none;
+    }
+
+    /*하단 광고 버튼*/
+    /*.milk_ad{*/
+    /*    padding: 0 0 3vh;*/
+
+    /*}*/
+    /*.milk_ad ul {*/
+    /*    list-style: none;*/
+    /*    width: 70vw;*/
+    /*    margin: auto;*/
+
+    /*}*/
+    /*.milk_ad ul li a {*/
+    /*    text-decoration: none;*/
+    /*    color: black;*/
+    /*    font-weight: bolder;*/
+    /*    display: block;*/
+    /*    line-height: 8.5vh;*/
+    /*    text-align: center;*/
+    /*    margin: 2vh auto;*/
+
+    /*    width: 50vw;*/
+    /*    height: 9vh;*/
+    /*    border-radius: 20px;*/
+
+    /*    font-size: 1.5rem;*/
+    /*}*/
+
+    .btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn #free, #buy {
+        padding: 2vw 3vw;
+        margin: 4vw 1vw 4vw 1vw;
+        font-size: 17px;
+        border: none;
+    }
+
+    .btn #free {
+        background-color: #fdbc98;
+    }
+
+    .btn #buy {
+        background-color: #5A7490;
+    }
+
+    .btn button a {
+        color: white;
+        font-size: 1.2rem;
+
+    }
+
+    /*캐릭터 숨기기*/
+    #icon_bee {
+        display: none;
+    }
+
+    /*하단 픽스 광고*/
+    .footer_school {
+        width: 650px;
+        height: 70px;
+
+        background-color: #FFE076;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .footer_sch_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .footer_school p{
+        display : inline-block;
+        padding : 25px;
+        font-size : 20px;
+        font-weight : 600;
+        color : black;
+    }
+    .footer_school .pc {
+        display: none;
+    }
+    .footer_school p span {
+        color : #FF7C3D;
+    }
+    .footer_school #foot_bear {
+        display : block;
+        width : 80px;
+        height: auto;
+    }
+    .footer_school #foot_rab {
+        display : block;
+        width : 80px;
+        height: auto;
+    }
+    .footer02 {
+        margin-bottom: 70px;
+    }
+    /*위로가기*/
+    .btnTop {
+        display: flex;
+        position: fixed;
+        right: 1.1rem;
+        bottom: 4rem;
+    }
+
+    /*챗봇*/
+    .school_Chat {
+        display: flex;
+        position: fixed;
+        right: 0.8rem;
+        bottom: 6.5rem;
+    }
+    .school_Chat img {
+        width: 50px;
+    }
+
+    .popup-content h2 {
+        text-align: center;
+        margin-top: 0;
+        /*padding-bottom: 15px;*/
+        font-size: 21px;
+    }
+
+}
