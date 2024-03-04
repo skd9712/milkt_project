@@ -174,8 +174,8 @@
     }
 
     .lecture_2 img {
-        width: 430px;
-        padding: 0 1vw 2vw 1vw;
+        width: 450px;
+        padding: 0 2vw 3vw 1vw;
     }
 
     /* 학습 유도 박스 */
@@ -468,7 +468,7 @@
     }
 
     .lecture_2 img {
-        width: 500px;
+        width: 369px;
         padding: 2vw 3vw 4vw 3vw;
     }
 
@@ -476,7 +476,7 @@
     .title_2 {
         /*text-align: center;*/
         padding: 5vw 2vw 2vw 0;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: bolder;
         display: flex;
         justify-content: center;

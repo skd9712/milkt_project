@@ -454,7 +454,7 @@
     .slider .slide1 img, .slider .slide img, .slider .slide2 img {
         width: 100vw;
         overflow: hidden;
-        padding-top: 10vw;
+        /*padding-top: 10vw;*/
     }
 
     .slide1, .slide, .slide2 {
