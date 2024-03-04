@@ -47,7 +47,7 @@ autoSlide();
 
 // 페이드
 const observer = new IntersectionObserver(
-    (entries, observer) => {
+    (entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 // 화면에 들어옴
