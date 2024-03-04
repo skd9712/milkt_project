@@ -17,7 +17,7 @@ ul li {
     position: fixed;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0 12px;
     height: 7vh;
@@ -25,15 +25,15 @@ ul li {
     z-index: 9999;
     background-color: white;
 }
+
 .navbar_menu {
     display: flex;
-    padding: 0 25px;
     font-size: 1rem;
     position: relative;
 }
 
 .navbar_menu .menu_li a {
-    padding: 26px 20px;
+    padding: 37px 10px;
     position: relative;
     left: -10px;
 }
@@ -56,7 +56,7 @@ ul li {
 .navbar_menu .menu_li .inner_school {
     position: absolute;
     padding: 20px 0 20px 20px;
-    top: 55px;
+    top: 64px;
     left: 80px;
     text-align: center;
     z-index: 100;
@@ -68,8 +68,8 @@ ul li {
     position: absolute;
     width: 25%;
     padding: 20px 0 20px 20px;
-    top: 55px;
-    left: 255px;
+    top: 64px;
+    left: 205px;
     text-align: center;
     z-index: 100;
     background-color: #ffffff;
