@@ -23,7 +23,7 @@
     /* body 부분*/
     /* 밀크T 배너 */
     .banner {
-        background: url("../img/background.jpg");
+        background: url("../../img/school/background.jpg");
         padding: 10vw;
     }
 
@@ -291,7 +291,7 @@
 
     /* 밀크T 배너 */
     .banner {
-        background: url("../img/background.jpg");
+        background: url("../../img/school/background.jpg");
         padding: 25vw;
     }
 
