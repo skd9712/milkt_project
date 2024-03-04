@@ -63,12 +63,12 @@
                     <img class="icon_off" src="img/icon_pencil_off.png" alt="">
                     <span>밀크T<br>메뉴 구성</span></a></li>
             <li>
-                <a href="#">
+                <a href="school2.html">
                     <img class="icon_on" src="img/icon_book_on.png" alt="">
                     <img class="icon_off" src="img/icon_book_off.png" alt="">
                     <span>학년별<br>학습 가이드</span></a></li>
             <li>
-                <a href="#">
+                <a href="school3.html">
                     <img class="icon_on" src="img/icon_school_on.png" alt="">
                     <img class="icon_off" src="img/icon_school_off.png" alt="">
                     <span>과목별<br>학교 공부</span></a></li>
@@ -85,8 +85,8 @@
 
         <h1>내 손안의 <br class='break-m'>스마트 교실 <span class="text_blue">밀크T</span></h1>
         <h2>밀크T 초등은 교과 과정과 <br class='break-m'>동일한 학습구성으로 <br>
-            예·복습 과정을 통한 이해도 향상과<br>
-            자기주도적 학습 능력을<br class='break-m'> 키워 주는 공부완성 플랫폼 입니다.</h2>
+            예·복습 과정을 통한 <br class='break-m'>이해도 향상과<br>
+            자기주도적 학습 능력을<br class='break-m'> 키워 주는 공부완성 <br class='break-m'>플랫폼 입니다.</h2>
 
 
         <!-- PC/태블릿용 이미지-->
@@ -116,17 +116,43 @@
 
         <div class="milk_ad up_on_scroll">
 
-            <h1>지금 바로 밀크T 학습을 <br class='break-m'>시작하시겠습니까?</h1>
+            <h1>지금 바로 <br class='break-m'>밀크T 학습을 <br class='break-m'>시작하시겠습니까?</h1>
             <ul>
-                <li><a href="https://www.milkt.co.kr/about/pc_exp?gn_3" class="color_b">밀크T 무료체험 ></a></li>
-                <li><a href="https://www.milkt.co.kr/Lounge/Paid_Student_Apply" class="color_g">밀크T 구매하기 ></a></li>
+                <li class="btn">
+                    <button onclick="openPopup()" type="button" id="free">밀크T <br class='break-m'>무료체험 ></button>
+                    <button type="button" id="buy">밀크T <br class='break-m'>구매하기 ></button>
+                </li>
             </ul>
+        </div>
+
+        <!--  무료체험 팝업창  -->
+        <div id="popup" class="popup-overlay">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h2>지금 바로 <span>밀크T</span> 무료체험 신청하세요!</h2>
+                <form>
+                    <input type="text" placeholder="이름">
+                    <input type="text" placeholder="휴대폰번호" maxlength="11">
+                    <select>
+                        <option value="0">7세</option>
+                        <option value="1">1학년</option>
+                        <option value="2">2학년</option>
+                        <option value="3">3학년</option>
+                        <option value="4">4학년</option>
+                        <option value="5">5학년</option>
+                        <option value="6">6학년</option>
+                    </select>
+                    <input type="submit" value="무료체험 신청" onclick="closePopup()">
+                </form>
+            </div>
         </div>
 
 
     </article>
 
 </div>
+
+
 
 <footer>
     <div class="footer01">

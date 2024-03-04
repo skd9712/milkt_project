@@ -61,12 +61,12 @@
                     <img class="icon_off" src="img/icon_pencil_off.png" alt="">
                     <span>밀크T<br>메뉴 구성</span></a></li>
             <li>
-                <a href="#">
+                <a href="school2.html">
                     <img class="icon_on" src="img/icon_book_on.png" alt="">
                     <img class="icon_off" src="img/icon_book_off.png" alt="">
                     <span>학년별<br>학습 가이드</span></a></li>
             <li>
-                <a href="#">
+                <a href="school3.html">
                     <img class="icon_on" src="img/icon_school_on.png" alt="">
                     <img class="icon_off" src="img/icon_school_off.png" alt="">
                     <span>과목별<br>학교 공부</span></a></li>
@@ -84,7 +84,7 @@
 
         <h1><span class="text_blue">밀크T</span> 실력 평가</h1>
         <h2>완벽한 학교 시험 대비와 <br>
-            학습 성취도 점검을 위한 실력평가</h2>
+            학습 성취도 점검을 위한 <br class='break-m'>실력평가</h2>
 
         <table class="up_on_scroll">
             <thead>
@@ -156,9 +156,9 @@
         </table>
         <div class="line"></div>
         <h3 class="up_on_scroll">
-            천재교육이 쌓은 다년간의 <br class='break-m'>문항 데이터로<br>
-            <span class="text_blue">출제 확률,<br class='break-m'> 적중률이 높은 문항</span>들로<br>
-            구성하여 완벽한 시험 대비
+            천재교육이 쌓은<br class='break-m'> 다년간의 <br class='break-m'>문항 데이터로<br>
+            <span class="text_blue">출제 확률,<br class='break-m'> 적중률이 높은<br class='break-m'> 문항</span>들로<br>
+            구성하여 <br class='break-m'>완벽한 시험 대비
         </h3>
 
 
@@ -179,9 +179,33 @@
         <div class="milk_ad up_on_scroll">
             <h1>지금 바로 밀크T 학습을 <br class='break-m'>시작하시겠습니까?</h1>
             <ul>
-                <li><a href="https://www.milkt.co.kr/about/pc_exp?gn_3" class="color_b">밀크T 무료체험 ></a></li>
-                <li><a href="https://www.milkt.co.kr/Lounge/Paid_Student_Apply" class="color_g">밀크T 구매하기 ></a></li>
+                <li class="btn">
+                    <button onclick="openPopup()" type="button" id="free">밀크T <br class='break-m'>무료체험 ></button>
+                    <button type="button" id="buy">밀크T <br class='break-m'>구매하기 ></button>
+                </li>
             </ul>
+        </div>
+
+        <!--  무료체험 팝업창  -->
+        <div id="popup" class="popup-overlay">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h2>지금 바로 <span>밀크T</span> 무료체험 신청하세요!</h2>
+                <form>
+                    <input type="text" placeholder="이름">
+                    <input type="text" placeholder="휴대폰번호" maxlength="11">
+                    <select>
+                        <option value="0">7세</option>
+                        <option value="1">1학년</option>
+                        <option value="2">2학년</option>
+                        <option value="3">3학년</option>
+                        <option value="4">4학년</option>
+                        <option value="5">5학년</option>
+                        <option value="6">6학년</option>
+                    </select>
+                    <input type="submit" value="무료체험 신청" onclick="closePopup()">
+                </form>
+            </div>
         </div>
 
     </article>
