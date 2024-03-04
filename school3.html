@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>과목별 학교 공부</title>
+    <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, max-scale=2.0">
+    <link rel="stylesheet" href="css/school_3.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <!-- 메인 메뉴  -->
+        <nav class="navbar">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <ul class="navbar_menu">
+                <li class="menu_li"><a href="#genia">AI Genia.</a></li>
+
+                <li class="menu_li"><a href="school1.html">학교 공부</a>
+                    <ul class="inner_school">
+                        <li><a href="school1.html">밀크T 메뉴 구성</a></li>
+                        <li><a href="school2.html">학년별 학습 가이드</a></li>
+                        <li><a href="school3.html">과목별 학교 공부</a></li>
+                        <li><a href="school4.html">실력 평가</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu_li"><a href="class_kor.html">수준별 국 영 수</a>
+                    <ul class="inner_level">
+                        <li><a href="class_kor.html">국어</a></li>
+                        <li><a href="class_eng.html">영어</a></li>
+                        <li><a href="class_math.html">수학</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu_li"><a href="#">학습 자료실</a></li>
+
+            </ul>
+
+            <ul class="navbar_icon">
+                <li><a href="#"><img src="img/join.png" alt="login"></a></li>
+                <li><a href="#"><img src="img/search.png" alt="search"></a></li>
+            </ul>
+
+            <a href="#" class="navbar_toggleBtn">
+                <img src="img/hamburger.png" alt="hamburger">
+            </a>
+
+        </nav>
+    </header>
+    <div class="main_content">
+        <nav>
+            <ul class="tabNav">
+                <li>
+                    <a href="school1.html">
+                        <img class="icon_on" src="img/icon_pencil_on.png" alt="">
+                        <img class="icon_off" src="img/icon_pencil_off.png" alt="">
+                        <span>밀크T<br>메뉴 구성</span></a></li>
+                <li>
+                    <a href="school2.html">
+                        <img class="icon_on" src="img/icon_book_on.png" alt="">
+                        <img class="icon_off" src="img/icon_book_off.png" alt="">
+                        <span>학년별<br>학습 가이드</span></a></li>
+                <li>
+                    <a href="school3.html">
+                        <img class="icon_on" src="img/icon_school_on.png" alt="">
+                        <img class="icon_off" src="img/icon_school_off.png" alt="">
+                        <span>과목별<br>학교 공부</span></a></li>
+                <li>
+                    <a href="school4.html">
+                        <img class="icon_on" src="img/icon_exam_on.png" alt="">
+                        <img class="icon_off" src="img/icon_exam_off.png" alt="">
+                        <span>실력평가</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="inner_content">
+            <div class="school3 up">
+                <h3>밀크T 과목별 학교 공부</h3>
+                <img src="img/과목별_1.jpg" alt="과목별1">
+            </div>
+            <div class="subject up">
+                <h3>과목별 특징</h3>
+                <ul class="sub_img">
+                    <li class="sub"><img src="img/과목별_2-1.jpg" alt="과목별2-1"></li>
+                    <li class="sub"><img src="img/과목별_2-2.jpg" alt="과목별2-2"></li>
+                    <li class="sub"><img src="img/과목별_2-3.jpg" alt="과목별2-3"></li>
+                    <li class="sub"><img src="img/과목별_2-4_.jpg" alt="과목별2-4"></li>
+                    <li class="sub"><img src="img/과목별_2-5_.jpg" alt="과목별2-5"></li>
+                    <li class="sub"><img src="img/과목별_2-6_.jpg" alt="과목별2-6"></li>
+                </ul>
+            </div>
+            <div class="middle up">
+                <h3>중학 특강</h3>
+                <ul class="middle_1">
+                    <li><img src="img/중학특강_1.jpg" alt="중학특강1"></li>
+                </ul>
+                <ul class="middle_2">
+                    <li>
+                        <img src="img/중학특강_2.jpg" alt="중학특강2">
+                        <img src="img/중학특강_3.jpg" alt="중학특강3">
+                        <img src="img/중학특강_4.jpg" alt="중학특강4">
+                    </li>
+                </ul>
+            </div>
+            <div class="lecture up">
+                <h3>강좌별 특징</h3>
+                <ul class="lecture_2">
+                    <li><img src="img/강좌별_1.jpg" alt="강좌별_1"></li>
+                    <li><img src="img/강좌별_2.jpg" alt="강좌별_2"></li>
+                </ul>
+            </div>
+            <ul class="start">
+                <li class="title_2">지금 바로 밀크T 학습을 시작하시겠습니까?</li>
+                <li class="btn">
+                    <button onclick="openPopup()" type="button" id="free">밀크T 무료체험 ></button>
+                    <button type="button" id="buy" onclick="location.href='https://www.milkt.co.kr/Lounge/Paid_Student_Apply'">밀크T 구매하기 ></button>
+                </li>
+            </ul>
+        </div>
+        <!--  무료체험 팝업창  -->
+        <div id="popup" class="popup-overlay">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h2>지금 바로 <span>밀크T</span> 무료체험 신청하세요!</h2>
+                <form>
+                    <input type="text" placeholder="이름">
+                    <input type="text" placeholder="휴대폰번호" maxlength="11">
+                    <select>
+                        <option value="0">7세</option>
+                        <option value="1">1학년</option>
+                        <option value="2">2학년</option>
+                        <option value="3">3학년</option>
+                        <option value="4">4학년</option>
+                        <option value="5">5학년</option>
+                        <option value="6">6학년</option>
+                    </select>
+                    <input type="submit" value="무료체험 신청"  onclick="closePopup()">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 챗봇, top 버튼   -->
+    <ul class="fixed_icon">
+        <li class="chat"><a href="#"><img src="img/school_chatbot_bear.png" alt="챗봇"></a></li>
+        <li class="top"><a href="#"><img src="https://cdndata.milkt.co.kr/ele/www/images/common/quick/quick_top_221020.png" alt="화살표"></a></li>
+    </ul>
+</div>
+<footer>
+    <div class="footer01">
+        <div class="company_info">
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">제휴문의</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+        </div>
+        <div class="family_site">
+            <a class="family_btn open" href="#">FANILY SITE +</a>
+        </div>
+    </div>
+    <div class="footer02">
+        <div class="footer_img">
+            <img src="img/천재교과서_이미지.png" alt="푸터 이미지">
+        </div>
+        <div class="footer_text">
+            <p>(주) 천재교과서 | 대표: 박정과, 임형진 | 서울특별시 금천구 가산디지털1로 16, 11층 18-20층(가산동) <br>
+                학원설립 운영등록번호 : 제 5434호 천재교과서밀크티초등원격학원 [정보조회] | 신고기관명 : 서울남부교육지원청 <br>
+                사업자등록번호 : 119-81-70643 | 통신판매업신고번호: 제 2016-서울금천-1306호[정보조회] | 신고기관명 : 서울특별시 금천구청 <br>
+                부가통신사업신고번호 : 제 2-01-16-0189 호 | 호스팅서비스 제공자 : (주)천재교과서 <br>
+                대표번호 Tel : 1577-1533 | 대표문의 E-mail: mt@chunjae.co.kr | 제휴문의 E-mail : marketing@chunjae.co.kr
+            </p>
+            <p>COPYRIGHT 2015 CHUNJAE TEXTBOOK CORPORATION. ALL RIGHTS RESERVED</p>
+        </div>
+    </div>
+</footer>
+<script defer src="js/school_3.js"></script>
+<script defer src="js/header.js"></script>
+</body>
+</html>

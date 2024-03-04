@@ -1,0 +1,514 @@
+@media screen and (max-width: 2560px) {
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .sub {
+        list-style: none;
+    }
+
+    #wrap {
+        width: 100%;
+        margin: 0 auto;
+        font-family: "Noto Sans KR", sans-serif;
+
+    }
+
+    .main_content {
+        background-color: #F6F6F6;
+        padding-bottom: 20px;
+    }
+
+    /* 메뉴바 - 공통  */
+    /*내부 메뉴 네비게이션*/
+    .main_content nav {
+        padding: 2vh 5vh;
+    }
+
+    .tabNav {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 70vw;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .tabNav li {
+        display: inline-block;
+    }
+
+    .tabNav li a {
+        text-decoration: none;
+        color: #1f1f1f;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: white;
+        width: 16vw;
+        height: 50px;
+        border-radius: 3vw;
+
+        font-size: 0.9em;
+
+        line-height: 1.2em;
+        letter-spacing: -0.03rem;
+
+    }
+
+    /*아이콘 이미지*/
+    .tabNav li img {
+        width: 30px;
+        height: 30px;
+        margin-right: 1.2vw;
+    }
+
+    /*마우스 오버*/
+    .tabNav li.on a {
+        background-color: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .tabNav li .icon_on {
+        display: none;
+    }
+
+    .tabNav .on .icon_off {
+        display: none;
+    }
+
+    .tabNav .on .icon_on {
+        display: flex;
+    }
+
+    /* 메인 content */
+    .inner_content {
+        background-color: white;
+        width: 72vw;
+        position: relative;
+        left: 13.5vw;
+        border-radius: 30px;
+    }
+
+    /* Title */
+    h3 {
+        padding: 2vw 0 2vw 0;
+        font-size: 1.6rem;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        width: 72vw;
+        position: relative;
+        left: -1vw;
+    }
+
+    /* 과목별 학교 공부 이미지 */
+    .school3 img, .middle img {
+        width: 65vw;
+        margin-left: 3.5vw;
+    }
+
+    /* 과목별 특징 이미지 */
+    .subject {
+        margin: 1.2vw;
+        width: 72vw;
+    }
+
+    .subject .sub_img sub {
+        width: 72vw;
+
+    }
+
+    .subject .sub_img {
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+        width: 72vw;
+        position: relative;
+        left: 0.7vw;
+    }
+
+    .subject .sub_img .sub {
+        margin: 10px 35px 15px 15px;
+    }
+
+    .subject .sub_img .sub img {
+        width: 91%;
+    }
+
+    /*중학 특강 */
+    .middle_2 li, .lecture_2 {
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+
+    .middle_2 li img {
+        width: 280px;
+        margin: 1vw;
+    }
+
+    /* 강좌별 특징*/
+    .lecture {
+        background-color: #CAD8D8;
+    }
+
+    .lecture .title {
+        color: #575757;
+    }
+
+    .lecture_2 img {
+        width: 450px;
+        padding: 0 2vw 3vw 1vw;
+    }
+
+    /* 학습 유도 박스 */
+    .title_2 {
+        padding: 3vw 2vw 2vw 0;
+        font-size: 1.8rem;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        width: 72vw;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn #free, #buy {
+        padding: 1.5vw 3vw;
+        margin: 0 1vw 4vw 1vw;
+        font-size: 17px;
+        border: none;
+    }
+
+    .btn #free {
+        background-color: #fdbc98;
+    }
+
+    .btn #buy {
+        background-color: #5A7490;
+    }
+
+    .btn button a {
+        color: white;
+        font-size: 1.2rem;
+
+    }
+
+    /* 스크롤 애니메이션 up */
+    .up {
+        opacity: 0;
+        transition: all 0.8s ease-in-out;
+        transform: translate(0, 100px);
+    }
+
+    .up.show {
+        opacity: 1;
+        transform: none;
+    }
+
+    /* 챗봇, top 버튼 */
+    .chat {
+        position: fixed;
+        bottom: 100px;
+        right: 5px;
+    }
+
+    .chat img {
+        width: 110px;
+    }
+
+    .top {
+        position: fixed;
+        bottom: 55px;
+        right: 37px;
+    }
+
+    .top img {
+        width: 40px;
+    }
+
+    /* 무료체험 팝업창 */
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s ease;
+    }
+    .popup-content {
+        width: 400px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .popup-content h2 {
+        text-align: center;
+        margin-top: 0;
+        padding-bottom: 15px;
+        font-size: 21px;
+    }
+    .popup-content form {
+        display: flex;
+        flex-direction: column;
+    }
+    .popup-content input[type="text"],
+    .popup-content select {
+        margin-bottom: 10px;
+        padding: 8px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+    .popup-content input[type="submit"] {
+        padding: 8px 12px;
+        border: none;
+        border-radius: 3px;
+        background-color: #3dc6f3;
+        color: #fff;
+        cursor: pointer;
+    }
+    .popup-content input[type="submit"]:hover {
+        background-color: rgb(0, 75, 126);
+    }
+    .popup-content .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .popup-content span {
+        color: #3dc6f3;
+    }
+
+}
+
+/* 모바일 화면*/
+@media screen and (max-width: 768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .sub {
+        list-style: none;
+    }
+
+    #wrap {
+        width: 100%;
+        margin: 0 auto;
+        font-family: "Noto Sans KR", sans-serif;
+
+    }
+
+    .main_content {
+        background-color: #F6F6F6;
+        padding-bottom: 2vw;
+    }
+
+
+    .sub {
+        list-style: none;
+    }
+
+    /*내부 메뉴 네비게이션*/
+    .tabNav {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 75vw;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .tabNav li {
+        flex-basis: 50%;
+        box-sizing: border-box;
+        margin: 1vh auto;
+    }
+
+    .tabNav li a {
+        text-decoration: none;
+        color: #1f1f1f;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: white;
+        width: 35vw;
+        height: 50px;
+        border-radius: 4vw;
+
+        font-size: 0.9rem;
+
+        line-height: 1.2rem;
+        letter-spacing: -0.03rem;
+    }
+
+    /*아이콘 이미지*/
+    .tabNav li a img {
+        width: 25px;
+        height: 25px;
+        margin-right: 1.7vw;
+    }
+
+    /* 메인 content */
+    .inner_content {
+        background-color: white;
+        width: 95vw;
+        position: relative;
+        left: 2vw;
+        border-radius: 30px;
+    }
+
+    /* 타이틀 */
+    h3 {
+        font-size: 1.4rem;
+        position: relative;
+        left: 9.9vw;
+        display: flex;
+        justify-content: center;
+        padding: 3vw 0 2vw 0;
+    }
+
+    .school3 img, .middle img {
+        width: 95vw;
+        position: relative;
+        left: -4vw;
+    }
+
+
+    /* 과목별 특징 이미지 */
+    .subject {
+        margin: 1.2vw;
+        width: 90vw;
+    }
+
+    .subject .sub_img sub {
+        width: 90vw;
+
+    }
+
+    .subject .sub_img {
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+        width: 90vw;
+        position: relative;
+        left: 3vw;
+    }
+
+    .subject .sub_img .sub {
+        margin: 10px 2px 15px 10px;
+    }
+
+    .subject .sub_img .sub img {
+        width: 89%;
+    }
+
+
+    /*중학 특강 */
+    .middle_1 li img {
+        width: 94vw;
+    }
+
+    .middle_2 li, .lecture_2 {
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+
+    .middle_2 li img {
+        width: 290px;
+        margin: 1vw 0 3vw 7vw;
+    }
+
+
+    /* 강좌별 특징*/
+    .lecture {
+        background-color: #CAD8D8;
+        margin-top: 5vw;
+    }
+
+    .lecture .title {
+        color: #575757;
+    }
+
+    .lecture_2 img {
+        width: 370px;
+        padding: 2vw 3vw 4vw 3vw;
+    }
+
+    /* 학습 유도 박스 */
+    .title_2 {
+        /*text-align: center;*/
+        padding: 5vw 2vw 2vw 0;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        width: 94vw;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn #free, #buy {
+        padding: 2vw 3vw;
+        margin: 0 1vw 4vw 1vw;
+        font-size: 17px;
+        border: none;
+    }
+
+    .btn #free {
+        background-color: #fdbc98;
+    }
+
+    .btn #buy {
+        background-color: #5A7490;
+    }
+
+    .btn button a {
+        color: white;
+        font-size: 1.2rem;
+
+    }
+
+    /* 챗봇, top 버튼 */
+    .chat img {
+        width: 80px;
+    }
+
+    .top {
+        position: fixed;
+        right: 28px;
+        bottom: 65px;
+    }
+
+    .top img {
+        width: 30px;
+    }
+
+
+}
