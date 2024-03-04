@@ -16,7 +16,6 @@
     }
 
     .navbar {
-        position: fixed;
         display: flex;
         width: 100%;
         justify-content: space-evenly;
@@ -133,7 +132,6 @@ body {
     }
 
     .navbar {
-        position: fixed;
         display: flex;
         width: 100%;
         justify-content: space-evenly;
@@ -286,7 +284,7 @@ body {
         .navbar_toggleBtn {
             position: absolute;
             display: block;
-            top: 12px;
+            top: 5px;
             right: 32px;
         }
 
