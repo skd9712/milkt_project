@@ -3,13 +3,25 @@
         width : 100%;
         margin : 0 auto;
     }
-    .pc {
+    .pc{
         display : none;
     }
+    .tab {
+        display: none;
+    }
+    #main_top .bg_left_img,
+    #main_top .bg_right_img,
+    .title, .robot
+    {
+        display: none;
+    }
+
     .navbar {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
         padding: 8px 24px;
+        z-index: 999;
+        background-color: #ffffff;
     }
 
     .navbar_menu {
@@ -17,6 +29,10 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+        top: 10px;
+        left: -40px;
+        z-index: 999;
+        background-color: #ffffff;
     }
 
     .navbar_menu li {
@@ -24,18 +40,21 @@
         text-align: center;
         padding: 21px;
         border-bottom: 1px solid silver;
+        text-decoration: none;
     }
-
 
     .navbar_icon {
         display: none;
         justify-items: center;
         width: 100%;
-        padding-left: 40%
+        padding: 20px 0 0 43%;
     }
 
     .navbar_toggleBtn {
+        position: absolute;
         display: block;
+        top: 5px;
+        right: 32px;
     }
 
     .navbar_menu.active,
@@ -45,21 +64,14 @@
 
     .navbar_menu ul li {
         display: none;
+
     }
 
     .navbar_menu a{
-        /*border-bottom: 1px solid silver;*/
+        color:#191919
     }
-    .navbar_menu a:hover{
-        /*color: pink;*/
+    .navbar_menu a:hover {
         border: none;
-    }
-
-    /* icon-box영역 */
-    .icon-box li {
-        position : absolute;
-        top : 12px;
-        left : 15px;
     }
 
     /* section 01 영역 */
