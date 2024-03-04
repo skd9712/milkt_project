@@ -199,10 +199,10 @@ article h3 {
 }
 
 .btn #free, #buy {
-    padding: 2vw 3vw;
-    margin: 2vh 2vw 4vh 1vw;
+    padding: 1.5vw 3vw;
+    margin: 4vw 1vw 4vw 1vw;
     font-size: 17px;
-    border: none;
+    border: none
 }
 
 .btn #free {
@@ -311,29 +311,29 @@ article h3 {
     }
 
     /*하단 광고 버튼*/
-    .milk_ad ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        width: 70vw;
-        margin: 3vh auto;
-        text-align: left;
-    }
-    .milk_ad ul li a {
-        text-decoration: none;
-        color: black;
-        font-weight: bolder;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 1vw 3vh;
+    /*.milk_ad ul {*/
+    /*    list-style: none;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    width: 70vw;*/
+    /*    margin: 3vh auto;*/
+    /*    text-align: left;*/
+    /*}*/
+    /*.milk_ad ul li a {*/
+    /*    text-decoration: none;*/
+    /*    color: black;*/
+    /*    font-weight: bolder;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    margin: 0 1vw 3vh;*/
 
-        width: 25vw;
-        height: 9vh;
-        border-radius: 20px;
+    /*    width: 25vw;*/
+    /*    height: 9vh;*/
+    /*    border-radius: 20px;*/
 
-        font-size: 1.5rem;
-    }
+    /*    font-size: 1.5rem;*/
+    /*}*/
 
     /*캐릭터*/
     #icon_bee {
@@ -502,30 +502,30 @@ and (max-width: 1023px) {
         display: none;
     }
     /*하단 광고 버튼*/
-    .milk_ad ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        width: 70vw;
-        margin: 3vh auto;
-        text-align: left;
-    }
-    .milk_ad ul li a {
-        text-decoration: none;
-        color: black;
-        font-weight: bolder;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 1vw 3vh;
+    /*.milk_ad ul {*/
+    /*    list-style: none;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    width: 70vw;*/
+    /*    margin: 3vh auto;*/
+    /*    text-align: left;*/
+    /*}*/
+    /*.milk_ad ul li a {*/
+    /*    text-decoration: none;*/
+    /*    color: black;*/
+    /*    font-weight: bolder;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    margin: 0 1vw 3vh;*/
 
-        width: 25vw;
-        height: 9vh;
-        border-radius: 20px;
+    /*    width: 25vw;*/
+    /*    height: 9vh;*/
+    /*    border-radius: 20px;*/
 
-        font-size: 1.5rem;
+    /*    font-size: 1.5rem;*/
 
-    }
+    /*}*/
 
     /*캐릭터*/
     #icon_bee {
@@ -705,30 +705,57 @@ and (max-width: 1023px) {
     }
 
     /*하단 광고 버튼*/
-    .milk_ad{
-        padding: 0 0 3vh;
+    /*.milk_ad{*/
+    /*    padding: 0 0 3vh;*/
+    /*}*/
+    /*.milk_ad ul {*/
+    /*    list-style: none;*/
+    /*    width: 70vw;*/
+    /*    margin: auto;*/
+
+    /*}*/
+    /*.milk_ad ul li a {*/
+    /*    text-decoration: none;*/
+    /*    color: black;*/
+    /*    font-weight: bolder;*/
+    /*    display: block;*/
+    /*    line-height: 8.5vh;*/
+    /*    text-align: center;*/
+    /*    margin: 2vh auto;*/
+
+    /*    width: 50vw;*/
+    /*    height: 9vh;*/
+    /*    border-radius: 20px;*/
+
+    /*    font-size: 1.5rem;*/
+    /*}*/
+
+    .btn {
+        display: flex;
+        justify-content: center;
     }
-    .milk_ad ul {
-        list-style: none;
-        width: 70vw;
-        margin: auto;
+
+    .btn #free, #buy {
+        padding: 2vw 3vw;
+        margin: 4vw 1vw 4vw 1vw;
+        font-size: 17px;
+        border: none;
+    }
+
+    .btn #free {
+        background-color: #fdbc98;
+    }
+
+    .btn #buy {
+        background-color: #5A7490;
+    }
+
+    .btn button a {
+        color: white;
+        font-size: 1.2rem;
 
     }
-    .milk_ad ul li a {
-        text-decoration: none;
-        color: black;
-        font-weight: bolder;
-        display: block;
-        line-height: 8.5vh;
-        text-align: center;
-        margin: 2vh auto;
 
-        width: 50vw;
-        height: 9vh;
-        border-radius: 20px;
-
-        font-size: 1.5rem;
-    }
     /*캐릭터 숨기기*/
     #icon_bee {
         display: none;
