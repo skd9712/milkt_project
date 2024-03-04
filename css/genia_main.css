@@ -1,0 +1,1172 @@
+h2{
+    display: none;
+}
+*{
+    scroll-behavior: smooth;
+    list-style: none;
+}
+/* PC (해상도 1024px)*/
+@media screen and (min-width: 1024px), screen and (min-height: 1024px) and (orientation: landscape) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width:100%;
+    }
+
+    #main_top {
+        width: 100%;
+    }
+    #infant,
+    #elementary{
+        width: 100%;
+    }
+
+    #main_top .bg_left_img {
+        position: relative;
+        display: flex;
+        float: left;
+        width: 30%;
+        height: 70vh;
+        animation: bg_left 1s ease-in normal;
+        z-index: -1;
+    }
+    @keyframes bg_left {
+        0% { opacity: 0.9; transform: scale(1.2); }
+        100% { opacity: 1; transform: scale(1); }
+    }
+
+    #main_top .bg_right_img {
+        position: relative;
+        display: flex;
+        float: left;
+        width: 70%;
+        height: 70vh;
+    }
+
+    .title {
+        position: absolute;
+        width: 100%;
+        top: 240px;
+        left: 15%;
+    }
+    .title .bg_txtTop {
+        position: relative;
+        display: block;
+        top: -20px;
+        left: 20px;
+        animation: bg_txtTop 1s 2s ease backwards;;
+        animation-delay: 2s;
+    }
+    @keyframes bg_txtTop {
+        0% { opacity: 0; transform: translateY(10px); }
+        100% { opacity: 1; transform: translateY(0px); }
+    }
+
+    .title .bg_txtG {
+        position: relative;
+        width: 110px;
+        animation: textG 1050ms ease-in forwards;
+    }
+    @keyframes textG {
+        0% { opacity: 0; transform: translateY(-90px); }
+        30% { opacity: 1; transform: translateY(-90px); }
+        40% { transform: translateY(-90px); }
+        60% { transform: translateY(0); }
+        100% { transform: translateY(0); }
+    }
+    .title .bg_txtE {
+        position: relative;
+        width: 100px;
+        animation: text 1050ms ease-in 2;
+        animation-delay: 150ms;
+    }
+
+    .title .bg_txtN {
+        position: relative;
+        width: 110px;
+        animation: text 1050ms ease-in 2;
+        animation-delay: 230ms;
+    }
+
+    .title .bg_txtI {
+        position: relative;
+        width: 50px;
+        animation: text 1050ms ease-in 2;
+        animation-delay: 310ms;
+    }
+
+    .title .bg_txtA {
+        position: relative;
+        width: 110px;
+        animation: text 1050ms ease-in 2;
+        animation-delay: 390ms;
+    }
+    @keyframes text {
+        0% { transform: translateY(0); }
+        30% { transform: translateY(0); }
+        45% { transform: translateY(-40px); }
+        100% { transform: translateY(0); }
+    }
+    #main_top .dot {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        top: 0;
+        left: -650px;
+        animation: glide 1s linear forwards;
+        z-index: 10;
+    }
+    @keyframes glide {
+        0% { opacity: 0; transform: translateX(0); }
+        20% { opacity: 1; transform: translateX(0); }
+        60% { transform: translateX(300px); }
+        100% { transform: translateX(650px); }
+    }
+
+    #main_top .bg_txtBottom {
+        position: relative;
+        display: block;
+        width: 350px;
+        top: 80px;
+        left: 180px;
+        animation: bg_txtBottom 1s 2s ease backwards;
+    }
+    @keyframes bg_txtBottom {
+        0% { opacity: 0; transform: translateX(-100px); }
+        100% { opacity: 1; transform: translateX(0px); }
+    }
+
+    .robot {
+        position: absolute;
+        left: 55%;
+        transform: rotate(-8deg);
+        animation: bounce 3s infinite ease-in normal;
+    }
+    @keyframes bounce {
+        0% { top: 33%; }
+        40% { top: 33%; }
+        45% { top: 32%; }
+        50% { top: 33%; }
+        55% { top: 32%; }
+        60% { top: 33%; }
+        100% { top: 33%; }
+    }
+    .robot .robot_body {
+        position: absolute;
+        width: 580px;
+        top: 170px;
+        left: -170px;
+        z-index: 3;
+    }
+
+    .robot .robot_eyeLeft {
+        position: absolute;
+        width: 14px;
+        left: 75px;
+        top: 365px;
+        z-index: 3;
+    }
+
+    .robot .robot_eyeRight {
+        position: absolute;
+        width: 20px;
+        left: 140px;
+        top: 365px;
+        z-index: 3;
+        animation: robotRightEye 3s infinite ease-in normal;
+    }
+    @keyframes robotRightEye {
+        0% { transform: scaleY(1); }
+        2% { transform: scaleY(0.2); }
+        4% { transform: scaleY(1); }
+        8% { transform: scaleY(0.2); }
+        10% { transform: scaleY(1); }
+        50% { transform: scaleY(1); }
+        52% { transform: scaleY(0.2); }
+        54% { transform: scaleY(1); }
+        58% { transform: scaleY(0.2); }
+        60% { transform: scaleY(1); }
+        100% { transform: scaleY(1); }
+    }
+    .robot .robot_earLeft {
+        position: absolute;
+        width: 55px;
+        left: -75px;
+        top: 180px;
+        z-index: 2;
+        animation: robotLeftEar 3s infinite ease-in normal;
+    }
+    @keyframes robotLeftEar {
+        0% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+        5% { transform: rotate(-10deg); margin-top: -5px; margin-left: -10px; }
+        10% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+        15% { transform: rotate(-10deg); margin-top: -5px; margin-left: -10px; }
+        20% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+    }
+    .robot .robot_earRight {
+        position: absolute;
+        width: 55px;
+        left: 255px;
+        top: 180px;
+        z-index: 2;
+        animation: robotRightEar 3s infinite ease-in normal;
+    }
+    @keyframes robotRightEar {
+        0% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+        5% { transform: rotate(10deg); margin-top: -5px; margin-left: 10px; }
+        10% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+        15% { transform: rotate(10deg); margin-top: -5px; margin-left: 10px; }
+        20% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+    }
+
+    /* main_top nav바  시작 */
+    .tap_top {
+        position: relative;
+        clear: both;
+        width: 100%;
+        padding: 35px 10px;
+        font-size: 1.7rem;
+        text-align: center;
+        background-color: #191919;
+    }
+
+    .tap_top ul li {
+        display: inline-block;
+        list-style: none;
+    }
+
+    .tap_top ul li a {
+        margin: 0;
+        padding: 50px 70px 60px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .tap_top ul li a:hover {
+        background: url(//cdndata.milkt.co.kr/ele/www/Images/partner/210319/tab_on_220718.png) no-repeat center top;
+    }
+
+    /* 슬라이드 공통 */
+    .window {
+        overflow: hidden;
+        position: relative;
+        display: block;
+        top: 1vw;
+        left: 50vw;
+        transform: translate(-50%, -10%);
+        width: 1190px;
+        height: 790px;
+        /*border: 5px solid cornflowerblue;*/
+        border-radius: 5%;
+        margin-bottom: 10%;
+    }
+    .cell {
+        list-style: none;
+        width: 1000px;
+        height: 700px;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 0 50px;
+        padding-top: 30px;
+        /*background-color: pink;*/
+    }
+
+    /* 유아 시작 */
+    #infant .infant_title {
+        margin: 12% auto;
+        position: relative;
+        left: 20px;
+        display: block;
+    }
+
+    #infant .infant_info {
+        margin: auto;
+        display: block;
+        position: relative;
+        left: -10vw;
+        width: 110%;
+    }
+
+    /* 슬라이드 유아 */
+    .container_infant {
+        position: relative;
+        width: 9999px;
+        height: 750px;
+        left: -1060px;
+        top: 20px;
+        /*border: 4px solid green;*/
+    }
+
+    .button-container .btn_prev {
+        position: absolute;
+        left: 320px;
+        top: 740px;
+    }
+
+    .button-container .btn_next {
+        position: absolute;
+        left: 690px;
+        top: 740px;
+    }
+
+    /* 초등 시작 */
+    #elementary .elementary_title {
+        margin: 10% auto;
+        display: block;
+    }
+
+    #elementary .elementary_info {
+        margin: auto;
+        display: block;
+        width: 70%;
+    }
+
+    /* 슬라이드 초등 */
+    .container_ele {
+        position: relative;
+        width: 9999px;
+        height: 750px;
+        left: -1060px;
+        top: -20px;
+        /*border: 4px solid green;*/
+    }
+
+    .button-container2 .btn_prev2 {
+        position: absolute;
+        left: 340px;
+        top: 700px;
+    }
+
+    .button-container2 .btn_next2 {
+        position: absolute;
+        left: 700px;
+        top: 700px;
+    }
+
+    /* 버튼 공용*/
+    button {
+        font-size: 2rem;
+        font-weight: 1000;
+        width: 250px;
+        height: 50px;
+        color: #fff;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+        transition: all 300ms ease-in-out;
+    }
+
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* 페이드 */
+    .pv_box .fade_wrap:nth-child(odd) {
+        transition: 1.5s;
+        opacity: 0;
+        position: relative;
+        left: -30px;
+    }
+    .pv_box .fade_wrap:nth-child(even) {
+        transition: 1.5s;
+        opacity: 0;
+        position: relative;
+        left: 30px;
+    }
+    .pv_box .fade_wrap.fade-in {
+        opacity: 1;
+        left: 10px
+    }
+
+
+    .robot_img_infant{
+        position: relative;
+        margin: -300px 0;
+        width: 400px;
+        top: -200px;
+        z-index: -3;
+    }
+    .robot_img_ele{
+        position: relative;
+        margin: -150px 0;
+        left: 1600px;
+        top: -100px;
+        width: 400px;
+        z-index: -3;
+    }
+
+}
+
+
+/* Tablet 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media screen and (min-width: 768px) and (max-width: 1023px), screen and (min-height: 760px) and (max-height: 1023px) and (orientation: landscape) {
+    body {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    #body {
+        width: 100%;
+    }
+
+    #main_top .bg_left_img {
+        position: relative;
+        display: inline;
+        float: left;
+        width: 30%;
+        height: 40vh;
+        animation: bg_left 1s ease-in normal;
+        z-index: -1;
+    }
+    @keyframes bg_left {
+        0% { opacity: 0.9; transform: scale(1.2); }
+        100% { opacity: 1; transform: scale(1); }
+    }
+
+    #main_top .bg_right_img {
+        position: relative;
+        display: inline;
+        float: right;
+        width: 70%;
+        height: 40vh;
+    }
+
+    .title {
+        position: absolute;
+        width: 100%;
+        top: 180px;
+        left: -25%;
+    }
+    .title .bg_txtTop {
+        position: relative;
+        width: 300px;
+        top: -120px;
+        left: 310px;
+        animation: bg_txtTop 1s 2s ease backwards;;
+        animation-delay: 2s;
+    }
+    @keyframes bg_txtTop {
+        0% { opacity: 0; transform: translateY(10px); }
+        100% { opacity: 1; transform: translateY(0px); }
+    }
+
+    .title .bg_txtG {
+        position: relative;
+        width: 80px;
+        animation: textG 1050ms ease-in forwards;
+    }
+    @keyframes textG {
+        0% { opacity: 0; transform: translateY(-90px); }
+        30% { opacity: 1; transform: translateY(-90px); }
+        40% { transform: translateY(-90px); }
+        60% { transform: translateY(0); }
+        100% { transform: translateY(0); }
+    }
+    .title .bg_txtE {
+        position: relative;
+        width: 80px;
+        animation: text 1050ms ease-in 2;
+        animation-delay: 150ms;
+    }
+
+    .title .bg_txtN {
+        position: relative;
+        width: 80px;
+        animation: text 1050ms ease-in 2;
+        animation-delay: 230ms;
+    }
+
+    .title .bg_txtI {
+        position: relative;
+        width: 40px;
+        animation: text 1050ms ease-in 2;
+        animation-delay: 310ms;
+    }
+
+    .title .bg_txtA {
+        position: relative;
+        width: 80px;
+        animation: text 1050ms ease-in 2;
+        animation-delay: 390ms;
+    }
+    @keyframes text {
+        0% { transform: translateY(0); }
+        30% { transform: translateY(0); }
+        45% { transform: translateY(-40px); }
+        100% { transform: translateY(0); }
+    }
+    #main_top .dot {
+        position: relative;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-color: white;
+        top: 0;
+        left: -650px;
+        animation: glide 1s linear forwards;
+        z-index: 10;
+    }
+    @keyframes glide {
+        0% { opacity: 0; transform: translateX(0); }
+        20% { opacity: 1; transform: translateX(0); }
+        60% { transform: translateX(300px); }
+        100% { transform: translateX(650px); }
+    }
+
+    #main_top .bg_txtBottom {
+        position: relative;
+        width: 250px;
+        top: 40px;
+        left: 320px;
+        animation: bg_txtBottom 1s 2s ease backwards;
+    }
+    @keyframes bg_txtBottom {
+        0% { opacity: 0; transform: translateX(-100px); }
+        100% { opacity: 1; transform: translateX(0px); }
+    }
+
+    .robot {
+        position: absolute;
+        left: 53%;
+        transform: rotate(-8deg);
+        animation: bounce 3s infinite ease-in normal;
+    }
+    @keyframes bounce {
+        0% { top: 33%; }
+        40% { top: 33%; }
+        45% { top: 32%; }
+        50% { top: 33%; }
+        55% { top: 32%; }
+        60% { top: 33%; }
+        100% { top: 33%; }
+    }
+    .robot .robot_body {
+        position: absolute;
+        width: 290px;
+        top: -60px;
+        z-index: 3;
+    }
+
+    .robot .robot_eyeLeft {
+        position: absolute;
+        width: 8px;
+        left: 125px;
+        top: 37px;
+        z-index: 3;
+    }
+
+    .robot .robot_eyeRight {
+        position: absolute;
+        width: 13px;
+        left: 150px;
+        top: 35px;
+        z-index: 3;
+        animation: robotRightEye 3s infinite ease-in normal;
+    }
+    @keyframes robotRightEye {
+        0% { transform: scaleY(1); }
+        2% { transform: scaleY(0.2); }
+        4% { transform: scaleY(1); }
+        8% { transform: scaleY(0.2); }
+        10% { transform: scaleY(1); }
+        50% { transform: scaleY(1); }
+        52% { transform: scaleY(0.2); }
+        54% { transform: scaleY(1); }
+        58% { transform: scaleY(0.2); }
+        60% { transform: scaleY(1); }
+        100% { transform: scaleY(1); }
+    }
+    .robot .robot_earLeft {
+        position: absolute;
+        width: 30px;
+        left: 47px;
+        top: -53px;
+        z-index: 2;
+        animation: robotLeftEar 3s infinite ease-in normal;
+    }
+    @keyframes robotLeftEar {
+        0% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+        5% { transform: rotate(-10deg); margin-top: -5px; margin-left: -10px; }
+        10% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+        15% { transform: rotate(-10deg); margin-top: -5px; margin-left: -10px; }
+        20% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+    }
+    .robot .robot_earRight {
+        position: absolute;
+        width: 30px;
+        left: 210px;
+        top: -52px;
+        z-index: 2;
+        animation: robotRightEar 3s infinite ease-in normal;
+    }
+    @keyframes robotRightEar {
+        0% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+        5% { transform: rotate(10deg); margin-top: -5px; margin-left: 10px; }
+        10% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+        15% { transform: rotate(10deg); margin-top: -5px; margin-left: 10px; }
+        20% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+    }
+
+    /* main_top nav바  시작 */
+    .tap_top {
+        position: relative;
+        clear: both;
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 1rem;
+        text-align: center;
+        background-color: #191919;
+    }
+
+    .tap_top ul li {
+        display: inline-block;
+        list-style: none;
+    }
+
+    .tap_top ul li a {
+        margin: 0;
+        padding: 50px 70px 50px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .tap_top ul li a:hover {
+
+        background: url(//cdndata.milkt.co.kr/ele/www/Images/partner/210319/tab_on_220718.png) no-repeat center top;
+    }
+
+    /* 슬라이드 공통 */
+    .window {
+        overflow: hidden;
+        position: relative;
+        display: block;
+        top: 1vw;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        width: 600px;
+        height: 500px;
+        /* border: 5px solid cornflowerblue; */
+        border-radius: 5%;
+        margin-bottom: 10%;
+    }
+    .cell {
+        list-style: none;
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 0 50px;
+        padding-top: 30px;
+        /* background-color: pink; */
+    }
+    .cell img{
+        width: 500px;
+    }
+
+    /* 유아 시작 */
+    #infant .infant_title {
+        margin: 10% auto;
+        position: relative;
+        display: block;
+        width: 500px;
+    }
+
+    #infant .infant_info {
+        margin: auto;
+        display: block;
+        position: relative;
+        left: -150px;
+        width: 70%;
+    }
+
+    /* 슬라이드 유아 */
+    .container_infant {
+        position: relative;
+        width: 5300px;
+        height: 400px;
+        left: -640px;
+        top: 20px;
+        /* border: 4px solid green; */
+    }
+
+    .button-container .btn_prev {
+        position: absolute;
+        left: 160px;
+        top: 410px;
+    }
+
+    .button-container .btn_next {
+        position: absolute;
+        left: 320px;
+        top: 410px;
+    }
+
+    /* 초등 시작 */
+    #elementary .elementary_title {
+        margin: 10% auto;
+        position: relative;
+        display: block;
+        width: 500px;
+    }
+
+    #elementary .elementary_info {
+        margin: auto;
+        display: block;
+        position: relative;
+        left: -50px;
+        width: 500px;
+    }
+
+    /* 슬라이드 초등 */
+    .container_ele {
+        position: relative;
+        width: 5300px;
+        height: 400px;
+        left: -640px;
+        top: 20px;
+        /* border: 4px solid green; */
+    }
+
+    .button-container2 .btn_prev2 {
+        position: absolute;
+        left: 160px;
+        top: 400px;
+    }
+
+    .button-container2 .btn_next2 {
+        position: absolute;
+        left: 320px;
+        top: 400px;
+    }
+
+    /* 버튼 공통 */
+    button {
+        font-size: 1rem;
+        font-weight: 1000;
+        width: 120px;
+        height: 35px;
+        color: #fff;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+        transition: all 300ms ease-in-out;
+    }
+
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* 페이드 */
+    .pv_box .fade_wrap:nth-child(odd) {
+        transition: 1.5s;
+        opacity: 0;
+        position: relative;
+        left: -30px;
+    }
+
+    .pv_box .fade_wrap:nth-child(even) {
+        transition: 1.5s;
+        opacity: 0;
+        position: relative;
+        left: 30px;
+    }
+
+    .pv_box .fade_wrap.fade-in {
+        opacity: 1;
+        left: 10px
+    }
+
+    .robot_img_infant{
+        position: relative;
+        margin: -100px 5px;
+        width: 220px;
+        z-index: -3;
+    }
+    .robot_img_ele{
+        position: relative;
+        margin: -120px 0;
+        left: 600px;
+        width: 220px;
+        z-index: -3;
+    }
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media screen and (max-width: 767px), screen and (max-height: 479px) and (orientation: landscape) {
+    * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    #main_top .bg_left_img {
+        position: relative;
+        display: inline;
+        float: left;
+        width: 30%;
+        height: 40vh;
+        animation: bg_left 1s ease-in normal;
+        z-index: -1;
+    }
+    @keyframes bg_left {
+        0% { opacity: 0.9; transform: scale(1.2); }
+        100% { opacity: 1; transform: scale(1); }
+    }
+
+    #main_top .bg_right_img {
+        position: relative;
+        display: inline;
+        float: right;
+        width: 70%;
+        height: 40vh;
+    }
+
+    .title {
+        position: absolute;
+        width: 55%;
+        top: 180px;
+        left: 15%;
+    }
+    .title .bg_txtTop {
+        display: none;
+    }
+
+    .title .bg_txtG {
+        position: relative;
+        width: 50px;
+        animation: textG 1050ms ease-in forwards;
+    }
+    @keyframes textG {
+        0% { opacity: 0; transform: translateY(-90px); }
+        30% { opacity: 1; transform: translateY(-90px); }
+        40% { transform: translateY(-90px); }
+        60% { transform: translateY(0); }
+        100% { transform: translateY(0); }
+    }
+    .title .bg_txtE {
+        position: relative;
+        width: 50px;
+        animation: text 1050ms ease-in 2;
+        animation-delay: 150ms;
+    }
+
+    .title .bg_txtN {
+        position: relative;
+        width: 50px;
+        animation: text 1050ms ease-in 2;
+        animation-delay: 230ms;
+    }
+
+    .title .bg_txtI {
+        position: relative;
+        width: 20px;
+        animation: text 1050ms ease-in 2;
+        animation-delay: 310ms;
+    }
+
+    .title .bg_txtA {
+        position: relative;
+        width: 50px;
+        animation: text 1050ms ease-in 2;
+        animation-delay: 390ms;
+    }
+    @keyframes text {
+        0% { transform: translateY(0); }
+        30% { transform: translateY(0); }
+        45% { transform: translateY(-40px); }
+        100% { transform: translateY(0); }
+    }
+    #main_top .dot {
+        position: relative;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        top: 0;
+        left: -650px;
+        animation: glide 1s linear forwards;
+        z-index: 10;
+    }
+    @keyframes glide {
+        0% { opacity: 0; transform: translateX(0); }
+        20% { opacity: 1; transform: translateX(0); }
+        60% { transform: translateX(300px); }
+        100% { transform: translateX(650px); }
+    }
+
+    #main_top .bg_txtBottom {
+       display: none;
+    }
+
+    .robot {
+        position: absolute;
+        left: 53%;
+        transform: rotate(-8deg);
+        animation: bounce 3s infinite ease-in normal;
+    }
+    @keyframes bounce {
+        0% { top: 33%; }
+        40% { top: 33%; }
+        45% { top: 32%; }
+        50% { top: 33%; }
+        55% { top: 32%; }
+        60% { top: 33%; }
+        100% { top: 33%; }
+    }
+    .robot .robot_body {
+        position: absolute;
+        width: 290px;
+        top: -60px;
+        z-index: 3;
+    }
+
+    .robot .robot_eyeLeft {
+        position: absolute;
+        width: 8px;
+        left: 125px;
+        top: 37px;
+        z-index: 3;
+    }
+
+    .robot .robot_eyeRight {
+        position: absolute;
+        width: 13px;
+        left: 150px;
+        top: 35px;
+        z-index: 3;
+        animation: robotRightEye 3s infinite ease-in normal;
+    }
+    @keyframes robotRightEye {
+        0% { transform: scaleY(1); }
+        2% { transform: scaleY(0.2); }
+        4% { transform: scaleY(1); }
+        8% { transform: scaleY(0.2); }
+        10% { transform: scaleY(1); }
+        50% { transform: scaleY(1); }
+        52% { transform: scaleY(0.2); }
+        54% { transform: scaleY(1); }
+        58% { transform: scaleY(0.2); }
+        60% { transform: scaleY(1); }
+        100% { transform: scaleY(1); }
+    }
+    .robot .robot_earLeft {
+        position: absolute;
+        width: 30px;
+        left: 47px;
+        top: -53px;
+        z-index: 2;
+        animation: robotLeftEar 3s infinite ease-in normal;
+    }
+    @keyframes robotLeftEar {
+        0% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+        5% { transform: rotate(-10deg); margin-top: -5px; margin-left: -10px; }
+        10% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+        15% { transform: rotate(-10deg); margin-top: -5px; margin-left: -10px; }
+        20% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+    }
+    .robot .robot_earRight {
+        position: absolute;
+        width: 30px;
+        left: 210px;
+        top: -52px;
+        z-index: 2;
+        animation: robotRightEar 3s infinite ease-in normal;
+    }
+    @keyframes robotRightEar {
+        0% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+        5% { transform: rotate(10deg); margin-top: -5px; margin-left: 10px; }
+        10% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+        15% { transform: rotate(10deg); margin-top: -5px; margin-left: 10px; }
+        20% { transform: rotate(0); margin-top: 0; margin-left: 0; }
+    }
+
+    /* main_top nav바  시작 */
+    .tap_top {
+        position: relative;
+        clear: both;
+        width: 100%;
+        padding: 25px 10px;
+        font-size: 1rem;
+        text-align: center;
+        background-color: #191919;
+    }
+
+    .tap_top ul li {
+        display: inline-block;
+        list-style: none;
+    }
+
+    .tap_top ul li a {
+        margin: 0;
+        padding: 20px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .tap_top ul li a:hover {
+        background-color: purple;
+    }
+
+    /* 슬라이드 공통 */
+    .window {
+        overflow: hidden;
+        position: relative;
+        display: block;
+        top: 1vw;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        width: 600px;
+        height: 500px;
+        /* border: 5px solid cornflowerblue; */
+        border-radius: 5%;
+        margin-bottom: 10%;
+    }
+    .cell {
+        list-style: none;
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 0 50px;
+        padding-top: 30px;
+        /* background-color: pink; */
+    }
+    .cell img{
+        width: 500px;
+    }
+
+    /* 유아 시작 */
+    #infant .infant_title {
+        margin: 10% auto;
+        position: relative;
+        display: block;
+        width: 400px;
+    }
+
+    #infant .infant_info {
+        margin: auto;
+        display: block;
+        position: relative;
+        left: -40px;
+        width: 80%;
+    }
+
+    /* 슬라이드 유아 */
+    .container_infant {
+        position: relative;
+        width: 5300px;
+        height: 400px;
+        left: -605px;
+        top: 20px;
+        /* border: 4px solid green; */
+    }
+
+    .button-container .btn_prev {
+        position: absolute;
+        left: 160px;
+        top: 410px;
+    }
+
+    .button-container .btn_next {
+        position: absolute;
+        left: 320px;
+        top: 410px;
+    }
+
+    /* 초등 시작 */
+    #elementary .elementary_title {
+        margin: 10% auto;
+        position: relative;
+        display: block;
+        width: 400px;
+    }
+
+    #elementary .elementary_info {
+        margin: auto;
+        display: block;
+        position: relative;
+        left: -50px;
+        width: 400px;
+    }
+
+    /* 슬라이드 초등 */
+    .container_ele {
+        position: relative;
+        width: 5300px;
+        height: 400px;
+        left: -605px;
+        top: 20px;
+        /* border: 4px solid green; */
+    }
+
+    .button-container2 .btn_prev2 {
+        position: absolute;
+        left: 160px;
+        top: 400px;
+    }
+
+    .button-container2 .btn_next2 {
+        position: absolute;
+        left: 320px;
+        top: 400px;
+    }
+
+    /* 버튼 공통 */
+    button {
+        font-size: 1rem;
+        font-weight: 1000;
+        width: 120px;
+        height: 35px;
+        color: #fff;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+        transition: all 300ms ease-in-out;
+    }
+
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* 페이드 */
+    .pv_box .fade_wrap:nth-child(odd) {
+        transition: 1.5s;
+        opacity: 0;
+        position: relative;
+        left: -30px;
+    }
+
+    .pv_box .fade_wrap:nth-child(even) {
+        transition: 1.5s;
+        opacity: 0;
+        position: relative;
+        left: 30px;
+    }
+
+    .pv_box .fade_wrap.fade-in {
+        opacity: 1;
+        left: 10px
+    }
+
+    .robot_img_infant{
+        position: relative;
+        margin: -100px 5px;
+        width: 220px;
+        z-index: -3;
+    }
+    .robot_img_ele{
+        position: relative;
+        margin: -100px 0;
+        left: 500px;
+        width: 220px;
+        z-index: -3;
+    }
+}
