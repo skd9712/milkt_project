@@ -154,12 +154,7 @@ article h3 {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.popup-content h2 {
-    text-align: center;
-    margin-top: 0;
-    padding-bottom: 15px;
-    font-size: 21px;
-}
+
 .popup-content form {
     display: flex;
     flex-direction: column;
@@ -415,6 +410,13 @@ article h3 {
         width: 90px;
     }
 
+    .popup-content h2 {
+        text-align: center;
+        margin: 0;
+        padding-bottom: 15px;
+        font-size: 21px;
+    }
+
 }
 
 
@@ -606,6 +608,13 @@ and (max-width: 1023px) {
     }
     .school_Chat img {
         width: 80px;
+    }
+
+    .popup-content h2 {
+        text-align: center;
+        margin-top: 0;
+        /*padding-bottom: 15px;*/
+        font-size: 21px;
     }
 }
 
@@ -831,6 +840,13 @@ and (max-width: 1023px) {
     }
     .school_Chat img {
         width: 50px;
+    }
+
+    .popup-content h2 {
+        text-align: center;
+        margin-top: 0;
+        /*padding-bottom: 15px;*/
+        font-size: 21px;
     }
 
 }
