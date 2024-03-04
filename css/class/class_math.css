@@ -1,0 +1,773 @@
+@media screen and (min-width: 1024px), screen and (min-height: 1024px) and (orientation: landscape) {
+    * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        height: 100%;
+        background: #fff;
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+        color: #191919;
+    }
+
+    ul li {
+        list-style: none;
+    }
+    /*--------------------본문---------------------*/
+    section {
+        display: block;
+        width: 100%;
+        min-height: 1440px;
+        margin: 0 auto;
+    }
+
+    .cont_smart {
+        width: 100%;
+        padding: 30px 0 70px;
+        background: #f7f7f7;
+    }
+    /*수준별 국영수 탭*/
+    .cont_smart .tabNav {
+        display: flex;
+        justify-content: space-between;
+        width: 1140px;
+        margin: 0 auto 0;
+        text-align: left;
+    }
+
+    .cont_smart .tabNav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .cont_smart .tabNav.levelLearning li {
+        width: 370px;
+    }
+
+    .cont_smart .tabNav.levelLearning li a {
+        font-size: 18px
+    }
+
+    .cont_smart .tabNav.levelLearning li a::before {
+        margin-top: -12px
+    }
+
+    .cont_smart .tabNav li {
+        width: 160px;
+        height: 80px;
+        list-style: none;
+    }
+
+    .cont_smart .tabNav li.on a {
+        background: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .cont_smart .tabNav li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border-radius: 15px;
+        box-sizing: border-box;
+        background: #fff;
+        color: #222;
+        line-height: 1.1em;
+        letter-spacing: -0.05rem;
+
+    }
+
+    .cont_smart .tabNav li a:active {
+        background: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+    /*수준별 국영수를 누르면 각각 해당하는 이미지 변경*/
+    .cont_smart .tabNav.levelLearning li:nth-child(1) a::before {
+        content: url(//cdndata.milkt.co.kr/ele/www/images/about/ico_tabnav_levelTab01_off.png);
+        width: 39px;
+        height: 30px;
+        margin-right: 15px;
+    }
+
+    .cont_smart .tabNav.levelLearning li:nth-child(2) a::before {
+        background: url(//cdndata.milkt.co.kr/ele/www/images/about/ico_tabnav_levelTab02_off.png) no-repeat;
+        width: 39px;
+        height: 31px;
+        display: inline-block;
+        margin-right: 15px;
+        content: "";
+    }
+
+    .cont_smart .tabNav li:nth-child(2) a:active ::before {
+        background: url(//cdndata.milkt.co.kr/ele/www/images/about/ico_tabnav_levelTab02_on.png) no-repeat;
+        display: inline-block;
+        content: "";
+    }
+
+    .cont_smart .tabNav.levelLearning li:nth-child(3) a::before {
+        background: url(//cdndata.milkt.co.kr/ele/www/images/about/ico_tabnav_levelTab03_on.png) no-repeat;
+        width: 39px;
+        height: 31px;
+        display: inline-block;
+        margin-right: 15px;
+        content: "";
+    }
+
+    .cont_smart .tab_content {
+        width: 1140px;
+        margin: 10px auto 0;
+        background: #fff;
+    }
+    /*수준별 국어, 한줄 소개*/
+    .cont_smart .tab_content .top_title {
+        height: 200px;
+        text-align: center;
+    }
+
+    .cont_smart .tab_content .top_title h3 {
+        display: none;
+    }
+    /*글자 애니메이션*/
+    .waviy {
+        padding: 60px 0 0;
+        position: relative;
+        -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+        font-size: 2.5rem;
+    }
+
+    .waviy span {
+        position: relative;
+        display: inline-block;
+        color: black;
+        animation: waviy 2s;
+        animation-delay: calc(.1s * var(--i));
+    }
+
+    @keyframes waviy {
+        0%, 40%, 100% {
+            transform: translateY(0)
+        }
+        20% {
+            transform: translateY(-20px)
+        }
+    }
+
+    /*pc일떄는 기본 상태 안보임*/
+    .cont_smart .tab_content .top_title h3 {
+        display: none;
+    }
+    /*수준별 수학 아래 한줄 설명*/
+    .cont_smart .tab_content .top_title p {
+        display: block;
+        padding: 20px 0 0 0;
+        color: #444;
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    .cont_smart .tab_content .tab_area {
+        position: relative;
+        width: 1140px;
+        height: 50px;
+        margin: 0 auto;
+        padding: 0;
+        border-bottom: 0;
+        z-index: 1;
+    }
+
+    .cont_smart .tab_area ul li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    .cont_smart .btm_info {
+        clear: both;
+        width: 1140px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .cont_smart .tab_content .tab_area {
+        position: relative;
+        width: 1140px;
+        height: 50px;
+        margin: 0 auto;
+        padding: 0;
+        border-bottom: 0;
+        z-index: 1;
+    }
+    /*제공하는 컨텐츠 안내*/
+    .cont_smart .tab_content .tab_area .cont_tabs_kor {
+        width: 70%;
+        padding: 0 0 0 2px;
+        margin: 0 0 0;
+        text-align: center;
+    }
+
+    .cont_smart .tab_content .tab_area .cont_tabs_kor:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .cont_smart .cont_tabs_kor {
+        overflow: hidden;
+        display: inline-block;
+        height: 46px;
+        border: 2px solid #f5f5f5;
+        border-radius: 23px;
+    }
+
+    .cont_smart .cont_tabs_kor li {
+        width: 130px;
+        /*float: left;*/
+        height: 46px;
+        list-style: none;
+
+    }
+
+    .cont_smart .cont_tabs_kor li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 16px;
+        box-sizing: border-box;
+        border-radius: 23px;
+        font-size: 1rem;
+        color: #888;
+        letter-spacing: -0.02em;
+        text-decoration: none;
+    }
+
+    .cont_smart .cont_tabs_kor li a:hover, a:active {
+        background: #3d8af0;
+        color: #fff
+    }
+
+    .cont_area {
+        list-style: none;
+    }
+
+    .math {
+        display: none;
+    }
+    /*슬라이드 애니메이션*/
+    .slide {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        user-select: none;
+    }
+
+    .slide_item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 0px;
+        width: 100%;
+        height: 1000px;
+        flex-shrink: 0;
+        transition: left 1s;
+    }
+
+    .slide_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: calc(50% - 16px);
+        width: 32px;
+        height: 32px;
+
+        border-radius: 100%;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .slide_prev_btn {
+        left: 10px;
+    }
+
+    .slide_next_btn {
+        right: 10px;
+    }
+
+    .ul li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .slide_pagination {
+        display: flex;
+        gap: 5px;
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .slide_pagination > li {
+        color: #7fb5ff88;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+
+    .slide_pagination > li.active {
+        color: #7fb5ff;
+    }
+
+    .slide_item_duplicate {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 0px;
+        width: 100%;
+        height: 300px;
+        flex-shrink: 0;
+        transition: left 1s;
+        transition-timing-function: ease-out;
+    }
+
+    .cont_smart .start_milkT {
+        padding-bottom: 100px;
+        text-align: center;
+    }
+    /*최상단 이동 버튼*/
+    .btnTop {
+        display: flex;
+        position: fixed;
+        right: 1.4rem;
+        bottom: 5rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px), screen and (min-height: 760px) and (max-height: 1023px) and (orientation: landscape) {
+    * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    a {
+        text-decoration: none;
+        color: #191919;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    section {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .cont_smart {
+        width: 95%;
+        padding: 30px 0 70px;
+        background: #f7f7f7;
+    }
+
+    .cont_smart .tabNav {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto 0;
+        text-align: left;
+    }
+
+    .cont_smart .tabNav.levelLearning li {
+        width: 160px;
+        height: 80px;
+    }
+
+    .cont_smart .tabNav li {
+        list-style: none;
+        width: 160px;
+        height: 80px;
+    }
+
+    .cont_smart .tabNav li.on a {
+        background: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .cont_smart .tabNav li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        box-sizing: border-box;
+        background: #fff;
+        color: #222;
+        line-height: 1.1em;
+        letter-spacing: -0.05rem;
+        width: 160px;
+        height: 60px;
+
+    }
+
+    .cont_smart .tabNav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .cont_smart .tabNav li a:active {
+        background: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    section .tab_content .tab_detail img {
+        width: 90%;
+    }
+
+    .cont_smart .tab_content {
+        width: 90%;
+        margin: 10px auto 0;
+        background: #fff;
+    }
+
+    .cont_smart .tab_content .top_title {
+        height: 150px;
+        text-align: center;
+    }
+
+    .cont_smart .tab_content .top_title .waviy {
+        display: none;
+    }
+
+    .cont_smart .tab_content .top_title h3 {
+        display: block;
+        height: auto;
+        padding: 40px 0 0;
+        color: black;
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .cont_smart .tab_content .top_title p {
+        display: block;
+        padding: 5px 0 0 0;
+        color: #444;
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+    .cont_smart .tab_content .tab_area {
+        position: relative;
+        width: 90%;
+        height: 50px;
+        margin: 0 auto;
+        padding: 0;
+        border-bottom: 0;
+        z-index: 1;
+    }
+
+    .cont_smart .tab_area ul li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    .cont_smart .btm_info {
+        clear: both;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .cont_smart .tab_content .tab_area {
+        position: relative;
+        width: 90%;
+        height: 50px;
+        margin: 0 auto;
+        padding: 0;
+        border-bottom: 0;
+        z-index: 1;
+    }
+
+    .cont_smart .tab_content .tab_area .cont_tabs_kor:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .cont_smart .cont_tabs_kor {
+        overflow: hidden;
+        display: inline-block;
+        height: 46px;
+        border: 2px solid #f5f5f5;
+        border-radius: 23px;
+    }
+
+    .cont_smart .cont_tabs_kor li {
+        width: 130px;
+        height: 46px;
+        list-style: none;
+
+    }
+
+    .cont_smart .cont_tabs_kor li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 16px;
+        box-sizing: border-box;
+        border-radius: 23px;
+        font-size: 0.8rem;
+        color: #888;
+        letter-spacing: -0.02em;
+        text-decoration: none;
+    }
+
+    .cont_smart .cont_tabs_kor li a:hover, a:active {
+        background: #3d8af0;
+        color: #fff
+    }
+
+    .cont_area {
+        list-style: none;
+    }
+
+    .slide_wrap {
+        display: none;
+    }
+
+    .cont_smart .start_milkT {
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .cont_smart .start_milkT .mobile_bee {
+        display: none;
+    }
+
+    .btnTop {
+        display: flex;
+        position: fixed;
+        right: 1.4rem;
+        bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 767px), screen and (max-height: 479px) and (orientation: landscape) {
+    * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    section {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .cont_smart {
+        width: 95%;
+        padding: 30px 0 70px;
+        background: #f7f7f7;
+    }
+
+    section .tab_content .tab_detail img {
+        width: 100%;
+    }
+
+    .cont_smart .start_milkT img {
+        width: 90%;
+    }
+
+    .cont_smart .tabNav {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto 0;
+        text-align: left;
+    }
+
+    .cont_smart .tabNav.levelLearning li {
+        width: 160px;
+        height: 50px;
+    }
+
+    .cont_smart .tabNav li {
+        list-style: none;
+        width: 160px;
+        height: 50px;
+    }
+
+    .cont_smart .tabNav li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        box-sizing: border-box;
+        background: #fff;
+        color: #222;
+        line-height: 1.1em;
+        letter-spacing: -0.05rem;
+        width: 90px;
+        height: 40px;
+        font-size: 0.8rem;
+        text-decoration: none;
+    }
+
+    .cont_smart .tabNav li.on a {
+        background: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .cont_smart .tabNav li a:active {
+        background: #3d8af0;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .cont_smart .tab_content {
+        width: 90%;
+        margin: 10px auto 0;
+        background: #fff;
+    }
+
+    .cont_smart .tab_content .top_title {
+        height: 150px;
+        text-align: center;
+    }
+
+    .cont_smart .tab_content .top_title .waviy {
+        display: none;
+    }
+
+    .cont_smart .tab_content .top_title h3 {
+        display: block;
+        height: auto;
+        padding: 40px 0 0;
+        color: black;
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+    .cont_smart .tab_content .top_title p {
+        display: block;
+        padding: 5px 0 0 0;
+        color: #444;
+        font-size: 0.7rem;
+        line-height: 1.4;
+    }
+
+    .cont_smart .tab_content .tab_area {
+        position: relative;
+        width: 90%;
+        height: 50px;
+        margin: 0 auto;
+        padding: 0;
+        border-bottom: 0;
+        z-index: 1;
+    }
+
+    .cont_smart .tab_area ul li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    .cont_smart .btm_info {
+        clear: both;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .cont_smart .tab_content .tab_area .cont_tabs_kor:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .cont_smart .cont_tabs_kor {
+        overflow: hidden;
+        display: inline-block;
+        height: 30px;
+        border: 2px solid #f5f5f5;
+        border-radius: 23px;
+    }
+
+    .cont_smart .cont_tabs_kor li {
+        width: 60px;
+        height: 30px;
+        list-style: none;
+    }
+
+    .cont_smart .cont_tabs_kor li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+        box-sizing: border-box;
+        border-radius: 23px;
+        font-size: 0.5rem;
+        color: #888;
+        letter-spacing: -0.02em;
+        text-decoration: none;
+    }
+
+    .cont_smart .cont_tabs_kor li a:active {
+        background: #3d8af0;
+        color: #fff
+    }
+
+    .cont_area {
+        list-style: none;
+    }
+
+    .slide_wrap {
+        display: none;
+    }
+
+    .cont_smart .start_milkT {
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .cont_smart .start_milkT .tab_bear, .mobile_bee {
+        display: none;
+    }
+
+    .cont_smart .start_milkT .pc_bear {
+        width: 70%;
+        height: 70%;
+    }
+
+    .btnTop {
+        display: flex;
+        position: fixed;
+        right: .4rem;
+        bottom: 1.5rem;
+    }
+}
