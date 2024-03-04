@@ -462,7 +462,7 @@
 
     /* section 41 */
     .section41 {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/section05_img.png);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
         background-size: cover;
         height: 1300px;
         background-position: right bottom;
@@ -715,6 +715,7 @@
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
         overflow: hidden;
+        z-index: 1000;
     }
     .footer03 p {
         position: relative;
