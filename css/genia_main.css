@@ -379,7 +379,7 @@ h2{
     .robot_img_ele{
         position: relative;
         margin: -150px 0;
-        left: 1100px;
+        left: 1600px;
         top: -100px;
         width: 400px;
         z-index: -3;
@@ -1166,8 +1166,8 @@ h2{
     }
     .robot_img_ele{
         position: relative;
-        margin: -120px 0;
-        left: 600px;
+        margin: -100px 0;
+        left: 500px;
         width: 220px;
         z-index: -3;
     }

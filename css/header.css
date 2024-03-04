@@ -28,12 +28,12 @@ ul li {
 .navbar_menu {
     display: flex;
     padding: 0 25px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     position: relative;
 }
 
 .navbar_menu .menu_li a {
-    padding: 20px 30px;
+    padding: 26px 20px;
     position: relative;
     left: -10px;
 }
@@ -56,8 +56,8 @@ ul li {
 .navbar_menu .menu_li .inner_school {
     position: absolute;
     padding: 20px 0 20px 20px;
-    top: 50px;
-    left: 100px;
+    top: 55px;
+    left: 80px;
     text-align: center;
     z-index: 100;
     background-color: #ffffff;
@@ -66,9 +66,10 @@ ul li {
 
 .navbar_menu .menu_li .inner_level {
     position: absolute;
+    width: 25%;
     padding: 20px 0 20px 20px;
-    top: 50px;
-    left: 350px;
+    top: 55px;
+    left: 255px;
     text-align: center;
     z-index: 100;
     background-color: #ffffff;
@@ -89,7 +90,8 @@ ul li {
     display: block;
 }
 
-.navbar .menu_li ul a:hover, .navbar .menu_li ul li:hover a {
+.navbar .menu_li ul a:hover,
+.navbar .menu_li ul li:hover a {
     border: 0;
     text-decoration: none;
 }
@@ -106,12 +108,17 @@ ul li {
 .navbar_toggleBtn {
     display: none;
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 60px;
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+    ul li{
+        list-style: none;
+    }
+    ul li a{
+        text-decoration: none;
+    }
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -125,6 +132,8 @@ ul li {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        top: 10px;
+        left: -40px;
         z-index: 999;
         background-color: #ffffff;
     }
@@ -134,17 +143,18 @@ ul li {
         text-align: center;
         padding: 21px;
         border-bottom: 1px solid silver;
+        text-decoration: none;
     }
-
 
     .navbar_icon {
         display: none;
         justify-items: center;
         width: 100%;
-        padding-left: 40%
+        padding-left: 30%;
     }
 
     .navbar_toggleBtn {
+        position: absolute;
         display: block;
     }
 
@@ -155,14 +165,13 @@ ul li {
 
     .navbar_menu ul li {
         display: none;
+
     }
 
-    .navbar_menu a {
-        /*border-bottom: 1px solid silver;*/
+    .navbar_menu a{
+        color:#191919
     }
-
     .navbar_menu a:hover {
-        /*color: pink;*/
         border: none;
     }
 }
