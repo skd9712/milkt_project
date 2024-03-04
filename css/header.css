@@ -35,7 +35,7 @@
     }
 
     .navbar_menu .menu_li a {
-        padding: 37px 10px;
+        padding: 30px 10px;
         position: relative;
         left: -10px;
     }
@@ -58,7 +58,7 @@
     .navbar_menu .menu_li .inner_school {
         position: absolute;
         padding: 20px 0 20px 20px;
-        top: 64px;
+        top: 55px;
         left: 27px;
         text-align: center;
         z-index: 100;
@@ -70,7 +70,7 @@
         position: absolute;
         width: 25%;
         padding: 20px 0 20px 20px;
-        top: 64px;
+        top: 55px;
         left: 170px;
         text-align: center;
         z-index: 100;
@@ -152,7 +152,7 @@ body {
     }
 
     .navbar_menu .menu_li a {
-        padding: 37px 10px;
+        padding: 30px 10px;
         position: relative;
         left: -10px;
     }
@@ -175,7 +175,7 @@ body {
     .navbar_menu .menu_li .inner_school {
         position: absolute;
         padding: 20px 0 20px 20px;
-        top: 64px;
+        top: 55px;
         left: 70px;
         text-align: center;
         z-index: 100;
@@ -187,7 +187,7 @@ body {
         position: absolute;
         width: 25%;
         padding: 20px 0 20px 20px;
-        top: 64px;
+        top: 55px;
         left: 205px;
         text-align: center;
         z-index: 100;
