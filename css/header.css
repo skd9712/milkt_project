@@ -150,7 +150,7 @@
     }
 
     .navbar_menu .menu_li a {
-        padding: 37px 10px;
+        padding: 37px 10px 20px;
         position: relative;
         left: -10px;
     }
@@ -174,7 +174,7 @@
         position: absolute;
         padding: 20px 0 20px 20px;
         top: 64px;
-        left: 70px;
+        left: 32px;
         text-align: center;
         z-index: 100;
         background-color: #ffffff;
@@ -186,7 +186,7 @@
         width: 25%;
         padding: 20px 0 20px 20px;
         top: 64px;
-        left: 205px;
+        left: 161px;
         text-align: center;
         z-index: 100;
         background-color: #ffffff;
