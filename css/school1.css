@@ -107,6 +107,7 @@ article h2 {
     text-align: center;
     margin-top: 0;
     padding-bottom: 15px;
+    font-size: 21px;
 }
 .popup-content form {
     display: flex;

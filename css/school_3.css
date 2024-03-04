@@ -274,6 +274,7 @@
         text-align: center;
         margin-top: 0;
         padding-bottom: 15px;
+        font-size: 21px;
     }
     .popup-content form {
         display: flex;
@@ -468,7 +469,7 @@
     }
 
     .lecture_2 img {
-        width: 369px;
+        width: 370px;
         padding: 2vw 3vw 4vw 3vw;
     }
 
