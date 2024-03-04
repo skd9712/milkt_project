@@ -830,26 +830,17 @@ h2{
 
     .title {
         position: absolute;
-        width: 100%;
+        width: 55%;
         top: 180px;
-        left: -25%;
+        left: 15%;
     }
     .title .bg_txtTop {
-        position: relative;
-        width: 300px;
-        top: -120px;
-        left: 310px;
-        animation: bg_txtTop 1s 2s ease backwards;;
-        animation-delay: 2s;
-    }
-    @keyframes bg_txtTop {
-        0% { opacity: 0; transform: translateY(10px); }
-        100% { opacity: 1; transform: translateY(0px); }
+        display: none;
     }
 
     .title .bg_txtG {
         position: relative;
-        width: 80px;
+        width: 50px;
         animation: textG 1050ms ease-in forwards;
     }
     @keyframes textG {
@@ -861,28 +852,28 @@ h2{
     }
     .title .bg_txtE {
         position: relative;
-        width: 80px;
+        width: 50px;
         animation: text 1050ms ease-in 2;
         animation-delay: 150ms;
     }
 
     .title .bg_txtN {
         position: relative;
-        width: 80px;
+        width: 50px;
         animation: text 1050ms ease-in 2;
         animation-delay: 230ms;
     }
 
     .title .bg_txtI {
         position: relative;
-        width: 40px;
+        width: 20px;
         animation: text 1050ms ease-in 2;
         animation-delay: 310ms;
     }
 
     .title .bg_txtA {
         position: relative;
-        width: 80px;
+        width: 50px;
         animation: text 1050ms ease-in 2;
         animation-delay: 390ms;
     }
@@ -895,8 +886,8 @@ h2{
     #main_top .dot {
         position: relative;
         display: inline-block;
-        width: 15px;
-        height: 15px;
+        width: 10px;
+        height: 10px;
         background-color: white;
         top: 0;
         left: -650px;
@@ -911,15 +902,7 @@ h2{
     }
 
     #main_top .bg_txtBottom {
-        position: relative;
-        width: 250px;
-        top: 20px;
-        left: 320px;
-        animation: bg_txtBottom 1s 2s ease backwards;
-    }
-    @keyframes bg_txtBottom {
-        0% { opacity: 0; transform: translateX(-100px); }
-        100% { opacity: 1; transform: translateX(0px); }
+       display: none;
     }
 
     .robot {
