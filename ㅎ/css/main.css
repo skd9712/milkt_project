@@ -122,42 +122,19 @@
     }
 
     /* section01 */
-    .section01 {
-        width: 1200px;
-        margin: 0 auto;
+    .video {
         position: relative;
-    }
-    .section01 > .sec_slide_wrap {
-        overflow: hidden;
-        width: 1200px;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
     }
 
-    .section01 > .sec_slide_wrap .sec_slide_list {
-        position: relative;
-        transition: 0.5s;
-    }
-    .section01 > .sec_slide_wrap .sec_slide_list li {
-        float:left;
-        width: 1200px;
-    }
-    .section01 > .sec_slide_wrap .sec_slide_list li img {
-        vertical-align: top;
-        object-fit: cover;
+    .video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-    }
-    .section01 .arrow img {
-        width: 5%;
-    }
-    .section01 .arrow > a.prev {
-        position: relative;
-        bottom: 214px;
-        z-index: 99;
-    }
-    .section01 .arrow > a.next {
-        position: relative;
-        bottom: 214px;
-        left: 90%;
-        z-index: 99;
+        height: 100%;
     }
 
     /* section 2 */
@@ -205,66 +182,84 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: hidden;
     }
 
     .section03 > h3 {
         font-size: 50px;
-    }
+        display: block;
+        position: relative;
+        width: 100%;
+        text-align: center;
 
+    }
     .section03 > h3 > span {
         color: #0A89D0;
     }
 
-    /* 루프 관련 */
-    .section03 .infinite_loop_slider {
-        position: relative;
-        overflow: hidden;
-        width: 95vw;
-    }
-
-    .loop_item {
+    .wrap {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        margin: 0 1vw;
+        padding: 120px 0 136px;
     }
-
-    .loop_list {
-        width: 100%;
+    .wrap .rolling-list ul {
         display: flex;
-        justify-content: space-around;
-        opacity: 1;
-        transform: translate3d(0px, 0px, 0px);
     }
 
-    /* 박스 관련 태그 */
-    .sec_three_box {
-        margin: 50px 0;
-        width: 15vw;
-        height: 10vw;
-        border-radius: 30px;
+    .wrap .rolling-list ul li {
+        width: 350px;
+        height: 276px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        margin: 0 16px;
+        padding: 2vw 3vw;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
         background-color: #ffffff;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-        /* shadow 정보 => X축 0, Y축 4 blur 4 spread 25%*/
-        padding: 2vw 2vw;
-        overflow: hidden;
     }
 
-    .section03 .sec_three_box img {
-        max-width: 25%;
+    .wrap .rolling-list ul li .image-wrap {
+        padding-right: 32px;
+        width: 156px;
+        flex-shrink: 0;
     }
-
-    .section03 .sec_three_box h4 {
-        font-size: 1.5vw;
-        margin: 0.3vw 0 0 0;
+    .wrap .rolling-list ul li .image-wrap > img {
+        max-width: 60%;
+    }
+    .wrap .rolling-list ul li .desc {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrap .rolling-list ul li .desc strong {
+        display: block;
+        font-size: 2rem;
+        margin: 0.5vw 0 0 0;
         font-weight: 500;
     }
-
-    .section03 .sec_three_box h2 {
-        font-size: 3vw;
+    .wrap .rolling-list ul li .desc span {
+        font-size: 3rem;
         color: #0A89D0;
         font-weight: 900;
+    }
+
+    .rolling-list.original {
+        animation: rollingleft1 33s linear infinite;
+    }
+    .rolling-list.clone {
+        animation: rollingleft2 33s linear infinite;
+    }
+
+    @keyframes rollingleft1 {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(-100%); }
+        50.01% { transform: translateX(100%); }
+        100% { transform: translateX(0); }
+    }
+
+    @keyframes rollingleft2 {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-200%); }
     }
 
     /* section 4 */
@@ -649,6 +644,15 @@
         text-align: center;
     }
 
+    .sec_five_list ul li a {
+        text-align: center;
+        position: relative;
+        top: 22%;
+        font-size: 1.6rem;
+        font-weight: bolder;
+
+    }
+
     /* footer */
     .footer01 {
         display: flex;
@@ -740,10 +744,13 @@
         font-size: 14px;
         color: #c6c6c6;
         font-weight: 100;
-        margin-top: 10px;
+        margin: 10px 0 60px;
     }
 
     .footer03 {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>천재교과서 밀크T초등</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, minimum-scale=1">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/tab.css">
     <link rel="stylesheet" href="css/mobile.css">
 
     <script defer src="js/header.js"></script>
-    <script defer src="js/section01.js"></script>
+<!--    <script defer src="js/section01.js"></script>-->
     <script defer src="js/section03.js"></script>
 
 
@@ -57,29 +57,9 @@
         </header>
         <main>
             <!-- section01 -->
-            <section class="section01">
-                <div class="sec_slide_wrap">
-                    <ul class="sec_slide_list">
-                        <li>
-                            <img class="pc star" src="./img/밀크티%20메인1.jpg" alt="메인1">
-                            <img class="phone" src="./img/모바일1.jpg" alt="모바일 메인1">
-                        </li>
-                        <li>
-                            <img class="pc star" src="./img/밀크티%20메인2.jpg" alt="메인2">
-                            <img class="phone" src="./img/모바일2.jpg" alt="모방ㄹ 메인2">
-                        </li>
-                        <li>
-                            <img class="pc star" src="./img/밀크티%20메인3.jpg" alt="메인3">
-                            <img class="phone" src="./img/모바일3.jpg" alt="모바일 메인3">
-                        </li>
-                    </ul>
-
-                    <div class="arrow">
-                        <a href="" class="prev"><img src="img/left.png" alt="왼쪽"></a>
-                        <a href="" class="next"><img src="img/right.png" alt="오른쪽"></a>
-                    </div>
-                </div>
-            </section>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PLh_oKervfI?autoplay=1&mute=1&controls=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <!-- section 02-->
             <section class="section02">
                 <div class="sec_two_h2">
@@ -100,51 +80,39 @@
             <!-- section 03 -->
             <section class="section03">
                 <h3>nnn만 학부모가 선택한 <span>밀크 T 초등</span></h3>
-                <div class="infinite_loop_slider">
-                    <ul class="loop_list">
-                        <li class="loop_item">
-                            <div class="sec_three_box">
-                                <img src="img/연필.png" alt="연필">
-                                <h4>문제풀이 데이터</h4>
-                                <h2>11억+</h2>
-                            </div>
-                        </li>
-                        <li class="loop_item">
-                            <div class="sec_three_box">
-                                <img src="img/연필.png" alt="연필">
-                                <h4>문제풀이 데이터</h4>
-                                <h2>15억+</h2>
-                            </div>
-                        </li>
-                        <li class="loop_item">
-                            <div class="sec_three_box">
-                                <img src="img/연필.png" alt="연필">
-                                <h4>문제풀이 데이터</h4>
-                                <h2>16억+</h2>
-                            </div>
-                        </li>
-                        <li class="loop_item">
-                            <div class="sec_three_box">
-                                <img src="img/연필.png" alt="연필">
-                                <h4>문제풀이 데이터</h4>
-                                <h2>17억+</h2>
-                            </div>
-                        </li>
-                        <li class="loop_item">
-                            <div class="sec_three_box">
-                                <img src="img/연필.png" alt="연필">
-                                <h4>문제풀이 데이터</h4>
-                                <h2>18억+</h2>
-                            </div>
-                        </li>
-                        <li class="loop_item">
-                            <div class="sec_three_box">
-                                <img src="img/연필.png" alt="연필">
-                                <h4>문제풀이 데이터</h4>
-                                <h2>19억+</h2>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="wrap"> <!-- 배너표시영역 -->
+                    <div class="rolling-list"> <!-- 원본배너 -->
+                        <ul>
+                            <li>
+                                <div class="image-wrap"><img src="./img/연필.png" alt=""></div>
+                                <div class="desc">
+                                    <strong>문제풀이 데이터</strong>
+                                    <span>11억+</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="image-wrap"><img src="./img/book_.png" alt=""></div>
+                                <div class="desc">
+                                    <strong>교과서 발행 합격</strong>
+                                    <span>1900권+</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="image-wrap"><img src="./img/bookmark_.png" alt=""></div>
+                                <div class="desc">
+                                    <strong>콘텐츠 투자</strong>
+                                    <span>6만여 권 +</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="image-wrap"><img src="./img/연필.png" alt=""></div>
+                                <div class="desc">
+                                    <strong>행동 유형 데이터</strong>
+                                    <span>21억건</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section class="section04">
@@ -329,9 +297,9 @@
                         </div>
                         <div class="sec_five_list">
                             <ul>
-                                <li><a href="#">일대일 문의</a></li>
-                                <li><a href="#">SNS</a></li>
-                                <li><a href="#">밀크T선생님채용</a></li>
+                                <li><a href="#">고객센터<br>1577-1533</a></li>
+                                <li><a href="#">밀크T<br>유튜브</a></li>
+                                <li><a href="#">밀크T<br>선생님채용</a></li>
                             </ul>
                         </div>
                     </div>
