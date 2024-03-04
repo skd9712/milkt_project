@@ -24,7 +24,7 @@
     /* 메뉴바 - 공통  */
     /*내부 메뉴 네비게이션*/
     .main_content nav {
-        padding: 2vw 0 0.8vw 0;
+        padding: 2vh 5vh;
     }
 
     .tabNav {
@@ -181,7 +181,7 @@
     /* 학습 유도 박스 */
     .title_2 {
         /*text-align: center;*/
-        padding: 5vw 2vw 2vw 0;
+        padding: 3vw 2vw 2vw 0;
         font-size: 1.8rem;
         font-weight: bolder;
         display: flex;
