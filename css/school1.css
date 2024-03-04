@@ -169,6 +169,10 @@ article h2 {
 }
 
 
+.footer_school a {
+    text-decoration: none;
+}
+
 
 @media screen and (min-width: 1024px) {
 
