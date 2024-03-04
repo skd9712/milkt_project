@@ -1,6 +1,9 @@
+/* PC */
 @media screen and (min-width: 1024px), screen and (min-height: 1024px) and (orientation: landscape){
     body {
         margin: 0;
+        padding: 0;
+        z-index: 3;
     }
 
     a {
@@ -14,69 +17,72 @@
 
     .navbar {
         display: flex;
-        justify-content: space-between;
+        width: 100%;
+        justify-content: space-evenly;
         align-items: center;
-        width: 95%;
         padding: 0 12px;
-        height: 6vh;
+        height: 7vh;
         border-bottom: 2px solid silver;
+        z-index: 9999;
+        background-color: white;
     }
 
     .navbar_menu {
         display: flex;
-        padding: 0 25px;
-        font-size: 1.3rem;
+        font-size: 1rem;
         position: relative;
     }
 
     .navbar_menu .menu_li a {
-        padding: 20px 30px;
+        padding: 37px 10px;
         position: relative;
         left: -10px;
     }
-    .menu_li a:hover{
+
+    .menu_li a:hover {
         color: lightskyblue;
         border-bottom: 3px solid blue;
     }
 
-    /* 하위 메뉴 기본 숨김 */
     .inner_school,
     .inner_level {
         display: none;
     }
 
-    /* 하위 메뉴 표시 */
     .inner_school.show,
     .inner_level.show {
         display: block;
     }
 
-    /*---------------------------------------------------*/
-
     .navbar_menu .menu_li .inner_school {
         position: absolute;
         padding: 20px 0 20px 20px;
-        top: 50px;
-        left: 100px;
+        top: 64px;
+        left: 27px;
         text-align: center;
-        background-color: white;
         z-index: 100;
+        background-color: #ffffff;
+
     }
+
     .navbar_menu .menu_li .inner_level {
         position: absolute;
+        width: 25%;
         padding: 20px 0 20px 20px;
-        top: 50px;
-        left: 350px;
+        top: 64px;
+        left: 170px;
         text-align: center;
-        background-color: white;
         z-index: 100;
+        background-color: #ffffff;
     }
-    .menu_li li a{
+
+    .menu_li li a {
         position: relative;
         display: block;
         padding: 10px 6px;
     }
-    .menu_li li a:hover{
+
+    .menu_li li a:hover {
         color: lightskyblue;
     }
 
@@ -85,13 +91,11 @@
         display: block;
     }
 
-    .navbar .menu_li ul a:hover, .navbar .menu_li ul li:hover a{
-        border:0;
-        text-decoration:none;
+    .navbar .menu_li ul a:hover,
+    .navbar .menu_li ul li:hover a {
+        border: 0;
+        text-decoration: none;
     }
-
-
-    /*---------------------------------------------------*/
 
     .navbar_icon {
         display: flex;
@@ -105,16 +109,17 @@
     .navbar_toggleBtn {
         display: none;
         position: absolute;
-        top: 20px;
-        right: 32px;
+        top: 30px;
+        right: 60px;
     }
-
-
 }
 
+/* 테블릿 tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px), screen and (min-height: 760px) and (max-height: 1023px) and (orientation: landscape){
     body {
         margin: 0;
+        padding: 0;
+        z-index: 3;
     }
 
     a {
@@ -125,96 +130,129 @@
     ul li {
         list-style: none;
     }
+
     .navbar {
         display: flex;
-        justify-content: space-between;
+        width: 100%;
+        justify-content: space-evenly;
         align-items: center;
-        width: 95%;
-        padding: 10px 12px;
+        padding: 0 12px;
+        height: 7vh;
         border-bottom: 2px solid silver;
+        z-index: 9999;
+        background-color: white;
     }
+
     .navbar_menu {
         display: flex;
-        padding: 10px 15px;
         font-size: 1rem;
         position: relative;
     }
+
     .navbar_menu .menu_li a {
-        padding: 20px 15px;
+        padding: 37px 10px;
         position: relative;
         left: -10px;
-        text-align: center;
     }
-    .menu_li a:hover{
+
+    .menu_li a:hover {
         color: lightskyblue;
-        /*border-bottom: 3px solid blue;*/
+        border-bottom: 3px solid blue;
     }
+
     .inner_school,
     .inner_level {
         display: none;
     }
 
-    /* 하위 메뉴 표시 */
     .inner_school.show,
     .inner_level.show {
         display: block;
     }
+
     .navbar_menu .menu_li .inner_school {
         position: absolute;
-        padding: 10px 5px 20px 20px;
-        top: 50px;
-        left: 100px;
+        padding: 20px 0 20px 20px;
+        top: 64px;
+        left: 70px;
         text-align: center;
-        background-color: white;
         z-index: 100;
-        font-size: 0.8rem;
+        background-color: #ffffff;
+
     }
+
     .navbar_menu .menu_li .inner_level {
         position: absolute;
-        padding: 10px 10px 20px 20px;
-        top: 50px;
-        left: 220px;
+        width: 25%;
+        padding: 20px 0 20px 20px;
+        top: 64px;
+        left: 205px;
         text-align: center;
-        background-color: white;
         z-index: 100;
-        font-size: 0.8rem;
+        background-color: #ffffff;
     }
-    .menu_li li a{
+
+    .menu_li li a {
         position: relative;
         display: block;
         padding: 10px 6px;
     }
-    .menu_li li a:hover{
+
+    .menu_li li a:hover {
         color: lightskyblue;
     }
+
+
     .navbar_menu li:hover ul {
         display: block;
     }
-    .navbar .menu_li ul a:hover, .navbar .menu_li ul li:hover a{
-        border:0;
-        text-decoration:none;
+
+    .navbar .menu_li ul a:hover,
+    .navbar .menu_li ul li:hover a {
+        border: 0;
+        text-decoration: none;
     }
+
     .navbar_icon {
         display: flex;
         padding-left: 0;
     }
 
     .navbar_icon li {
-        padding: 0 12px;
+        padding: 0 24px;
     }
 
     .navbar_toggleBtn {
         display: none;
         position: absolute;
-        top: 20px;
-        right: 32px;
+        top: 30px;
+        right: 60px;
     }
 }
-@media screen and (max-width: 767px) , screen and (max-height: 479px) and (orientation: landscape){
+
+/* 모바일 mobile */
+@media screen and (max-width: 767px) {
+
+    ul li{
+        list-style: none;
+    }
+    ul li a{
+        text-decoration: none;
+    }
+
+    #main_top .bg_left_img,
+    #main_top .bg_right_img,
+    .title, .robot
+    {
+        display: none;
+    }
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
         padding: 8px 24px;
+        z-index: 999;
+        background-color: #ffffff;
     }
 
     .navbar_menu {
@@ -222,6 +260,10 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+        top: 10px;
+        left: -40px;
+        z-index: 999;
+        background-color: #ffffff;
     }
 
     .navbar_menu li {
@@ -229,29 +271,26 @@
         text-align: center;
         padding: 21px;
         border-bottom: 1px solid silver;
-
+        text-decoration: none;
     }
-
 
     .navbar_icon {
         display: none;
         justify-items: center;
         width: 100%;
-        padding-left: 40%
+        padding: 20px 0 0 43%;
     }
 
     .navbar_toggleBtn {
-        display: block;
         position: absolute;
-        top: 10px;
+        display: block;
+        top: 5px;
         right: 32px;
     }
 
     .navbar_menu.active,
     .navbar_icon.active {
         display: flex;
-        background-color: white;
-        z-index: 100;
     }
 
     .navbar_menu ul li {
@@ -260,10 +299,9 @@
     }
 
     .navbar_menu a{
-        /*border-bottom: 1px solid silver;*/
+        color:#191919
     }
-    .navbar_menu a:hover{
-        /*color: pink;*/
+    .navbar_menu a:hover {
         border: none;
     }
 }
