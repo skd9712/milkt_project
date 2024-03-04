@@ -320,7 +320,7 @@
         justify-content: center;
         position: relative;
         top: -1vh;
-        font-size: 1.0rem;
+        font-size: 0.7rem;
         color: #d9d6d6;
 
     }
@@ -329,7 +329,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: bolder;
         margin-top: 0.8vw;
     }
@@ -439,7 +439,7 @@
     }
 
     .inner_content .text p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-top: 1rem;
     }
 
@@ -499,7 +499,7 @@
     }
 
     .txt_wrap_2 .inner_content {
-        font-size: 1.1rem;
+        font-size: 1rem;
         letter-spacing: 0.1rem;
     }
 
