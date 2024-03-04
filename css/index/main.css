@@ -750,12 +750,11 @@
     .footer03 {
         position: fixed;
         bottom: 0;
-        width: 100%;
+        width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        max-width: 1200px;
         height: 6.5vh;
         margin: 0 auto;
         background-color: #FF7C3D;
