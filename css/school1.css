@@ -149,7 +149,7 @@ article h2 {
 
 .btn #free, #buy {
     padding: 2vw 3vw;
-    margin: 0 2vw 4vw 1vw;
+    margin: 2vh 2vw 4vh 1vw;
     font-size: 17px;
     border: none;
 }
@@ -254,7 +254,7 @@ article h2 {
         margin: 3vh auto;
         text-align: left;
     }
-    .milk_ad ul li a, .milk_ad ul li button {
+    .milk_ad ul li a {
         text-decoration: none;
         color: black;
         font-weight: bolder;
