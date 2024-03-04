@@ -400,9 +400,23 @@ h2{
         z-index: -3;
     }
 
-    .upToTop{
+    .sideMenu .free{
         position: fixed;
-        bottom: 50px;
+        display: block;
+        bottom: 200px;
+        right: 10px;
+    }
+
+    .sideMenu .aiChat{
+        position: fixed;
+        display: block;
+        bottom: 80px;
+        right: 20px;
+    }
+    .sideMenu .upToTop{
+        position: fixed;
+        display: block;
+        bottom: 20px;
         right: 50px;
     }
 
@@ -801,10 +815,29 @@ h2{
         z-index: -3;
     }
 
-    .upToTop{
+    .sideMenu {
         position: fixed;
         bottom: 20px;
         right: 20px;
+    }
+    .sideMenu .free{
+        position: fixed;
+        display: block;
+        bottom: 200px;
+        right: 10px;
+    }
+
+    .sideMenu .aiChat{
+        position: fixed;
+        display: block;
+        bottom: 80px;
+        right: 20px;
+    }
+    .sideMenu .upToTop{
+        position: fixed;
+        display: block;
+        bottom: 20px;
+        right: 50px;
     }
 }
 
@@ -1182,9 +1215,28 @@ h2{
         z-index: -3;
     }
 
-    .upToTop{
+    .sideMenu {
         position: fixed;
         bottom: 20px;
         right: 20px;
+    }
+    .sideMenu .free{
+        position: fixed;
+        display: block;
+        bottom: 200px;
+        right: 10px;
+    }
+
+    .sideMenu .aiChat{
+        position: fixed;
+        display: block;
+        bottom: 80px;
+        right: 20px;
+    }
+    .sideMenu .upToTop{
+        position: fixed;
+        display: block;
+        bottom: 20px;
+        right: 50px;
     }
 }
