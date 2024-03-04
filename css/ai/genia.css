@@ -49,7 +49,7 @@ h2{
 
     .title {
         position: absolute;
-        width: 100%;
+        width: 80%;
         top: 240px;
         left: 15%;
     }
@@ -229,7 +229,7 @@ h2{
     .tap_top {
         position: relative;
         clear: both;
-        width: 100%;
+        width: 98.6%;
         padding: 35px 10px;
         font-size: 1.7rem;
         text-align: center;
@@ -398,6 +398,12 @@ h2{
         top: -100px;
         width: 400px;
         z-index: -3;
+    }
+
+    .upToTop{
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
     }
 
 }
@@ -617,7 +623,7 @@ h2{
     .tap_top {
         position: relative;
         clear: both;
-        width: 100%;
+        width: 97.5%;
         padding: 5px 10px;
         font-size: 1rem;
         text-align: center;
@@ -793,6 +799,12 @@ h2{
         left: 600px;
         width: 220px;
         z-index: -3;
+    }
+
+    .upToTop{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
     }
 }
 
@@ -1056,8 +1068,8 @@ h2{
         margin: auto;
         display: block;
         position: relative;
-        left: -40px;
-        width: 80%;
+        left: -20px;
+        width: 110%;
     }
 
     /* 슬라이드 유아 */
@@ -1065,20 +1077,20 @@ h2{
         position: relative;
         width: 5300px;
         height: 400px;
-        left: -605px;
+        left: -580px;
         top: 20px;
         /* border: 4px solid green; */
     }
 
     .button-container .btn_prev {
         position: absolute;
-        left: 160px;
+        left: 180px;
         top: 410px;
     }
 
     .button-container .btn_next {
         position: absolute;
-        left: 320px;
+        left: 340px;
         top: 410px;
     }
 
@@ -1094,7 +1106,7 @@ h2{
         margin: auto;
         display: block;
         position: relative;
-        left: -50px;
+        left: -20px;
         width: 400px;
     }
 
@@ -1103,20 +1115,20 @@ h2{
         position: relative;
         width: 5300px;
         height: 400px;
-        left: -605px;
+        left: -580px;
         top: 20px;
         /* border: 4px solid green; */
     }
 
     .button-container2 .btn_prev2 {
         position: absolute;
-        left: 160px;
+        left: 180px;
         top: 400px;
     }
 
     .button-container2 .btn_next2 {
         position: absolute;
-        left: 320px;
+        left: 340px;
         top: 400px;
     }
 
@@ -1168,5 +1180,11 @@ h2{
         left: 500px;
         width: 220px;
         z-index: -3;
+    }
+
+    .upToTop{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
     }
 }
