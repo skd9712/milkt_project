@@ -287,6 +287,14 @@
         top: 5px;
         right: 32px;
     }
+    .navbar_toggleBtn img {
+        width: 35px;
+        position: absolute;
+        top: 5px;
+        right: 3px;
+
+    }
+
 
     .navbar_menu.active,
     .navbar_icon.active {
