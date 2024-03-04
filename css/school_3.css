@@ -89,9 +89,6 @@
     /* 메인 content */
     .inner_content {
         background-color: white;
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*justify-content: center;*/
         width: 72vw;
         position: relative;
         left: 13.5vw;
@@ -99,12 +96,7 @@
     }
 
     /* Title */
-    .school3 {
-        /*margin: 1vw;*/
-    }
-
     h3 {
-        /*text-align: center;*/
         padding: 2vw 0 2vw 0;
         font-size: 1.6rem;
         font-weight: bolder;
@@ -164,13 +156,10 @@
     /* 강좌별 특징*/
     .lecture {
         background-color: #CAD8D8;
-        /*padding-bottom: 5vw;*/
-        /*width: 500vw;*/
     }
 
     .lecture .title {
         color: #575757;
-        /*padding: 2vw;*/
     }
 
     .lecture_2 img {
@@ -180,7 +169,6 @@
 
     /* 학습 유도 박스 */
     .title_2 {
-        /*text-align: center;*/
         padding: 3vw 2vw 2vw 0;
         font-size: 1.8rem;
         font-weight: bolder;
@@ -386,9 +374,6 @@
     /* 메인 content */
     .inner_content {
         background-color: white;
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*justify-content: center;*/
         width: 95vw;
         position: relative;
         left: 2vw;

@@ -23,7 +23,6 @@
     /* body 부분*/
     /* 밀크T 배너 */
     .banner {
-        /*background-color: #353d57;*/
         background: url("../img/background.jpg");
         padding: 10vw;
     }
@@ -82,7 +81,6 @@
     /* 키즈 section */
     .kids {
         background-color: rgb(255, 242, 212);
-        /*padding: 5vw 30vw 5vw 30vw;*/
         display: flex;
         justify-content: center;
     }
@@ -90,7 +88,6 @@
     /* 저학년 section */
     .lowerGrades {
         background-color: rgb(231, 248, 235);
-        /*padding: 5vw 30vw 5vw 30vw;*/
         display: flex;
         justify-content: center;
     }
@@ -98,7 +95,6 @@
     /* 고학년 section */
     .higherGrades {
         background-color: rgb(246, 243, 254);
-        /*padding: 5vw 30vw 5vw 30vw;*/
         display: flex;
         justify-content: center;
     }
@@ -393,7 +389,6 @@
         position: relative;
         left: 0;
         top: -5vh;
-        /*padding-bottom: 3vw;*/
     }
 
     .content_box .contWrap .guide, .contWrap .text {
@@ -454,7 +449,6 @@
     .slider .slide1 img, .slider .slide img, .slider .slide2 img {
         width: 100vw;
         overflow: hidden;
-        /*padding-top: 10vw;*/
     }
 
     .slide1, .slide, .slide2 {
