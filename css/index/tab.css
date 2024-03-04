@@ -176,90 +176,110 @@
 
     /* section 03 */
 
+    /* reset */
     .section03 {
-        background-color: #f9f9f9;
-        padding: 120px 0 136px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow: hidden;
+        width: 100%;
     }
 
-    .section03 > h3 {
-        font-size: 50px;
+    .section03 h2 {
+        font-size: 2.5rem;
         display: block;
         position: relative;
         width: 100%;
         text-align: center;
-
     }
-    .section03 > h3 > span {
+
+    .section03 > h2 > span {
         color: #0A89D0;
     }
 
-    .wrap {
+    /* 슬라이드 */
+    .slideWrap {
         display: flex;
-        padding: 120px 0 136px;
-    }
-    .wrap .rolling-list ul {
-        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        height: 40vh;
     }
 
-    .wrap .rolling-list ul li {
-        width: 350px;
-        height: 276px;
-        box-sizing: border-box;
+    .slideWrap .imgSlide {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+
+    .slideWrap .imgSlide.original {
+        animation: 30s linear 0s infinite normal forwards running slide01;
+    }
+
+    .slideWrap .imgSlide.clone {
+        animation: 30s linear 0s infinite normal none running slide02;
+    }
+
+    .slideWrap .imgSlide li {
+        width: 330px;
+        height: 250px;
+        line-height: 200px;
         border-radius: 20px;
+        /*margin-right: 5vw;*/
         margin: 0 16px;
         padding: 2vw 3vw;
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 0;
         background-color: #ffffff;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    }
-
-    .wrap .rolling-list ul li .image-wrap {
-        padding-right: 32px;
-        width: 156px;
-        flex-shrink: 0;
-    }
-    .wrap .rolling-list ul li .image-wrap > img {
-        max-width: 50%;
-    }
-    .wrap .rolling-list ul li .desc {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
     }
-    .wrap .rolling-list ul li .desc strong {
-        display: block;
+
+    .slideWrap .imgSlide li img {
+        width: 30%;
+    }
+    .slideWrap .imgSlide li .desc {
+        display: flex;
+        flex-direction: column;
+        margin-top: -67px;
+    }
+
+    .slideWrap .imgSlide li .desc strong {
         font-size: 2rem;
-        margin: 0.5vw 0 0 0;
         font-weight: 500;
     }
-    .wrap .rolling-list ul li .desc span {
-        font-size: 3rem;
+
+    .slideWrap .imgSlide li .desc span {
+        font-size: 3.5rem;
         color: #0A89D0;
         font-weight: 900;
+        margin-top: -130px;
     }
 
-    .rolling-list.original {
-        animation: rollingleft1 33s linear infinite;
-    }
-    .rolling-list.clone {
-        animation: rollingleft2 33s linear infinite;
+
+    /** 애니메이션 **/
+    /* 원본용 */
+    @keyframes slide01 {
+        0% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(-100%);
+        }
+        50.01% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
     }
 
-    @keyframes rollingleft1 {
-        0% { transform: translateX(0); }
-        50% { transform: translateX(-100%); }
-        50.01% { transform: translateX(100%); }
-        100% { transform: translateX(0); }
-    }
-
-    @keyframes rollingleft2 {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-200%); }
+    /* 복제용 */
+    @keyframes slide02 {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-200%);
+        }
     }
 
     /* section 04 */
