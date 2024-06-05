@@ -40,3 +40,12 @@
 ![1차프로젝트_ WBS](https://github.com/skd9712/milkt_project/assets/59557044/eb5cf4f3-5be7-41fd-b02e-ab37bc16c52f)
 
 ## 경쟁사 분석
+![경쟁사분석_1](https://github.com/skd9712/milkt_project/assets/59557044/14bbbe29-c53f-4511-b9f4-fc3d94a3fb77)
+![경쟁사분석_2](https://github.com/skd9712/milkt_project/assets/59557044/85334fae-f64e-4e45-86f1-209deea8a230)
+
+## SWOT 분석
+![swot분석](https://github.com/skd9712/milkt_project/assets/59557044/45d2f9a7-8b23-467d-bff2-381417295b8c)
+
+## 인터뷰
+![인터뷰_1](https://github.com/skd9712/milkt_project/assets/59557044/85c36e4b-efa3-4b20-a76f-0bbf1a2ad411)
+![인터뷰_2](https://github.com/skd9712/milkt_project/assets/59557044/141098ec-50f6-4a56-b732-1d6ae1287098)
