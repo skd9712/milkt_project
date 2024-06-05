@@ -18,10 +18,19 @@
 - 사용자 편의성에 대한 수요가 증가하는 현 시장에서 지금의 웹사이트는 경쟁 어려움
 - 모바일 최적화가 필요한 고객들의 니즈를 충족시키기 위해 UI 개선이 시급함
 
-## WBS
-![1차프로젝트_ WBS](https://github.com/skd9712/milkt_project/assets/59557044/eb5cf4f3-5be7-41fd-b02e-ab37bc16c52f)
+## 팀원
+
+| 황현준 | 권수향 | 김보경 | 김채원 | 양세현 |
+|------|------|--------|--------|-------|
+| 황현준 | 팀장 | skd97122@gmail.com |  |
+| 은 별 | 개발자 | agstarr000@gmail.com | [은 별](https://github.com/Agstarr) |
+| [황현준](https://github.com/skd9712) | [권수향](https://github.com/Suhayng) | [김보경](https://github.com/ppodaejang) |[김채원](https://github.com/HEYWONY) |[양세현](https://github.com/ysh71034)|
 
 ## 기술 스택
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+## WBS
+![1차프로젝트_ WBS](https://github.com/skd9712/milkt_project/assets/59557044/eb5cf4f3-5be7-41fd-b02e-ab37bc16c52f)
+
