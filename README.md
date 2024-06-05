@@ -30,8 +30,7 @@
 
 | 이름 | 역할 | 이메일 | 깃허브 |
 |------|------|--------|-------|
-| 황현준 | 팀장 | skd97122@gmail.com | [황현준](https://github.com/skd9712) |
-| 은 별 | 개발자 | agstarr000@gmail.com | [은 별](https://github.com/Agstarr) |
+| 황현준 | 팀장 | skd97122@gmail.com | [![GitHub 로고](https://img.shields.io/badge/GitHub-181717?style=plastic&logo=GitHub&logoColor=white)](https://github.com/skd9712) |
 | 권수향 | 개발자 | example@gmail.com | [권수향](https://github.com/Suhayng) |
 | 김보경 | 개발자 | example@gmail.com | [김보경](https://github.com/ppodaejang) |
 | 김채원 | 개발자 | example@gmail.com | [김채원](https://github.com/HEYWONY) |
